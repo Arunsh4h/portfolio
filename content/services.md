@@ -110,7 +110,7 @@ icon:
 ---services[3]
 title: Mobile App Development
 icon:
-  src: /icons/mobile-dev.svg
+  src: /icons/mobile-app.svg
 ---
 
 <small>
