@@ -69,7 +69,7 @@ list:
 title: Back-End Development
 list:
   - title: Node.js
-    level: 1
+    level: 4
     icon:
       src: /icons/nodedotjs.svg
   - title: Prisma
@@ -85,7 +85,7 @@ list:
     icon:
       src: /icons/html5.svg
   - title: Solidity
-    level: 2
+    level: 4
     icon:
       src: /icons/solidity.svg
 ---
@@ -111,7 +111,7 @@ list:
     icon:
       src: /icons/redux.svg
   - title: GraphQL
-    level: 2
+    level: 3
     icon:
       src: /icons/graphql.svg
   - title: Node.js
