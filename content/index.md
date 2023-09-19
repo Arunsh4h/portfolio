@@ -1,8 +1,8 @@
 ---
 layout: Home
 seo:
-  title: Web Developer
-  description: Custom description for this page goes here
+  title: Arun Shah - Full Stack Engineer - Bhopal
+  description: professional, proficient in web development, marketing, monetization, content creation, and growth consulting
 ---
 
 ---main
