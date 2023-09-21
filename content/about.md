@@ -2,7 +2,7 @@
 layout: About
 seo:
   title: About Me
-  description: Custom description for this page goes here
+  description: Arun shah Full Stack
 ---
 
 
@@ -15,13 +15,18 @@ images:
 ---
 ##### <span>01.</span> About me
 
-I'm Arun Shah, a highly skilled Full Stack Web Developer with 6 years of experience. My expertise includes React.js, WordPress, PHP, and React Native. I've worked on international projects, constantly expanding my knowledge. Colleagues describe me as a motivated team player with excellent communication skills. I excel in generating leads and have proficiency in CI/CD, Automation, Docker, Kubernetes, and cloud technologies. With keen attention to detail, I ensure client satisfaction by replicating websites flawlessly. I'm passionate and dedicated to delivering exceptional results in every project.
 
-##### <span>02.</span> Interests and Hobbies
 
-Versatile and driven, I bring a wealth of technical skills in React Native, Node.js, Python, PHP, and WordPress, along with HTML, CSS, Tailwind, Bootstrap, and Material UI. With a passion for data science and open-source tech, I continually seek growth and stay ahead of industry trends. Committed to delivering exceptional results, I thrive in dynamic teams and embrace challenges.
 
-##### <span>03.</span> Framework Preferences
+Hello, I'm Arun Shah, a seasoned Full Stack Web Developer with over 6 years of hands-on experience. . I specialize in a range of technologies, including React.js, WordPress, PHP, Next.js, Python, and React Native. Over the years, I've honed my skills by working on numerous ongoing projects, always seeking opportunities to automate and improve processes. Throughout my career, I've had the privilege of working on a variety of international projects, constantly expanding my knowledge and honing my skills.
+
+I have a knack for generating leads and possess expertise in CI/CD, Automation, Docker, Kubernetes, and various cloud technologies. What sets me apart is my meticulous attention to detail, ensuring that I replicate websites flawlessly and guarantee client satisfaction. I'm driven by passion and dedicated to consistently delivering exceptional results
+
+##### <span>02.</span> Interests In Developement
+
+Covering a wide range of encompassing React Native, Node.js, Python, PHP, react.js, next.js and WordPress. I'm also well-versed in front-end technologies such as HTML, javascript, CSS and have experience with frameworks like Tailwind, Bootstrap, and Material UI. I am keenly enthusiastic in data science, AI Automation and actively exploring open-source technologies. Staying ahead of industry trends, allows me to continually grow & adapt my skills to meet the ever-evolving needs of my intrests. I thrive in dynamic teams and eagerly embrace challenges
+
+##### <span>03.</span> Preferences
 
 Ready to contribute to your organization's success.
 
