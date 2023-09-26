@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'clsx'
-import { useForm, FormProvider } from 'react-hook-form'
+import { useForm, FormProvider, useFormContext } from 'react-hook-form'
 import ContentRenderer from '@/components/ContentRenderer'
 import Reveal from '@/components/Reveal'
 import FormInput from '@/components/FormInput'
@@ -22,10 +22,29 @@ const FormComponent = {
   checkbox: FormCheckbox,
 }
 
-const ErrorMessage = ({ errors, name }) =>
-  errors[name] ? (
-    <div className="mb-4 block bg-red-500/5 px-4 py-2 text-red-500">{errors[name].message}</div>
+const validationRules = {
+  'first-name': { required: 'First name is required' },
+  'last-name': { required: 'Last name is required' },
+  email: {
+    required: 'Email is required',
+    pattern: {
+      value: /^\S+@\S+$/i,
+      message: 'Invalid email address',
+    },
+  },
+  // Add validation rules for other fields here
+
+  budget: { required: 'Please select a budget option' },
+  message: { required: 'Project description is required' },
+}
+
+const ErrorMessage = ({ errors, name }) => {
+  const error = errors[name]
+
+  return error ? (
+    <div className="mb-4 block bg-red-500/5 px-4 py-2 text-red-500">{error.message}</div>
   ) : null
+}
 
 const SuccessMessage = () => (
   <Reveal animation="fade-in">
@@ -40,7 +59,26 @@ const SuccessMessage = () => (
 )
 
 const Contact01 = ({ main = {} }) => {
-  const methods = useForm()
+  const methods = useForm({
+    defaultValues: {}, // Add default values for your fields if needed
+    resolver: (data) => {
+      // Custom resolver function to check for validation errors
+      const errors = {}
+      for (const key in validationRules) {
+        if (validationRules.hasOwnProperty(key)) {
+          const rule = validationRules[key]
+          if (rule.required && !data[key]) {
+            errors[key] = { message: rule.required }
+          }
+        }
+      }
+      return {
+        values: data,
+        errors,
+      }
+    },
+  })
+
   const {
     register,
     formState: { errors, isValidating, isSubmitting, isSubmitSuccessful },
@@ -111,6 +149,7 @@ const Contact01 = ({ main = {} }) => {
                           return input.type && Component ? (
                             <div key={(input.id || input.name) + j} className="flex items-center">
                               <Component {...input} {...register(input.id || input.name)} />
+                              <ErrorMessage errors={errors} name={input.id || input.name} />
                             </div>
                           ) : null
                         })}
@@ -138,4 +177,5 @@ const Contact01 = ({ main = {} }) => {
     </div>
   )
 }
+
 export default Contact01

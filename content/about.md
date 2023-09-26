@@ -216,15 +216,15 @@ list:
   - name: MBA in IT Service Management
     description: NMIMS, Mumbai
     date: 2022-2024
-  - name: Bachelor's in Business Administration (in Marketing)
-    description: BU Bhopal
+  - name: Bachelor's in Business Administration (MARKETING)
+    description: Bhopal
     date: July 2018 - 2021
   - name: Gas Authority of India Ltd.
     description: Apprentice
     date: 2017-2019
   - name: Electrical (UJJAIN)
-    date: 2013-2015-2017
-  - name: 10th Grade (CBSE)
-    description: Completed with CGPA grading
+    date: 2013 - 2017
+  - name: 10th CBSE (BHOPAL)
+    description: 7.2 CGPA 
     date: 2010
 ---

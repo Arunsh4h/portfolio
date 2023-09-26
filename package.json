@@ -19,6 +19,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.1",
     "@next/font": "^13.1.6",
     "@sendgrid/mail": "^7.7.0",
     "autoprefixer": "^10.4.13",
@@ -54,7 +55,8 @@
     "remark-squeeze-paragraphs": "^5.0.1",
     "remark-unwrap-images": "^3.0.1",
     "sharp": "^0.31.3",
-    "sift": "^16.0.1"
+    "sift": "^16.0.1",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.1.6",
