@@ -3,12 +3,12 @@ import { HiOutlineColorSwatch } from 'react-icons/hi'
 
 const themes = [
   {
-    name: 'lime',
-    switchBg: 'from-lime-500 to-green-500',
-  },
-  {
     name: 'amber',
     switchBg: 'from-amber-500 to-red-500',
+  },
+  {
+    name: 'lime',
+    switchBg: 'from-lime-500 to-green-500',
   },
   {
     name: 'rose',
