@@ -65,7 +65,7 @@ const Contact01 = ({ main = {} }) => {
       // Custom resolver function to check for validation errors
       const errors = {}
       for (const key in validationRules) {
-        if (validationRules.hasOwnProperty(key)) {
+        if (Object.prototype.hasOwnProperty.call(validationRules, key)) {
           const rule = validationRules[key]
           if (rule.required && !data[key]) {
             errors[key] = { message: rule.required }
