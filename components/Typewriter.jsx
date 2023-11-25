@@ -42,13 +42,14 @@ const Typewriter = (props) => {
         key={index}
         className={classNames(
           'animate-typewriter overflow-hidden whitespace-nowrap',
-          lineClassName
+          lineClassName,
+          'text-2xl md:text-3xl' // Responsive text size adjustment
         )}
         {...rest}
       >
         {index !== null && (lines[index] || children)}
       </span>
-      <div className="ml-2 -translate-y-2 animate-blink">_</div>
+      <div className="ml-2 -translate-y-2 animate-blink text-sm md:text-base">_</div>
     </Component>
   )
 }

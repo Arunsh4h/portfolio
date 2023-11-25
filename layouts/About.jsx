@@ -118,7 +118,11 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
       {history && (
         <div className="prose flex-wrap justify-between bg-white p-6 md:flex">
           {history.map((props, i) => (
-            <div key={i} className="flex-1 md:p-12" style={{ overflow: 'auto', maxHeight: '300px' }}>
+            <div
+              key={i}
+              className="flex-1 md:p-12"
+              style={{ overflow: 'auto', maxHeight: '300px' }}
+            >
               <History {...props} />
             </div>
           ))}
