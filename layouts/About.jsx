@@ -8,7 +8,9 @@ import Icon from '@/components/Icon'
 
 const History = ({ title, list }) => (
   <>
-    <h3>{title}</h3>
+    <h3 className="font-outfit text-54 leading-1 text-#3A454E !text-#3A454E font-extrabold">
+      {title}
+    </h3>
     <Reveal
       animation="fade-in scale-x"
       className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
@@ -105,10 +107,10 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
         </div>
         <div className="basis-2/3">
           {skills_header && (
-            <div className="p-6 md:p-12">
-              <h3 className="mb-2">{skills_header.title}</h3>
+            <div className="p-6 md:p-12 ">
+              <h3 className="mb-2  ">{skills_header.title}</h3>
               {skills_header.list && (
-                <h3 className="inline text-xl sm:text-xl md:text-4xl">
+                <h3 className="inline text-xl sm:text-xl md:text-4xl ">
                   <Typewriter lines={skills_header.list} lineClassName="text-gradient-500" />
                 </h3>
               )}
@@ -131,7 +133,7 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
           {history.map((props, i) => (
             <div
               key={i}
-              className="flex-1 md:p-12"
+              className="flex-1 md:p-12 "
               style={{ overflow: 'auto', maxHeight: '300px' }}
             >
               <History {...props} />
