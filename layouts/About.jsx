@@ -16,12 +16,23 @@ const History = ({ title, list }) => (
     <div className="mt-6 flex flex-col md:mt-12">
       {list?.map((item, i) => (
         <React.Fragment key={`item-${i}`}>
-          <div className="flex" key={`item-${i}`}>
+          <div
+            className="flex rounded bg-gradient-to-r from-green-100 to-blue-100 pl-2 pt-4 pr-2 shadow-md hover:from-pink-100 hover:to-yellow-100 "
+            key={`item-${i}`}
+          >
             <div>
-              <h6 className="pr-1 font-medium">{item.name}</h6>
-              <div>{item.description}</div>
+              <h6 className="font-raleway inline-block rounded border-0 border-solid border-gray-300 bg-black py-1 px-2 pr-3 text-sm font-medium uppercase tracking-wide text-white">
+                {item.name}
+              </h6>
+              <div className="font-Kanit leading-1.3 mb-1 text-base font-semibold text-black">
+                {item.description}
+              </div>
             </div>
-            <small className="ml-auto shrink-0 opacity-60">{item.date}</small>
+            <small className="ml-auto shrink-0 opacity-60">
+              <h6 className="font-raleway inline-block rounded border border-purple-700 bg-black py-1 px-2 pr-5 text-sm font-medium uppercase tracking-wide text-white">
+                {item.date}
+              </h6>
+            </small>
           </div>
           <hr className="my-6" />
         </React.Fragment>
@@ -97,7 +108,7 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
             <div className="p-6 md:p-12">
               <h3 className="mb-2">{skills_header.title}</h3>
               {skills_header.list && (
-                <h3 className="inline">
+                <h3 className="inline text-xl sm:text-xl md:text-4xl">
                   <Typewriter lines={skills_header.list} lineClassName="text-gradient-500" />
                 </h3>
               )}

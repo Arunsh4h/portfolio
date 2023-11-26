@@ -34,7 +34,7 @@ const Typewriter = (props) => {
   const Component = as
 
   return (
-    <Component className={classNames('m-0 inline-flex items-baseline font-mono', className)}>
+    <Component className={classNames('m-0 inline-flex items-baseline font-mono ', className)}>
       {withIcon && (
         <IoChevronForwardSharp className="hidden shrink-0 grow-0 self-center text-omega-500 md:block" />
       )}

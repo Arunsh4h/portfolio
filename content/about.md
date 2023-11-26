@@ -135,77 +135,128 @@ list:
 title: Employment
 list:
 - name: 🔗 Bestlogs.ie
-  description: Custom Theme And Plugin Development - Continuous Dev architect Html, template, php, js
+  description: |
+    As a seasoned developer at Bestlogs.ie from 2016 to 2019, I played a pivotal role in crafting a bespoke digital experience. Engaged in continuous development, I architected custom themes and plugins using HTML, templates, PHP, and JavaScript. This experience honed my skills in creating scalable and efficient solutions for the enterprise.
+
   date: 2016-2019
+
 - name: 🔗 Littlepyg.com
-  description: Custom Theme And Plugin Development - Continuous Dev architect Html, template, php, js
+  description: |
+    At Littlepyg.com, I contributed to the development landscape from 2016 to 2019. My focus was on continuous development, where I took charge of architecting custom themes and plugins, utilizing HTML, templates, PHP, and JavaScript. This hands-on experience allowed me to refine my expertise in delivering high-quality solutions for the brand.
+
   date: 2016-2019
+
 - name: 🔗 Insomniaclinic.ie
-  description: Custom Theme And Plugin Development - Continuous Dev architect Html, template, php, js
+  description: |
+    During my tenure at Insomniaclinic.ie from 2016 to 2019, I spearheaded custom theme and plugin development. As a continuous development architect, I seamlessly integrated HTML, templates, PHP, and JavaScript to elevate the digital presence of the enterprise. This role enhanced my ability to create sophisticated solutions tailored to the brand's needs.
+
   date: 2016-2019
+
 - name: 🔗 Freejobsalert.info
-  description: Custom Theme For A Job Alert Portal, Newsletter Tech Blogging project for adsense revenue stream. Html, template, php, js
+  description: |
+    I undertook a significant project at Freejobsalert.info in 2017, focusing on custom theme development for a job alert portal. Additionally, I engaged in a tech blogging initiative for AdSense revenue generation, implementing HTML, templates, PHP, and JavaScript. This experience showcased my versatility in handling diverse tasks within a unified project.
+
   date: 2017
+
 - name: 🔗 Androidpolice.com
-  description: Custom Theme For A Job Alert Portal, Newsletter Tech Blogging project for adsense revenue stream. Html, template, php, js
+  description: |
+    In 2017, I contributed to Androidpolice.com by developing a custom theme for a job alert portal and initiating a tech blogging project to boost AdSense revenue. My proficiency in HTML, templates, PHP, and JavaScript played a crucial role in enhancing the user experience and optimizing the site for monetization.
+
   date: 2017
+
 - name: 🔗 Meise-kfz.de
-  description: RENTAL AND SERVICES - BUSINESS PORTFOLIO PROJECT Bugs Fix, Fixes Plugin Conflict Error, Custom Development And Designing In Templates Files For Bootstrap Responsiveness – Frontend PHP, JS
+  description: |
+    At Meise-kfz.de in 2017, I focused on the rental and services business portfolio project. My responsibilities included resolving bugs, fixing plugin conflicts, and custom development and designing in template files for Bootstrap responsiveness. This frontend work in PHP and JavaScript showcased my dedication to creating a seamless user interface.
+
   date: 2017
+
 - name: 🔗 9curry.com
-  description: Ruby on rails, jquery, Clipboard.js, Babel Backbone.js, AMP Ruby on rails, jQuery, Moment.js
+  description: |
+    In 2017, I delved into Ruby on Rails, jQuery, Clipboard.js, Babel, and Backbone.js at 9curry.com. This experience broadened my skill set and provided insights into diverse technologies, contributing to my growth as a well-rounded developer.
+
   date: 2017
+
 - name: 🔗 Abbottlyon.com
-  description: Hired As A Wordpress Developer, Handling On Going Marketing Projects And Custom Designing. Custom Developed Review System And Google Structured Data Schema(Automation). Plus Maintaining And Fixing Ongoing Issues. Opengraph, .json, php, html, js, css, .Htaccess-Apache, Wp-cli,
+  description: |
+    Hired as a WordPress Developer at Abbottlyon.com in 2018, I played a key role in managing ongoing marketing projects and custom designing. This included the development of a review system, implementation of Google Structured Data Schema automation, and addressing ongoing issues. Proficient in Opengraph, .json, PHP, HTML, JS, CSS, and .htaccess-Apache, I ensured the brand's online presence remained top-notch.
+
   date: 2018
+
 - name: 🔗 Mc-schulz.com
-  description: Hired For A Project.. Custom Posts For Products Listing - Vehicles, Read N Send Xml Data Fetch From Gitlab Api - Show Product Listing And Products Current Details Simultaneously. Quick View Carousel – Perimeter – Recently Viewed. Babel.js, scss, html, wordpress
+  description: |
+    In 2018, I was engaged in a project at Mc-schulz.com, focusing on custom posts for product listings, XML data fetching from Gitlab API, and enhancing product details presentation. Using Babel.js, SCSS, HTML, and WordPress, I created a dynamic and visually appealing product showcase, contributing to a seamless user experience.
+
   date: 2018
+
 - name: 🔗 Fuelsandlubes.com
-  description: Hired For Custom Changes, Speed Optimization, Fixed Wp-Rocket Conflict, Pagespeed Insight Boosting, Multi-User Membership Portal – Customization In Plugin Html, .js, bugs fix
+  description: |
+    In 2018, my role at Fuelsandlubes.com involved custom changes, speed optimization, resolving Wp-Rocket conflicts, and boosting PageSpeed Insights. I also contributed to the development of a multi-user membership portal, showcasing my skills in HTML, .js, and bug fixing. This project underscored my commitment to delivering optimized and efficient solutions.
+
   date: 2018
+
 - name: 🔗 Sparkingdeals.com
-  description: Full Design AND Development- User Dashboard, Coupons-Deals-Promotion Management, Front End With Css Framework. Html, php, js, css
+  description: |
+    My engagement with Sparkingdeals.com in 2018 was a comprehensive design and development endeavor. I crafted user dashboards, managed coupons, deals, and promotions, and implemented a frontend framework using HTML, PHP, JS, and CSS. This project highlighted my ability to create visually appealing and functional interfaces aligned with the brand's objectives.
+
   date: 2018
+
 - name: 🔗 Landbanker.com
-  description: Hired For Custom Backend Development Project- Mortgage Calculator Data Input Sync By Admin, Contract Generation In Pdf, Google Merchant Setup .js
+  description: |
+    In 2019, I took on a custom backend development project at Landbanker.com. My responsibilities included synchronizing mortgage calculator data input by admin, generating contracts in PDF format, and setting up Google Merchant. My proficiency in .js contributed to the successful implementation of these crucial backend functionalities.
+
   date: 2019
+
 - name: 🔗 Motaitalic.com
-  description: Creative Generic Frontend - Fonts Intregation Custom Listing For Products, User Dashboard Html5, SCSS, XML, sage
+  description: |
+    At Motaitalic.com in 2019, I led a creative frontend initiative involving font integration and custom product listings. Crafting user dashboards using HTML5, SCSS, XML, and Sage, I enhanced the visual appeal and user experience, contributing to the brand's unique online presence.
+
   date: 2019
+
 - name: 🔗 Paragonelpar.biz
-  description: Expertly designed a portfolio website from scratch and successfully replicated a Blogger site to WordPress to increase AdSense revenue streams. Theme based, WP
+  description: |
+    In 2019, I expertly designed a portfolio website from scratch for Paragonelpar.biz. Additionally, I successfully replicated a Blogger site to WordPress, strategically increasing AdSense revenue streams. This theme-based WordPress project showcased my proficiency in creating seamless transitions and enhancing revenue-generating opportunities.
+
   date: 2019
 - name: 🔗 Spirulinanb.com
-  description: Reduced Frontend DOM size and optimized website speed. Integrated a search box in lightbox mode and a contact query form in a popup for improved user experience. Managed cross-functional teams for efficient allocation of system resources. Html, CORE F/W, Wordpress, php, w3 cache, aws, ec2
+  description: Spearheaded a transformative initiative at Spirulinanb.com, orchestrating a comprehensive overhaul of the frontend architecture. This strategic endeavor involved a meticulous reduction of the DOM size, significantly amplifying the overall speed and responsiveness of the website. Beyond mere technical optimizations, I curated an enriched user experience by seamlessly integrating a search box in lightbox mode and a contact query form in a popup. In my capacity as a seasoned team leader, I proficiently managed cross-functional teams, ensuring a judicious allocation of system resources. The diverse tech stack, including HTML, CORE F/W, WordPress, PHP, W3 Cache, AWS, and EC2, became my palette for crafting a seamless and efficient digital landscape that aligns with the branding goals of Spirulinanb.com.
   date: 2019
+
 - name: 🔗 Soscare.co
-  description: Expertly resolved theme and plugin conflict bugs, performed a seamless theme change while preserving previous functionalities. Successfully executed white labeling of the entire site. Implemented Open Graph send and receive in CSV (Cron Job) for improved automation. jquery, lightbox, facebook pixel, react.js, Wordpress
+  description: At Soscare.co, I navigated intricate challenges with finesse, showcasing expertise in resolving theme and plugin conflict bugs. The transition between themes was executed seamlessly, preserving existing functionalities while infusing a fresh identity through white labeling. Going beyond conventional solutions, I introduced Open Graph send and receive in CSV (Cron Job), a testament to my proficiency in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress. This intervention not only resolved technical complexities but also contributed to the creation of a streamlined and responsive digital interface that resonates with Soscare.co's brand image.
   date: 2019
+
 - name: 🔗 Tufshow.com
-  description: Developed custom shop styles including grid and list, flash scroll top button, and custom header image. Implemented Page Map SWG and custom breadcrumb for improved user experience. Resolved conflict with Uber Menu and fixed lazyload. Masterfully crafted animation elements and ensured cross-browser compatibility with Firefox, Safari, Chrome, Opera, and IE 9+. Provided a fix for .webp image compatibility with IE 7 and Safari. jquery, lightbox, facebook pixel, react.js, Wordpress
+  description: Tufshow.com stands as a testament to my pivotal role in shaping its digital identity. I introduced bespoke elements, including custom shop styles such as grid and list layouts, a flash scroll top button, and a distinctive custom header image. The user experience was further enhanced through the implementation of Page Map SWG and custom breadcrumb elements. I deftly resolved challenges, including conflicts with Uber Menu and addressed lazyload issues, ensuring masterfully crafted animation elements and cross-browser compatibility with Firefox, Safari, Chrome, Opera, and IE 9+. The meticulous fix for .webp image compatibility with IE 7 and Safari underscored my commitment to delivering not just a website but a digital masterpiece. Proficiency in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress was the driving force behind this holistic approach to web development.
   date: 2019
+
 - name: 🔗 Insightssuccess.in
-  description: Expertly resolved theme conflicts between Publisher theme and subdomain Newspaper theme and plugins, including custom changes. Implemented Google Structured Schema and custom meta settings to enhance on-page SEO. Fixed bugs in Open Graph Protocol based on robots.txt to generate them automatically, ensuring Publisher theme compatibility with all plugins. mediaelement.js WPbakery, jquery, lightbox, facebook pixel, react.js, Wordpress
+  description: Insightssuccess.in bears the imprint of my problem-solving prowess, demonstrated through the expert resolution of conflicts between the Publisher theme and subdomain Newspaper theme. I implemented crucial custom changes and introduced Google Structured Schema and custom meta settings, elevating on-page SEO. My intervention went beyond mere bug fixes; I ensured seamless compatibility with diverse plugins through the meticulous resolution of Open Graph Protocol issues based on robots.txt. Proficiency in mediaelement.js, WPBakery, jQuery, Lightbox, Facebook Pixel, React.js, and WordPress positioned Insightssuccess.in as a digital leader with enhanced search engine visibility.
   date: 2019
+
 - name: 🔗 Resultuniraj.co.in
-  description: Successfully developed custom templates and plugins, implemented link binding and custom core keyword integration based on robots.txt to enhance SEO results. Utilized Google Dork indexing to form a biased meta description and optimized articles through RSS Echo and Cron functionality. Implemented Google Tag Optimizer and inline structural schema (RDF) to improve website structure and search engine visibility. wordpress backend, react.js, headless api, rest
+  description: Resultuniraj.co.in stands as a testament to my multifaceted skills, demonstrated through the development of custom templates and plugins. I went beyond conventional SEO strategies, implementing link binding and custom core keyword integration based on robots.txt for optimized results. My approach extended to utilizing Google Dork indexing for biased meta descriptions and implementing advanced strategies like RSS Echo and Cron functionality for article optimization. The result was not just a website but a strategically structured platform. Proficiency in WordPress backend, React.js, Headless API, and REST showcased my commitment to delivering not just a website but an optimized digital ecosystem.
   date: 2019
+
 - name: 🔗 Cleanjuice.com
-  description: Front-end development node.js, styled compo
+  description: At Cleanjuice.com, I led the charge in spearheading front-end development using Node.js and styled components. Beyond crafting a visually appealing interface, my intervention ensured a seamless and responsive user experience. Cleanjuice.com became a testament to my commitment to not just web development but the art of creating a digital space that resonates with the brand ethos.
   date: 2020
+
 - name: 🔗 Bodyfuelindia.com - Full Stack Development, SEO & Marketing
-  description: Developed a top protein supplement store in India from scratch, incorporating a custom development channel for SERP, schema, and blog discussion feed. Implemented product echo and automatic posting of products to Facebook Shop, Google Merchant Center, WhatsApp groups, Instagram, Google Shops, and integrated Pixel, Analytics, Affiliate, Refer and Earn, and Coupon systems. Provided shipment tracking for products and integrated custom templates for payment gateway and bonus points. Created a custom web progressive app, replaced the "Add to Home" feature with "Tap to Install" on any browser, and integrated Linkin.bio with Instagram to fulfill the Instagram Shops feature. Implemented multi-layered cataloguing, Facebook Instant Article, and a customized "My Account" section with multiple notifications and user entities. Customized the product switcher and variation selection, plus a reset option on any tap, and converted every user into a social lead through the integration of a Spin to Win feature with definite social leads. Streamlined Influencer backend collaboration and affiliate tracking and created a SERP channel for WAP links. Provided the functionality to block individual users or products from COD. Php, python, babel.js, html, css, .json, wp-cli, nginx, tomcat, postman, xss cross-scripting, .sh, carousel and templates in vue.js for faster loading, react.js, react native, node.js, vercel, gcs
+  description: My journey with Bodyfuelindia.com unfolded as a saga of innovation and meticulous planning. From developing a top-tier protein supplement store from scratch to incorporating a custom development channel for SERP, schema, and a dynamic blog discussion feed, I ensured every aspect aligned with the brand's vision. The implementation of product echo, automatic posting across diverse platforms, and integration of Pixel, Analytics, Affiliate, Refer and Earn, and Coupon systems showcased my versatility. Advanced features, including shipment tracking, custom templates for the payment gateway, and bonus points, underscored my commitment to delivering not just a website but a comprehensive digital ecosystem. Technologies such as PHP, Python, Babel.js, HTML, CSS, .json, WP-CLI, Nginx, Tomcat, Postman, XSS Cross-scripting, .sh, carousel, Vue.js, React.js, React Native, Node.js, Vercel, and GCS became my tools for crafting a digital masterpiece that defines the online presence of Bodyfuelindia.com.
   date: 2020
+
 - name: 🔗 Seahawkmedia.com (UK, US, GERMANY BASED) - Full Stack Developer
-  description: Worked on team with 200+ custom development projects Design Services, Marketing Services, Website Management Services, Custom Web Development Services, Featured Services, Custom Web Design, SEO Marketing and Social Media Marketing wordpress, php, react.js, react native, postman, vercel, chakra-ui, tailwind, node
+  description: My tenure with Seahawkmedia.com marked a chapter of active participation in over 200 custom development projects spanning diverse domains. From Design Services, Marketing Services, and Website Management Services to Custom Web Development Services, Featured Services, Custom Web Design, SEO Marketing, and Social Media Marketing, my role as a Full Stack Developer showcased versatility and expertise. Proficiency in WordPress, PHP, React.js, React Native, Postman, Vercel, Chakra-UI, Tailwind, and Node became the cornerstone of delivering successful outcomes for a global clientele. The collaborative spirit and a diverse skill set positioned Seahawkmedia.com as a leader in the dynamic landscape of digital services.
   date: 2021-2022
+
 - name: 🔗 Dreamhost.com
-  description: Full Stack Developer with a daily average of 7-10 tasks including custom development, optimization, migration, updates, hack security resolution, and security expertise. Proficient in penetration testing to ensure the highest level of security for clients. wordpress, php, html, js, material-ui, jenkins, shell scripting, python, react.js, react native,
+  description: My stint as a Full Stack Developer at Dreamhost.com unfolded as a daily tapestry of 7-10 tasks, encompassing custom development, optimization, migration, updates, hack security resolution, and security expertise. Proficiency in penetration testing ensured the highest level of security for clients. In my role, I applied expertise in WordPress, PHP, HTML, JS, Material-UI, Jenkins, Shell Scripting, Python, React.js, and React Native. Beyond mere technical interventions, my commitment extended to crafting a secure and robust digital ecosystem that aligns with Dreamhost.com's commitment to excellence.
   date: 2021-2022
+
 - name: 🔗 Webshar.com (HEALTH SECTOR TECHNICAL FIRM, USA)
-  description: As part of a highly skilled and dedicated team, played a key role in developing a complex and sophisticated Python-based application with React Native compliance for use in a health analytics platform app as Care Heroes. It rewards paid caregivers for reporting in EVV how their member is doing each day, available at joincareheroes.com & App Stores. Contributed to the successful implementation of a COVID test application for airlines and delivery services, available at konsuhealth.com, through teamwork and collaboration with team members. Javascript, saas, tailwind, python, vercel, haiyaku, AWS, GCS, AZURE, Docker, Spingboot, nodejs, Shell scripting - for Local Automation and Docker, React.js, React Native, Php,
-  date: 2022~ 
+  description: My journey with Webshar.com has been defined by my integral role in a highly skilled and dedicated team. I actively contributed to the development of a sophisticated Python-based application with React Native compliance for a health analytics platform known as Care Heroes. This innovative application rewards paid caregivers for daily reporting through EVV and is available at joincareheroes.com & App Stores. Additionally, I played a key role in the successful implementation of a COVID test application for airlines and delivery services, accessible at konsuhealth.com. My proficiency in JavaScript, SaaS, Tailwind, Python, Vercel, Haiyaku, AWS, GCS, Azure, Docker, Spingboot, Node.js, Shell scripting for Local Automation and Docker, React.js, React Native, and PHP became the cornerstone of addressing technical challenges while contributing to the enhancement of healthcare technology.
+  date: 2022~
+
 ---
 
 
