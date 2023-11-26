@@ -4,8 +4,8 @@ const rose = require('./theme.rose')
 const cyan = require('./theme.cyan')
 
 module.exports = {
-  default: amber,
-  lime,
+  default: lime,
+  amber,
   rose,
   cyan,
 }

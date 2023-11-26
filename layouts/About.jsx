@@ -8,7 +8,7 @@ import Icon from '@/components/Icon'
 
 const History = ({ title, list }) => (
   <>
-    <h3 className="font-outfit text-54 leading-1 text-#3A454E !text-#3A454E font-extrabold">
+    <h3 className="font-poppins text-54 leading-1 text-#3A454E !text-#3A454E font-extrabold">
       {title}
     </h3>
     <Reveal

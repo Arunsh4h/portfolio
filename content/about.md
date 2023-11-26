@@ -132,7 +132,7 @@ list:
 
 
 ---history[0]
-title: Employment
+title: Key Milestones
 list:
 - name: 🔗 Bestlogs.ie
   description: |
@@ -262,16 +262,16 @@ list:
 
 
 ---history[1]
-title: Education
+title: Academic Credentials
 list:
-  - name: MBA in IT Service Management
+  - name: MBA [ITSM prime]
     description: NMIMS, Mumbai
     date: 2022-2024
-  - name: Bachelor's in Business Administration (MARKETING)
+  - name: BBA [Marketing Hon.]
     description: Bhopal
     date: July 2018 - 2021
   - name: Gas Authority of India Ltd.
-    description: Apprentice
+    description: Excecutive Trainee
     date: 2017-2019
   - name: Electrical (UJJAIN)
     date: 2013 - 2017
