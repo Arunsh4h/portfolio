@@ -261,7 +261,7 @@
 	--bright-red: rgb(255, 0, 0);
 	--background: #18181b;
 	--foreground: white;
-	--border-size: 2px;
+	--border-size: 4px;
 	--border-radius: 0.75em;
 }
 
