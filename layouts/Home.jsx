@@ -6,7 +6,7 @@ import Sep from '@/components/Sep'
 import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
 import StackedRotatingImages from '@/components/StackedRotatingImages'
-import RocketForm from '@/components/RocketForm'
+// import RocketForm from '@/components/RocketForm'
 
 const HeroPhoto = ({ main }) => (
   <>
@@ -97,7 +97,7 @@ const Layout = ({ main = {}, cta = {}, achievements = [], companies }) => (
         <Achievements achievements={achievements} />
         <div className="prose prose-invert mt-6 flex md:mt-12">
           <ContentRenderer source={cta} />
-          <RocketForm />
+          {/* <RocketForm /> */}
         </div>
       </div>
     </div>
