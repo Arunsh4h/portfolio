@@ -5,6 +5,8 @@ import Image from '@/components/Image'
 import Sep from '@/components/Sep'
 import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
+import StackedRotatingImages from '@/components/StackedRotatingImages'
+import RocketForm from '@/components/Rocketform'
 
 const HeroPhoto = ({ main }) => (
   <>
@@ -79,16 +81,23 @@ const Achievements = ({ achievements }) => (
 )
 
 const Layout = ({ main = {}, cta = {}, achievements = [], companies }) => (
-  <div className="mx-auto my-auto p-4 md:p-10 lg:p-20">
+  <div className="mx-auto my-auto p-4 md:p-10 lg:p-20 ">
     <div className="items-center text-center md:flex md:text-left">
       <div className="inline-block shrink-0 md:order-2 md:-ml-40">
-        <HeroPhoto main={main} />
+        {/* <HeroPhoto main={main} /> */}
+        <div className="hidden md:block">
+          <StackedRotatingImages />
+        </div>
+        <div className="hidden-sm:block  md:block">
+          <HeroPhoto main={main} />
+        </div>
       </div>
       <div className="z-10 mt-6 basis-full md:m-0">
         <HeroAbout main={main} />
         <Achievements achievements={achievements} />
-        <div className="prose prose-invert mt-6 md:mt-12">
+        <div className="prose prose-invert mt-6 flex md:mt-12">
           <ContentRenderer source={cta} />
+          <RocketForm />
         </div>
       </div>
     </div>

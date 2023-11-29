@@ -7,7 +7,7 @@ seo:
 
 ---main
 images:
-  - src: /hero.jpg
+  - src: /herrro.png
     alt: my photo
   - src: /hero-mobile.jpg
     alt: my photo
@@ -36,7 +36,7 @@ I'm a versatile professional, proficient in web development, marketing, monetiza
 
 ---cta
 ---
-<Button href="/contact" size="lg">
+<Button href="/contact" size="xl" className="bigFontSize">
   Download Resume
 </Button>
 
