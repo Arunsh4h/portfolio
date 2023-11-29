@@ -6,7 +6,7 @@ import Sep from '@/components/Sep'
 import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
 import StackedRotatingImages from '@/components/StackedRotatingImages'
-import RocketForm from '/components/Rocketform'
+import RocketForm from '@/components/RocketForm'
 
 const HeroPhoto = ({ main }) => (
   <>
