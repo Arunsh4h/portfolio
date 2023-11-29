@@ -60,10 +60,10 @@ const RocketForm = () => {
 
   return (
     <div className="container">
-      <button className="restart">URGENT!!👆🚨</button>
+      <button className="restart">Click Me to DM</button>
       <button className="button">
         <div className="text">
-          <span>🚢🆘🛟</span>
+          <span>URGENT🆘 ??</span>
           <svg
             className="rocket"
             id="Capa_1"
