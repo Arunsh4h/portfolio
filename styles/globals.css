@@ -261,8 +261,8 @@
 	--bright-red: rgb(255, 0, 0);
 	--background: #18181B;
 	--foreground: white;
-	--border-size: 4px;
-	--border-radius: 0.75em;
+	--border-size: 2px;
+	--border-radius: 0.15em;
 }
 
 /* Display-P3 color, when supported. */
@@ -339,10 +339,10 @@
 /* Change this background to transparent to see how the gradient works! */
 .button .text {
 	background: var(--background); 
-	padding: 2px 0;
+	padding: 8px 0;
   width: 180px;
 	border-radius: calc(var(--border-radius) - var(--border-size));
-	color: #3b82f6;
+	color: #f9d047;
 }
 
 .rocket {

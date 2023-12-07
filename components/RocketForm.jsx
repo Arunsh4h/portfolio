@@ -18,19 +18,19 @@ const RocketForm = () => {
       container.appendChild(notification)
       setTimeout(() => {
         notification.remove()
-      }, 3000)
+      }, 4000)
     }
 
     const handleRestartClick = () => {
       // Show notifications
-      setTimeout(() => showNotification('If this isnt super-duper important,', 'purple'), 0)
-      setTimeout(() => showNotification('4 seconds to ponder life choices...', 'yellow'), 3000)
-      setTimeout(() => showNotification('THREEEEEE!!!!!!', 'pink'), 6000)
+      setTimeout(() => showNotification('Hold up! Netflix can wait, right?', 'purple'), 0)
+      setTimeout(() => showNotification('Is it a cat video or something urgent?', 'yellow'), 5000)
+      setTimeout(() => showNotification('now you got our attention!', 'pink'), 9000)
+      setTimeout(() => showNotification('Click on `Yes` When Asked!!', 'red'), 13000)
       setTimeout(
-        () => showNotification('Seriously, do you need to connect RIGHT now?', 'red'),
-        9000
+        () => showNotification('This better be important or a pizza delivery!', 'green'),
+        17000
       )
-      setTimeout(() => showNotification('Click "Yes" When Asked', 'green'), 12000)
 
       // Show confirmation alert at the end
       setTimeout(() => {
@@ -45,7 +45,7 @@ const RocketForm = () => {
           window.location.reload()
         })
         container.appendChild(link)
-      }, 15000)
+      }, 21000)
     }
 
     submitButton.addEventListener('click', toggleAnimate)
@@ -60,10 +60,10 @@ const RocketForm = () => {
 
   return (
     <div className="container">
-      <button className="restart">Click Me to DM</button>
+      <button className="restart">Send SOS message!</button>
       <button className="button">
         <div className="text">
-          <span>URGENT🆘 ??</span>
+          <span>Critical Support Request ? </span>
           <svg
             className="rocket"
             id="Capa_1"
