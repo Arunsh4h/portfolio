@@ -90,11 +90,12 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolledToBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight
+      const scrollPercentage =
+        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
 
-      if (isScrolledToBottom && !showModal) {
+      if (scrollPercentage >= 80 && !showModal) {
         setShowModal(true)
-      } else if (!isScrolledToBottom && showModal) {
+      } else if (scrollPercentage < 80 && showModal) {
         setShowModal(false)
       }
     }
