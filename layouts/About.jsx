@@ -93,9 +93,9 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
       const scrollPercentage =
         (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
 
-      if (scrollPercentage >= 80 && !showModal) {
+      if (scrollPercentage >= 90 && !showModal) {
         setShowModal(true)
-      } else if (scrollPercentage < 80 && showModal) {
+      } else if (scrollPercentage < 90 && showModal) {
         setShowModal(false)
       }
     }
