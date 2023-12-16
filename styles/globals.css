@@ -516,3 +516,96 @@
     background-position: 0% 50%;
   }
 }
+
+
+/* @keyframes glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 5px);
+  }
+  50% {
+    transform: translate(5px, -5px);
+  }
+  75% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.glitch {
+  animation: glitch 0.2s infinite;
+} */
+
+
+/* Services01.css */
+@keyframes gradientChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.transition-glitch {
+  background: linear-gradient(45deg, #f36c6c, #ffb8b8);
+  animation: gradientChange 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(243, 108, 108, 0.5);
+}
+
+.transition-fade {
+  background: linear-gradient(45deg, #70a8e8, #9cd6ff);
+  animation: gradientChange 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(112, 168, 232, 0.5);
+}
+
+.transition-zoom-out {
+  background: linear-gradient(45deg, #53e087, #a3fcb1);
+  animation: gradientChange 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(83, 224, 135, 0.5);
+}
+
+.transition-bounce-out {
+  background: linear-gradient(45deg, #b274d1, #e6a8f4);
+  animation: gradientChange 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(178, 116, 209, 0.5);
+}
+
+.transition-bounce-in {
+  background: linear-gradient(45deg, #fcb75a, #ffdca5);
+  animation: gradientChange 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(252, 183, 90, 0.5);
+}
+
+.transition-fade-in {
+  background: linear-gradient(45deg, #f06e5d, #ffadab);
+  animation: gradientChange 3s ease-in-out infinite;
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(240, 110, 93, 0.5);
+}
+
+.service-box {
+  /* Common styles for service boxes */
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
