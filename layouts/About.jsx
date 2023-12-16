@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import classNames from 'clsx'
 import ContentRenderer from '@/components/ContentRenderer'
 import Typewriter from '@/components/Typewriter'
@@ -19,23 +19,28 @@ const History = ({ title, list }) => (
       {list?.map((item, i) => (
         <React.Fragment key={`item-${i}`}>
           <div
-            className="flex rounded bg-gradient-to-r from-green-100 to-blue-100 pl-2 pt-4 pr-2 shadow-md hover:from-pink-100 hover:to-yellow-100 "
+            className="flex flex-col rounded bg-gradient-to-r from-green-100 to-blue-100 pl-2 pt-4 pr-2 shadow-md hover:from-pink-100 hover:to-yellow-100 "
             key={`item-${i}`}
           >
-            <div>
+            <div className="flex items-center">
               <h6 className="font-raleway inline-block rounded border-0 border-solid border-gray-300 bg-black py-1 px-2 pr-3 text-sm font-medium uppercase tracking-wide text-white">
                 {item.name}
               </h6>
-              <div className="font-Kanit leading-1.3 mb-1 text-base font-semibold text-black">
-                {item.description}
-              </div>
+              <small className="ml-auto shrink-0 opacity-60">
+                <h6 className="font-raleway inline-block rounded border border-purple-700 bg-black py-1 px-2 pr-5 text-sm font-medium uppercase tracking-wide text-white">
+                  {item.date}
+                </h6>
+              </small>
             </div>
-            <small className="ml-auto shrink-0 opacity-60">
-              <h6 className="font-raleway inline-block rounded border border-purple-700 bg-black py-1 px-2 pr-5 text-sm font-medium uppercase tracking-wide text-white">
-                {item.date}
-              </h6>
-            </small>
+            {item.description && (
+              <ul className="font-lexend leading-1.3 mb-1 mt-0 list-disc p-0 text-base font-semibold text-black">
+                {item.description
+                  .split('\n')
+                  .map((point, index) => point.trim() && <li key={index}>{point}</li>)}
+              </ul>
+            )}
           </div>
+
           <hr className="my-6" />
         </React.Fragment>
       ))}
@@ -44,7 +49,7 @@ const History = ({ title, list }) => (
 )
 
 const Skill = ({ title, icon, level }) => (
-  <div className="flex items-center">
+  <div className="flex items-center pb-0">
     {icon && (
       <Icon width={28} height={28} {...icon} className="mr-3 h-7 w-7 fill-current text-omega-500" />
     )}
@@ -81,6 +86,26 @@ const SkillSet = ({ title, list }) => (
 )
 
 const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }) => {
+  const [showModal, setShowModal] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolledToBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight
+
+      if (isScrolledToBottom && !showModal) {
+        setShowModal(true)
+      } else if (!isScrolledToBottom && showModal) {
+        setShowModal(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [showModal])
+
   return (
     <div className="mx-auto">
       <div className="prose prose-invert md:flex">
@@ -139,6 +164,27 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
               <History {...props} />
             </div>
           ))}
+          {showModal && (
+            <div className="custom-gradient-animation fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-50 p-8 backdrop-blur-md backdrop-filter">
+              <div className="prose flex-wrap justify-between rounded bg-white p-6 shadow-md md:flex">
+                {history.map((props, i) => (
+                  <div
+                    key={i}
+                    className="flex-1 md:p-12"
+                    style={{ overflow: 'auto', maxHeight: '530px' }}
+                  >
+                    <History {...props} />
+                  </div>
+                ))}
+                <button
+                  className="absolute top-4 right-4 cursor-pointer text-white"
+                  onClick={() => setShowModal(false)}
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>

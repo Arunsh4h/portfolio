@@ -495,3 +495,24 @@
 @keyframes rotateBackground3 {
 	to { --border-angle-3: 540deg; }
 }
+
+
+
+
+.custom-gradient-animation {
+  animation: gradientAnimation 10s infinite linear;
+  background-size: 400% 400%;
+  background-image: linear-gradient(-45deg, rgba(255, 0, 0, 0.4), rgba(255, 128, 0, 0.4), rgba(255, 255, 0, 0.4), rgba(128, 255, 0, 0.4), rgba(0, 255, 128, 0.4), rgba(0, 255, 255, 0.4), rgba(0, 128, 255, 0.4), rgba(0, 0, 255, 0.4), rgba(128, 0, 255, 0.4), rgba(255, 0, 255, 0.4), rgba(255, 0, 128, 0.4), rgba(255, 0, 0, 0.4));
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

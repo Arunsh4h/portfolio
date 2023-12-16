@@ -19,7 +19,7 @@ export const menu = [
     name: 'Home',
     slug: '/',
     Icon: TfiHome,
-    number: 1,
+    // number: 1,
   },
   // {
   //   name: 'Home (2)',
