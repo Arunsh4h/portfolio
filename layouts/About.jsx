@@ -19,7 +19,7 @@ const History = ({ title, list }) => (
       {list?.map((item, i) => (
         <React.Fragment key={`item-${i}`}>
           <div
-            className="flex flex-col rounded bg-gradient-to-r from-green-100 to-blue-100 pl-2 pt-4 pr-2 shadow-md hover:from-pink-100 hover:to-yellow-100 "
+            className="border-gradient flex flex-col rounded border-b-2 bg-gradient-to-r from-green-100 to-blue-100 pl-2 pt-4 pr-2 shadow-md hover:from-pink-100 hover:to-yellow-100"
             key={`item-${i}`}
           >
             <div className="flex items-center">
@@ -86,27 +86,6 @@ const SkillSet = ({ title, list }) => (
 )
 
 const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }) => {
-  const [showModal, setShowModal] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPercentage =
-        (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100
-
-      if (scrollPercentage >= 90 && !showModal) {
-        setShowModal(true)
-      } else if (scrollPercentage < 90 && showModal) {
-        setShowModal(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [showModal])
-
   return (
     <div className="mx-auto">
       <div className="prose prose-invert md:flex">
@@ -159,33 +138,12 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
           {history.map((props, i) => (
             <div
               key={i}
-              className="flex-1 md:p-12 "
+              className="flex-1 md:p-12  "
               style={{ overflow: 'auto', maxHeight: '300px' }}
             >
               <History {...props} />
             </div>
           ))}
-          {showModal && (
-            <div className="custom-gradient-animation fixed top-0 left-0 z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-50 p-8 backdrop-blur-md backdrop-filter">
-              <div className="prose flex-wrap justify-between rounded bg-white p-6 shadow-md md:flex">
-                {history.map((props, i) => (
-                  <div
-                    key={i}
-                    className="flex-1 md:p-12"
-                    style={{ overflow: 'auto', maxHeight: '530px' }}
-                  >
-                    <History {...props} />
-                  </div>
-                ))}
-                <button
-                  className="absolute top-4 right-4 cursor-pointer text-white"
-                  onClick={() => setShowModal(false)}
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          )}
         </div>
       )}
     </div>
