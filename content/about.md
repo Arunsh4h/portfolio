@@ -287,44 +287,45 @@ list:
 
   date: 2019
 
-- name: 🔗 Cleanjuice.com
+- name: 🔗 Cleanjuice
   description: |
     - Led front-end development using Node.js and styled components at Cleanjuice.com in 2020.
     - Crafted a visually appealing and responsive user experience.
 
   date: 2020
 
-- name: 🔗 Bodyfuelindia.com - Full Stack Development, SEO & Marketing
+- name: 🔗 Bodyfuelindia.com
   description: |
-    - Unfolded innovation and meticulous planning at Bodyfuelindia.com in 2020.
-    - Developed a top-tier protein supplement store from scratch.
-    - Incorporated custom development for SERP, schema, and a dynamic blog discussion feed.
-    - Implemented product echo, automatic posting, and integration of Pixel, Analytics, Affiliate, Refer and Earn, and Coupon systems.
-    - Proficient in PHP, Python, Babel.js, HTML, CSS, .json, WP-CLI, Nginx, Tomcat, Postman, XSS Cross-scripting, .sh, carousel, Vue.js, React.js, React Native, Node.js, Vercel, and GCS.
+    - In 2020, I collaborated with a excellence team at Bodyfuelindia.com where we unfolded innovative approaches and executed meticulous planning strategies.
+    - Incorporated custom development for SERP, schema, and a dynamic blog with a discussion feed.
+    - Custom hooking of AMP for Blog Type, Progressive Web App segements and Asset designing.
+    - Implemented product shop with filters and integration of Pixel to meta, Analytics, Affiliate, Refer and Earn, and Coupon systems.
+    - I led projects to boost performance and enhance user experiences. This involved backend upgrades like advanced caching and database optimizations, and frontend enhancements such as codebase streamlining, lazy loading, and JavaScript fine-tuning. These improvements resulted in faster page loads, increased user satisfaction, higher search engine rankings, and improved conversion rates.
+    - Additionally, I conducted routine performance audits and A/B testing to continually refine our systems based on user feedback, ensuring an exceptional user experience.
+    - Tray - PHP, Python, Babel.js, HTML, CSS, .json, WP-CLI, Nginx, Tomcat, Postman, XSS Cross-scripting, .sh, carousel, Vue.js, React.js, React Native, Node.js, Vercel, and GCS.
 
   date: 2020
 
-- name: 🔗 Seahawkmedia.com (UK, US, GERMANY BASED) - Full Stack Developer
+- name: 🔗 Seahawkmedia.com
   description: |
     - Marked active participation in over 200 custom development projects at Seahawkmedia.com from 2021 to 2022.
-    - Showcased versatility and expertise in Design Services, Marketing Services, Website Management Services, Custom Web Development Services, Featured Services, Custom Web Design, SEO Marketing, and Social Media Marketing.
-    - Proficient in WordPress, PHP, React.js, React Native, Postman, Vercel, Chakra-UI, Tailwind, and Node.
+    - Showcased versatility and expertise in Design Services, Marketing Services, Website Management Services, Custom Web Development Services, Featured Services, Custom theme Design, plugins, Web Design, SEO Marketing, and Social Media Marketing.
+    - Proficient in python, Docker, Jenkins, CI/CD, WordPress, PHP, React.js, React Native, Postman, Vercel, Chakra-UI, Tailwind, and Node.
 
   date: 2021-2022
 
 - name: 🔗 Dreamhost.com
   description: |
-    - Unfolded a daily tapestry of 7-10 tasks as a Full Stack Developer at Dreamhost.com from 2021 to 2022.
-    - Encompassed custom development, optimization, migration, updates, hack security resolution, and penetration testing.
-    - Proficient in WordPress, PHP, HTML, JS, Material-UI, Jenkins, Shell Scripting, Python, React.js, and React Native.
+    - Unfolded a daily tickets of 7-10 tasks of custom development, performance, optimization, migration, updates, hack security resolution, and penetration testing.
+    - Proficient in WordPress, PHP, WPScan, HTML, JS, Material-UI, Jenkins, Shell Scripting, Python, React.js, and React Native.
 
   date: 2021-2022
 
-- name: 🔗 Webshar.com (HEALTH SECTOR TECHNICAL FIRM, USA)
+- name: 🔗 Webshar.com
   description: |
-    - Defined an integral role in a highly skilled and dedicated team at Webshar.com from 2022 onwards.
-    - Contributed to the development of a sophisticated Python-based application with React Native compliance for a health analytics platform (Care Heroes) at joincareheroes.com & App Stores.
-    - Played a key role in the successful implementation of a COVID test application for airlines and delivery services at konsuhealth.com.
+    - Contributed to an integral role in a highly excellence team at Webshar.com from 2022 onwards.
+    - Development of a sophisticated Python-based application with React Native compliance for a health analytics platform (Care Heroes) at joincareheroes.com & App Stores.
+    - Implementation of a COVID test application for airlines and delivery services at konsuhealth.com
     - Proficient in JavaScript, SaaS, Tailwind, Python, Vercel, Haiyaku, AWS, GCS, Azure, Docker, Spingboot, Node.js, Shell scripting for Local Automation and Docker, React.js, React Native, and PHP.
 
   date: 2022~

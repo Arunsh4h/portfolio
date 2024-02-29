@@ -8,14 +8,25 @@ import Icon from '@/components/Icon'
 
 const History = ({ title, list }) => (
   <>
-    <h3 className="font-poppins text-54 leading-1 text-#3A454E !text-#3A454E font-extrabold">
-      {title}
+    <h3 className="pt-4 font-serif text-3xl font-bold text-blue-600">
+      <span className="inline-block">
+        {title.split('').map((char, index) => (
+          <span
+            key={index}
+            className="inline-block animate-pulse text-black"
+            style={{ animationDelay: `${index * 0.4}s` }}
+          >
+            {char}
+          </span>
+        ))}
+      </span>
     </h3>
+
     <Reveal
       animation="fade-in scale-x"
       className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
     />
-    <div className="mt-6 flex flex-col md:mt-12">
+    <div className="mt-6 flex flex-col md:mt-4">
       {list?.map((item, i) => (
         <React.Fragment key={`item-${i}`}>
           <div
@@ -23,7 +34,7 @@ const History = ({ title, list }) => (
             key={`item-${i}`}
           >
             <div className="flex items-center">
-              <h6 className="font-raleway inline-block rounded border-0 border-solid border-gray-300 bg-black py-1 px-2 pr-3 text-sm font-medium uppercase tracking-wide text-white">
+              <h6 className="font-raleway inline-block inline-block animate-pulse rounded border-0 border-solid border-gray-300 bg-black py-1 px-2 pr-3 text-sm font-medium uppercase tracking-wide text-white">
                 {item.name}
               </h6>
               <small className="ml-auto shrink-0 opacity-60">
@@ -138,7 +149,7 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
           {history.map((props, i) => (
             <div
               key={i}
-              className="flex-1 md:p-12  "
+              className="neon-scroller flex-1 md:p-2 "
               style={{ overflow: 'auto', maxHeight: '300px' }}
             >
               <History {...props} />
