@@ -620,22 +620,24 @@
 }
 
 .neon-scroller::-webkit-scrollbar {
-  width: 8px; /* Adjust scrollbar width */
+  width: 7px; /* Adjust scrollbar width */
+
 }
 
 .neon-scroller::-webkit-scrollbar-thumb {
   background-color: #000;
   border-radius: 8px; /* Adjust thumb border radius */
-  border: 2px solid #000; /* Add shine effect */
+  /* Add shine effect */
 }
 
 .neon-scroller::-webkit-scrollbar-thumb:hover {
-  background-color: #222; /* Darker color on hover for shine effect */
+  background-color:  #003f47; /* Darker color on hover for shine effect */
 }
 
 .neon-scroller::-webkit-scrollbar-track {
-  background-color: #8e8c8c; /* Adjust track color */
-  border-radius: 8px; /* Adjust track border radius */
+  background-color:  #96ecf7; /* Adjust track color */
+  border-radius: 0px; /* Adjust track border radius */
+
 }
 
 
@@ -653,3 +655,36 @@
 .border-gradient.flex.flex-col.rounded.border-b-2.bg-gradient-to-r.from-green-100.to-blue-100.pl-2.pt-4.pr-2.shadow-md.hover\:from-pink-100.hover\:to-yellow-100 {
   border: 1px double #96ecf7;
 }
+
+.neon-scroller.flex-1.md\:p-2 {
+  border-bottom: 4px ridge #96ecf7;
+  border-radius: 7px;
+}
+/* 
+h3.rounded.bg-black.pl-2.pb-1.pt-3.font-serif.text-3xl.font-bold.text-blue-600 {
+  background: #1c1c1f; } */
+
+  .bg-blck{background-color: #1c1c1f;}
+
+
+
+  @font-face {
+    font-family: 'Boiling-BlackDemo';
+    src: url('/fonts/Boiling-BlackDemo.ttf') format('truetype');
+    /* You can define other properties like font-weight and font-style here if needed */
+  }
+  @font-face {
+    font-family: 'Boiling-BlackDemo';
+    src: url('/fonts/Junter-0vWjo.otf') format('truetype');
+    /* You can define other properties like font-weight and font-style here if needed */
+  }
+  
+  /* Apply the font to specific elements or globally */
+  .nikbody2 {
+    font-family: 'Boiling-BlackDemo', sans-serif;
+    font-weight: 400;
+  }
+
+  .nikbody {
+    font-family: 'Junter', sans-serif;
+  }

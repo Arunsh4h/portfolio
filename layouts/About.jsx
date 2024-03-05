@@ -8,12 +8,16 @@ import Icon from '@/components/Icon'
 
 const History = ({ title, list }) => (
   <>
-    <h3 className="pt-4 font-serif text-3xl font-bold text-blue-600">
+    <h3
+      className="bg-blck nikbody2 rounded pl-2
+
+pb-1 pt-3 text-3xl font-bold text-blue-600"
+    >
       <span className="inline-block">
         {title.split('').map((char, index) => (
           <span
             key={index}
-            className="inline-block animate-pulse text-black"
+            className="inline-block animate-pulse text-white"
             style={{ animationDelay: `${index * 0.4}s` }}
           >
             {char}
@@ -26,7 +30,7 @@ const History = ({ title, list }) => (
       animation="fade-in scale-x"
       className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
     />
-    <div className="mt-6 flex flex-col md:mt-4">
+    <div className="mt-6 flex flex-col md:mt-4 ">
       {list?.map((item, i) => (
         <React.Fragment key={`item-${i}`}>
           <div
@@ -34,17 +38,23 @@ const History = ({ title, list }) => (
             key={`item-${i}`}
           >
             <div className="flex items-center">
-              <h6 className="font-raleway inline-block inline-block animate-pulse rounded border-0 border-solid border-gray-300 bg-black py-1 px-2 pr-3 text-sm font-medium uppercase tracking-wide text-white">
+              <h6 className="nikbody bg-blck inline-block rounded border-0 border-solid border-gray-300 py-1 px-2 pr-1 font-mono text-base uppercase tracking-wide text-white">
                 {item.name}
               </h6>
-              <small className="ml-auto shrink-0 opacity-60">
-                <h6 className="font-raleway inline-block rounded border border-purple-700 bg-black py-1 px-2 pr-5 text-sm font-medium uppercase tracking-wide text-white">
+              <small className="ml-auto opacity-100">
+                <h6 className="font-cartoon from-10% via-30% to-90% ... inline-block skew-y-[-12] transform animate-pulse rounded bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 py-1 px-2 text-xs font-semibold tracking-wide text-white">
+                  {item.place}
+                </h6>
+              </small>
+
+              <small className="ml-auto opacity-100">
+                <h6 className="inline-block py-1 px-2 font-sans text-sm font-semibold tracking-wide text-black">
                   {item.date}
                 </h6>
               </small>
             </div>
             {item.description && (
-              <ul className="font-lexend leading-1.3 mb-1 mt-0 list-disc p-0 text-base font-semibold text-black">
+              <ul className="leading-1.3 mb-1 mt-0 list-disc p-0 font-sans text-base font-semibold text-black">
                 {item.description
                   .split('\n')
                   .map((point, index) => point.trim() && <li key={index}>{point}</li>)}
@@ -126,7 +136,7 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
             <div className="p-6 md:p-12 ">
               <h3 className="mb-2  ">{skills_header.title}</h3>
               {skills_header.list && (
-                <h3 className="inline text-xl sm:text-xl md:text-4xl ">
+                <h3 className="inline text-xl sm:text-xl md:text-3xl ">
                   <Typewriter lines={skills_header.list} lineClassName="text-gradient-500" />
                 </h3>
               )}
@@ -145,7 +155,7 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
         </div>
       </div>
       {history && (
-        <div className="prose flex-wrap justify-between bg-white p-6 md:flex">
+        <div className="prose flex-wrap justify-between bg-white p-2 md:flex">
           {history.map((props, i) => (
             <div
               key={i}
