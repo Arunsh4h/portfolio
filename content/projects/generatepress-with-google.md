@@ -11,15 +11,15 @@ tags:
   - structured-schema
   - meta-strategies
 logo:
-  src: /icons/logo-15.svg
+  src: /icons/logo-1.svg
   alt: SEOGenius
 images:
-  - src: /projects/project-33.png
+  - src: /projects/project-1.png
     alt: image alt text
     overlay:
-      src: /projects/project-33-mobile.png
+      src: /projects/project-1-mobile.png
       alt: overlay image
-  - src: /projects/project-34.png
+  - src: /projects/project-2.png
     alt: image alt text
 attributes:
   - label: Duration
