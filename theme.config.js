@@ -78,7 +78,7 @@ export const social = [
   },
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/just.superman',
+    url: 'https://www.instagram.com/arunnshah',
     Icon: IoLogoInstagram,
   },
   {
@@ -102,7 +102,7 @@ export const config = {
     timeZone: 'UTC',
   },
   convertKit: {
-    tipUrl: 'https://instagram.com/just.superman',
+    tipUrl: 'https://instagram.com/arunnshah',
   },
   contactForm: {
     inputs: require('./content/contact-form.json'),

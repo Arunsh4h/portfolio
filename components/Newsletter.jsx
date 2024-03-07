@@ -38,7 +38,7 @@ const Badge = () => (
       className="group h-6 text-omega-400 no-underline"
       target="_blank"
       rel="noreferrer"
-      href="https://instagram.com/just.superman"
+      href="https://instagram.com/arunnshah"
     >
       <span className="text-xs">BUILT BY</span>
       <Icon
