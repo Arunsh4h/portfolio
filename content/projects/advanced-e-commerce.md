@@ -14,12 +14,12 @@ logo:
   src: /icons/logo-8.svg
   alt: ShopInnovate
 images:
-  - src: /projects/project-6.png
+  - src: /projects/project-6.jpg
     alt: image alt text
     overlay:
-      src: /projects/project-7-mobile.png
+      src: /projects/project-7-mobile.jpg
       alt: overlay image
-  - src: /projects/project-8.png
+  - src: /projects/project-8.jpg
     alt: image alt text
 attributes:
   - label: Duration

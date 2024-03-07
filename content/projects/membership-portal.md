@@ -13,12 +13,12 @@ logo:
   src: /icons/logo-1.svg
   alt: PortalX
 images:
-  - src: /projects/project-8.png
+  - src: /projects/project-8.jpg
     alt: image alt text
     overlay:
-      src: /projects/project-8-mobile.png
+      src: /projects/project-8-mobile.jpg
       alt: overlay image
-  - src: /projects/project-6.png
+  - src: /projects/project-6.jpg
     alt: image alt text
 attributes:
   - label: Duration

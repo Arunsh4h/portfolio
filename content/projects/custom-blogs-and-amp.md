@@ -13,12 +13,12 @@ logo:
   src: /icons/logo-1.svg
   alt: SpeedCraft
 images:
-  - src: /projects/project-7.png
+  - src: /projects/project-7.jpg
     alt: image alt text
     overlay:
-      src: /projects/project-5-mobile.png
+      src: /projects/project-5-mobile.jpg
       alt: overlay image
-  - src: /projects/project-8.png
+  - src: /projects/project-8.jpg
     alt: image alt text
 attributes:
   - label: Duration

@@ -12,12 +12,12 @@ logo:
   src: /icons/logo-1.svg
   alt: JobHub
 images:
-  - src: /projects/project-5.png
+  - src: /projects/project-5.jpg
     alt: image alt text
     overlay:
-      src: /projects/project-7-mobile.png
+      src: /projects/project-7-mobile.jpg
       alt: overlay image
-  - src: /projects/project-6.png
+  - src: /projects/project-6.jpg
     alt: image alt text
 attributes:
   - label: Duration

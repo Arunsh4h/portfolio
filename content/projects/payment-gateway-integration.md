@@ -14,12 +14,12 @@ logo:
   src: /icons/logo-1.svg
   alt: ShopEase
 images:
-  - src: /projects/project-8.png
+  - src: /projects/project-8.jpg
     alt: image alt text
     overlay:
-      src: /projects/project-6-mobile.png
+      src: /projects/project-6-mobile.jpg
       alt: overlay image
-  - src: /projects/project-9.png
+  - src: /projects/project-9.jpg
     alt: image alt text
 attributes:
   - label: Duration
