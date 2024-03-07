@@ -11,18 +11,18 @@ logo:
   src: /icons/logo-3.svg
   alt: Company X
 images:
-  - src: /projects/project-3.png
+  - src: /projects/project-6.png
     alt: Control Panel Dashboard
     overlay:
-      src: /projects/project-3-mobile.png
+      src: /projects/project-8-mobile.png
       alt: Control Panel Mobile
-  - src: /projects/project-1.png
+  - src: /projects/project-6.png
     alt: Customers Dashboard
-  - src: /projects/project-2.png
+  - src: /projects/project-8.png
     alt: Inovice & Payments
-  - src: /projects/project-3.png
+  - src: /projects/project-9.png
     alt: Inovice & Payments
-  - src: /projects/project-4.png
+  - src: /projects/project-5.png
     alt: Inovice & Payments
 attributes:
   - label: Duration

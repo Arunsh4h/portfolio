@@ -11,15 +11,15 @@ tags:
   - backend
   - frontend
 logo:
-  src: /icons/logo-1.svg
+  src: /icons/logo-8.svg
   alt: ShopInnovate
 images:
-  - src: /projects/project-1.png
+  - src: /projects/project-6.png
     alt: image alt text
     overlay:
-      src: /projects/project-1-mobile.png
+      src: /projects/project-7-mobile.png
       alt: overlay image
-  - src: /projects/project-2.png
+  - src: /projects/project-8.png
     alt: image alt text
 attributes:
   - label: Duration
