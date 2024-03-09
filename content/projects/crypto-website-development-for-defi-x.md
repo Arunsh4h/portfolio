@@ -20,7 +20,7 @@ images:
     alt: Customers Dashboard
   - src: /projects/project-8.jpg
     alt: Inovice & Payments
-  - src: /projects/project-9.jpg
+  - src: /projects/project-9.png
     alt: Inovice & Payments
   - src: /projects/project-5.jpg
     alt: Inovice & Payments

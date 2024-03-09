@@ -19,7 +19,7 @@ images:
     overlay:
       src: /projects/project-6-mobile.jpg
       alt: overlay image
-  - src: /projects/project-9.jpg
+  - src: /projects/project-9.png
     alt: image alt text
 attributes:
   - label: Duration
