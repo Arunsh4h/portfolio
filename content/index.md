@@ -7,7 +7,7 @@ seo:
 
 ---main
 images:
-  - src: /herrroq.png
+  - src: /herrroq.jpg
     alt: my photo
   - src: /hero-mobile.jpg
     alt: my photo
