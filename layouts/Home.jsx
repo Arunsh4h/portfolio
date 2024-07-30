@@ -7,6 +7,8 @@ import Reveal from '@/components/Reveal'
 import Companies from '@/components/Companies'
 import StackedRotatingImages from '@/components/StackedRotatingImages'
 import RocketForm from '@/components/RocketForm'
+import SolidEnter from '@/components/SolidEnter'
+import CompaniesBase from '@/components/CompaniesBase'
 
 const HeroPhoto = ({ main }) => (
   <>
@@ -80,14 +82,14 @@ const Achievements = ({ achievements }) => (
   </Reveal>
 )
 
-const Layout = ({ main = {}, cta = {}, achievements = [], companies }) => (
+const Layout = ({ main = {}, cta = {}, achievements = [], companies, solidEnter }) => (
   <div className="mx-auto my-auto p-4 md:p-10 lg:p-20 ">
     <div className="items-center text-center md:flex md:text-left">
       <div className="inline-block shrink-0 md:order-2 md:-ml-40">
-        {/* <HeroPhoto main={main} /> */}
-        <div className="hidden md:block">
+        <div className="md:block">
           <StackedRotatingImages />
         </div>
+        {/* <SolidEnter data={solidEnter} /> */}
         <div className="hidden-sm:block  md:block">
           <HeroPhoto main={main} />
         </div>
@@ -101,8 +103,11 @@ const Layout = ({ main = {}, cta = {}, achievements = [], companies }) => (
         </div>
       </div>
     </div>
-    <div className="mt-6 mt-12 hidden px-4 md:block">
+    <div className="mt-6 mt-12 hidden px-4 pb-0 md:block">
       <Companies {...companies} />
+    </div>
+    <div className=" hidden md:block">
+      <CompaniesBase {...companies} />
     </div>
   </div>
 )

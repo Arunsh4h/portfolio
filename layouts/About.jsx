@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import classNames from 'clsx'
 import ContentRenderer from '@/components/ContentRenderer'
 import Typewriter from '@/components/Typewriter'
 import Reveal from '@/components/Reveal'
 import Image from '@/components/Image'
 import Icon from '@/components/Icon'
+import MarqueeSection from '@/components/MarqueeSection'
 
 const History = ({ title, list }) => (
   <>
-    <h3
-      className="bg-blck nikbody2 rounded pl-2
-
-pb-1 pt-3 text-3xl font-bold text-blue-600"
-    >
+    <h3 className="bg-blck nikbody2 rounded pl-2 pb-1 pt-3 text-3xl font-bold text-blue-600">
       <span className="inline-block">
         {title.split('').map((char, index) => (
           <span
@@ -25,7 +22,6 @@ pb-1 pt-3 text-3xl font-bold text-blue-600"
         ))}
       </span>
     </h3>
-
     <Reveal
       animation="fade-in scale-x"
       className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
@@ -46,7 +42,6 @@ pb-1 pt-3 text-3xl font-bold text-blue-600"
                   {item.place}
                 </h6>
               </small>
-
               <small className="ml-auto opacity-100">
                 <h6 className="inline-block py-1 px-2 font-sans text-sm font-semibold tracking-wide text-black">
                   {item.date}
@@ -61,7 +56,6 @@ pb-1 pt-3 text-3xl font-bold text-blue-600"
               </ul>
             )}
           </div>
-
           <hr className="my-6" />
         </React.Fragment>
       ))}
@@ -69,8 +63,8 @@ pb-1 pt-3 text-3xl font-bold text-blue-600"
   </>
 )
 
-const Skill = ({ title, icon, level }) => (
-  <div className="flex items-center pb-0">
+const Skill = ({ title, icon, level, onHover }) => (
+  <div className="flex items-center pb-0" onMouseEnter={onHover}>
     {icon && (
       <Icon width={28} height={28} {...icon} className="mr-3 h-7 w-7 fill-current text-omega-500" />
     )}
@@ -91,7 +85,7 @@ const Skill = ({ title, icon, level }) => (
   </div>
 )
 
-const SkillSet = ({ title, list }) => (
+const SkillSet = ({ title, list, onSkillHover }) => (
   <div className="bg-gradient-omega-900 p-6 md:px-12 md:py-8">
     <p className="col-span-3 mt-0 mb-6 self-center border-l-2 border-alpha pl-3 text-white">
       {title}
@@ -99,7 +93,7 @@ const SkillSet = ({ title, list }) => (
     <div className="grid grid-cols-fluid gap-y-3 gap-x-8 [--tw-fluid-col-min:12rem]">
       {list?.map((props, j) => (
         <Reveal key={j} animation="fade-in" delay={j * 200}>
-          <Skill {...props} />
+          <Skill {...props} onHover={() => onSkillHover(props)} />
         </Reveal>
       ))}
     </div>
@@ -107,20 +101,33 @@ const SkillSet = ({ title, list }) => (
 )
 
 const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }) => {
+  const [hoveredSkill, setHoveredSkill] = useState(null)
+
   return (
     <div className="mx-auto">
       <div className="prose prose-invert md:flex">
         <div className="relative flex h-screen basis-1/3 flex-col justify-between pb-24 md:h-auto md:items-center md:py-12">
-          <div className="not-prose absolute top-0 left-0 h-full w-full bg-omega-900 grayscale">
-            {personal_info.images?.[0] && (
+          <div className="not-prose absolute top-0 left-0 h-full w-full bg-omega-900 ">
+            {hoveredSkill?.pro?.src ? (
               <Image
-                src={personal_info.images[0].src}
-                alt={personal_info.images[0].alt}
+                src={hoveredSkill.pro.src}
+                alt={hoveredSkill.icon.alt}
                 animation="fade-in zoom-out"
                 className="object-cover"
                 priority
                 fill
               />
+            ) : (
+              personal_info.images?.[0] && (
+                <Image
+                  src={personal_info.images[0].src}
+                  alt={personal_info.images[0].alt}
+                  animation="fade-in zoom-out"
+                  className="object-cover"
+                  priority
+                  fill
+                />
+              )
             )}
             <div className="absolute top-0 left-0 z-20 h-full w-full bg-gradient-to-b from-transparent via-transparent to-black/90" />
           </div>
@@ -142,25 +149,28 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
               )}
             </div>
           )}
+
           {skills && (
             <div className="grid grid-cols-1 items-start divide-y divide-omega-700 shadow-xl">
               {skills.map((props, i) => (
-                <SkillSet key={i} {...props} />
+                <SkillSet key={i} {...props} onSkillHover={setHoveredSkill} />
               ))}
             </div>
           )}
+
           <Reveal animation="fade-in slide-in-top" className="prose p-6 dark:prose-invert md:p-12">
             <ContentRenderer source={personal_info} />
           </Reveal>
         </div>
       </div>
+
       {history && (
         <div className="prose flex-wrap justify-between bg-white p-2 md:flex">
           {history.map((props, i) => (
             <div
               key={i}
               className="neon-scroller flex-1 md:p-2 "
-              style={{ overflow: 'auto', maxHeight: '300px' }}
+              style={{ overflow: 'auto', maxHeight: '450px' }}
             >
               <History {...props} />
             </div>

@@ -106,8 +106,8 @@ export const config = {
   },
   contactForm: {
     inputs: require('./content/contact-form.json'),
-    recipient: 'RECIPIENT@EXAMPLE.com',
-    sender: 'SENDER@EXAMPLE.com',
+    recipient: 'addictedarun4@gmail.com',
+    sender: 'arunshah0000007@gmail.com',
     subject: 'EMAIL NOTIFICATION SUBJECT',
   },
 }

@@ -69,47 +69,68 @@ list:
 ---
 
 
+
 ---skills[0]
 title: Web Design and Development
 list:
   - title: HTML5
     level: 5
+    pro: 
+      src: /proImage/html5.jpg
     icon:
       src: /icons/html5.svg
   - title: CSS3
     level: 4
+    pro:
+      src: /proImage/css3.jpg
     icon:
       src: /icons/css3.svg
   - title: JavaScript
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
       src: /icons/javascript.svg
   - title: React.js
     level: 5
+    pro:
+      src: /proImage/react.jpg
     icon:
       src: /icons/react.svg
   - title: React Native
     level: 3
+    pro:
+      src: /proImage/rn.jpg
     icon:
       src: /icons/rn.svg
   - title: Ember.js
     level: 3
+    pro:
+      src: /proImage/ember.jpg
     icon:
       src: /icons/ember.svg
   - title: Backbone.js
     level: 3
+    pro:
+      src: /proImage/backbone.jpg
     icon:
       src: /icons/backbone.svg
   - title: jQuery
     level: 5
+    pro:
+      src: /proImage/jquery.jpg
     icon:
       src: /icons/jquery.svg
   - title: Redux
     level: 4
+    pro:
+      src: /proImage/redux.jpg
     icon:
       src: /icons/redux.svg
   - title: Next.js
     level: 4
+    pro:
+      src: /proImage/nextjs.jpg
     icon:
       src: /icons/nextjs.svg
   - title: Gatsby.js
@@ -321,7 +342,7 @@ list:
     level: 4
     icon:
       src: /icons/wordpress-plugins.svg
-  - title: WooCommerc
+  - title: WooCommerce
     level: 4
     icon:
       src: /icons/woocommerce.svg
@@ -639,3 +660,21 @@ list:
   date: 2022-2024
 ---
 
+---solidEnter
+services:
+  - title: Branding
+    description: We weave visual stories and craft strategic messaging that resonate at heartstrings, build unwavering trust, and turn customers into fervent brand champions.
+    image:
+      src: /hero0.jpg
+      alt: Branding
+  - title: Branding
+    description: We weave visual stories and craft strategic messaging that resonate at heartstrings, build unwavering trust, and turn customers into fervent brand champions.
+    image:
+      src: /jjj.jpg
+      alt: Branding
+  - title: Branding
+    description: We weave visual stories and craft strategic messaging that resonate at heartstrings, build unwavering trust, and turn customers into fervent brand champions.
+    image:
+      src: /heroas.jpg
+      alt: Branding
+---

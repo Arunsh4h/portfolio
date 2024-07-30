@@ -1,0 +1,32 @@
+/* DEV TEMP */
+/* Info Card */
+.arunshah-info-card-item {
+    border-radius: var(--arunshah-small-br);
+    background: var(--arunshah-s-container-bg) bottom right no-repeat;
+    padding: var(--stg-gap);
+    position: relative;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    row-gap: var(--stg-gap);
+    position: relative;
+    --mouse-x: 0;
+    --mouse-y: 0;
+}
+.arunshah-info-card-number {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+    font-size: 5vw;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    font-family: var(--arunshah-t-heading-ff);
+    font-weight: var(--arunshah-t-heading-fw);
+    opacity: 0.05;
+}
+.arunshah-info-card-item p:last-child {
+    margin-bottom: -0.15em;
+}
+.arunshah-info-card-item h5 {
+    margin: -0.25em 0 0 0;
+}

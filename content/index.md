@@ -43,7 +43,7 @@ I'm a versatile professional, proficient in web development, marketing, monetiza
 
 
 ---companies
-title: Trusted By
+title: Honored by
 list:
   - name: Company 1
     icon:
@@ -60,4 +60,19 @@ list:
   - name: Company 5
     icon:
       src: /icons/logo-5.svg
+  - name: empty
+    icon:
+      src: #
 ---
+
+
+---companies2
+title: Honored by
+list:
+  - name: Company 6
+    icon:
+      src: /icons/logo-6.svg
+---
+
+
+
