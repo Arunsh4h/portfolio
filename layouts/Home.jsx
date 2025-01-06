@@ -9,33 +9,23 @@ import StackedRotatingImages from '@/components/StackedRotatingImages'
 import RocketForm from '@/components/RocketForm'
 import SolidEnter from '@/components/SolidEnter'
 import CompaniesBase from '@/components/CompaniesBase'
+import HeroSlider from './HeroSlider'
 
 const HeroPhoto = ({ main }) => (
   <>
-    {main.images?.[0] && (
-      <div className="with-back-plate hidden md:block">
-        <Image
-          src={main.images[0].src}
-          width={main.images[0].width}
-          height={main.images[0].height}
-          alt={main.images[0].alt}
-          animation="mask-left"
-          priority
-        />
-      </div>
-    )}
-    {main.images?.[1] && (
-      <div className="with-back-plate md:hidden">
-        <Image
-          src={main.images[1].src}
-          width={main.images[1].width}
-          height={main.images[1].height}
-          alt={main.images[1].alt}
-          animation="mask-left"
-          priority
-        />
-      </div>
-    )}
+    <div className="hidden md:block">
+      <HeroSlider images={main.images} />
+    </div>
+    <div className="with-back-plate md:hidden">
+      <Image
+        src={main.images[main.images.length - 1].src}
+        width={main.images[main.images.length - 1].width || 500}
+        height={main.images[main.images.length - 1].height || 600}
+        alt={main.images[main.images.length - 1].alt}
+        animation="mask-left"
+        priority
+      />
+    </div>
   </>
 )
 
@@ -105,9 +95,6 @@ const Layout = ({ main = {}, cta = {}, achievements = [], companies, solidEnter 
     </div>
     <div className="mt-6 mt-12 hidden px-4 pb-0 md:block">
       <Companies {...companies} />
-    </div>
-    <div className=" hidden md:block">
-      <CompaniesBase {...companies} />
     </div>
   </div>
 )

@@ -1,72 +1,224 @@
 import React, { useState } from 'react'
 import classNames from 'clsx'
+import { motion, AnimatePresence } from 'framer-motion'
 import ContentRenderer from '@/components/ContentRenderer'
 import Typewriter from '@/components/Typewriter'
 import Reveal from '@/components/Reveal'
 import Image from '@/components/Image'
-import Icon from '@/components/Icon'
 import MarqueeSection from '@/components/MarqueeSection'
 
-const History = ({ title, list }) => (
-  <>
-    <h3 className="bg-blck nikbody2 rounded pl-2 pb-1 pt-3 text-3xl font-bold text-blue-600">
-      <span className="inline-block">
-        {title.split('').map((char, index) => (
-          <span
-            key={index}
-            className="inline-block animate-pulse text-white"
-            style={{ animationDelay: `${index * 0.4}s` }}
-          >
-            {char}
-          </span>
+const History = ({ title, list }) => {
+  const [selectedItem, setSelectedItem] = useState(null)
+
+  // Close the pop-up when clicking outside
+  const closePopup = () => setSelectedItem(null)
+
+  return (
+    <>
+      <h3 className="bg-blck nikbody2 rounded pl-2 pb-1 pt-3 text-3xl font-bold text-blue-600">
+        <span className="inline-block">
+          {title.split('').map((char, index) => (
+            <span
+              key={index}
+              className="inline-block animate-pulse text-white"
+              style={{ animationDelay: `${index * 0.4}s` }}
+            >
+              {char}
+            </span>
+          ))}
+        </span>
+      </h3>
+      <Reveal
+        animation="fade-in scale-x"
+        className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
+      />
+      <div className="mt-6 flex flex-col md:mt-4">
+        {list?.map((item, i) => (
+          <React.Fragment key={`item-${i}`}>
+            {/* Header with Framer Motion, Gradient Animation, and Glitch Effect */}
+            <motion.div
+              className="relative flex flex-col overflow-hidden rounded-t-lg p-4"
+              initial={{
+                opacity: 0,
+                y: -20,
+                background: 'linear-gradient(90deg, #1a1a1a, #000000)',
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                background: [
+                  'linear-gradient(90deg, #1a1a1a, #000000)',
+                  'linear-gradient(90deg, #1a1a1a, #111111)',
+                  'linear-gradient(90deg, #1a1a1a, #000000)',
+                ],
+              }}
+              transition={{
+                delay: i * 0.1,
+                duration: 0.5,
+                background: {
+                  repeat: Infinity,
+                  repeatType: 'mirror',
+                  duration: 3,
+                  ease: 'linear',
+                },
+              }}
+              whileHover={{ scale: 1.02, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.2)' }}
+              viewport={{ once: true }} // Ensures animations trigger only once
+            >
+              {/* Glitch Effect */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0"
+                whileInView={{ opacity: 0.1 }}
+                whileHover={{
+                  opacity: 0.3,
+                  x: [0, -5, 5, -5, 5, 0],
+                  y: [0, 5, -5, 5, -5, 0],
+                  transition: { duration: 0.5, repeat: Infinity, repeatType: 'mirror' },
+                }}
+                viewport={{ once: true }} // Ensures animations trigger only once
+              />
+              <div className="relative z-10">
+                {/* Company Title (Bold and Clean) */}
+                <motion.h1
+                  className="mb-1 text-xl font-bold text-white"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.1 + 0.2, duration: 0.5 }}
+                  whileHover={{ scale: 1.05, color: '#3b82f6' }} // Blue color on hover
+                  viewport={{ once: true }} // Ensures animations trigger only once
+                >
+                  {item.name}
+                </motion.h1>
+
+                {/* Details Row */}
+                <div className="flex items-center justify-between">
+                  {/* Place (Subtle Badge with Hover Effect) */}
+                  <motion.div
+                    className="flex items-center gap-2"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 + 0.3, duration: 0.5 }}
+                    whileHover={{ scale: 1.05 }}
+                    viewport={{ once: true }} // Ensures animations trigger only once
+                  >
+                    <h6 className="rounded-full bg-gray-700 py-1 px-3 text-xs font-semibold tracking-wide text-gray-300">
+                      {item.place}
+                    </h6>
+                  </motion.div>
+
+                  {/* Date (Minimalist) */}
+                  <motion.h6
+                    className="font-sans text-sm font-medium tracking-wide text-gray-400"
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 + 0.4, duration: 0.5 }}
+                    whileHover={{ scale: 1.05, color: '#3b82f6' }} // Blue color on hover
+                    viewport={{ once: true }} // Ensures animations trigger only once
+                  >
+                    {item.date}
+                  </motion.h6>
+
+                  {/* Magnifying Glass Button (Sleek and Modern) */}
+                  <motion.button
+                    onClick={() => setSelectedItem(item)}
+                    className="rounded-full p-2 transition-all duration-200 hover:bg-gray-800"
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: i * 0.1 + 0.5, duration: 0.5 }}
+                    whileHover={{ scale: 1.1, rotate: 10 }}
+                    whileTap={{ scale: 0.9 }}
+                    viewport={{ once: true }} // Ensures animations trigger only once
+                  >
+                    <span role="img" aria-label="magnify" className="text-xl text-gray-300">
+                      🔍
+                    </span>
+                  </motion.button>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Body with Framer Motion and Hover Effect */}
+            <motion.div
+              className="flex flex-col rounded-b-lg bg-gray-50 p-4 shadow-sm"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 + 0.6, duration: 0.5 }}
+              whileHover={{ scale: 1.02, boxShadow: '0px 10px 20px rgba(0, 0, 0, 0.1)' }}
+              viewport={{ once: true }} // Ensures animations trigger only once
+            >
+              {item.description && (
+                <ul className="leading-1.6 list-disc pl-5 font-sans text-base font-normal text-gray-700">
+                  {item.description.split('\n').map((point, index) => (
+                    <motion.li
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 + i * 0.1 + 0.7, duration: 0.5 }}
+                      whileHover={{ scale: 1.02, color: '#3b82f6' }} // Blue color on hover
+                      viewport={{ once: true }} // Ensures animations trigger only once
+                    >
+                      {point}
+                    </motion.li>
+                  ))}
+                </ul>
+              )}
+            </motion.div>
+            <hr className="my-6 border-gray-200" />
+          </React.Fragment>
         ))}
-      </span>
-    </h3>
-    <Reveal
-      animation="fade-in scale-x"
-      className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
-    />
-    <div className="mt-6 flex flex-col md:mt-4 ">
-      {list?.map((item, i) => (
-        <React.Fragment key={`item-${i}`}>
-          <div
-            className="border-gradient flex flex-col rounded border-b-2 bg-gradient-to-r from-green-100 to-blue-100 pl-2 pt-4 pr-2 shadow-md hover:from-pink-100 hover:to-yellow-100"
-            key={`item-${i}`}
+      </div>
+
+      {/* Pop-Up for Detailed View with Framer Motion */}
+      <AnimatePresence>
+        {selectedItem && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closePopup} // Close when clicking outside
           >
-            <div className="flex items-center">
-              <h6 className="nikbody bg-blck inline-block rounded border-0 border-solid border-gray-300 py-1 px-2 pr-1 font-mono text-base uppercase tracking-wide text-white">
-                {item.name}
-              </h6>
-              <small className="ml-auto opacity-100">
-                <h6 className="font-cartoon from-10% via-30% to-90% ... inline-block skew-y-[-12] transform animate-pulse rounded bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 py-1 px-2 text-xs font-semibold tracking-wide text-white">
-                  {item.place}
-                </h6>
-              </small>
-              <small className="ml-auto opacity-100">
-                <h6 className="inline-block py-1 px-2 font-sans text-sm font-semibold tracking-wide text-black">
-                  {item.date}
-                </h6>
-              </small>
-            </div>
-            {item.description && (
-              <ul className="leading-1.3 mb-1 mt-0 list-disc p-0 font-sans text-base font-semibold text-black">
-                {item.description
+            <motion.div
+              className="relative w-full max-w-2xl rounded-lg bg-white p-8 shadow-lg"
+              initial={{ y: '-100vh', opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: '-100vh', opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 100, damping: 20 }}
+              onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+            >
+              {/* Close Button */}
+              <button
+                onClick={closePopup}
+                className="absolute right-4 top-4 rounded-full p-2 hover:bg-gray-200"
+              >
+                <span role="img" aria-label="close" className="text-2xl">
+                  ❌
+                </span>
+              </button>
+
+              {/* Pop-Up Content */}
+              <h3 className="text-3xl font-bold text-blue-600">{selectedItem.name}</h3>
+              <p className="mt-2 text-lg font-semibold text-gray-600">{selectedItem.place}</p>
+              <p className="text-sm text-gray-500">{selectedItem.date}</p>
+              <ul className="mt-4 list-disc pl-5 text-lg text-gray-700">
+                {selectedItem.description
                   .split('\n')
                   .map((point, index) => point.trim() && <li key={index}>{point}</li>)}
               </ul>
-            )}
-          </div>
-          <hr className="my-6" />
-        </React.Fragment>
-      ))}
-    </div>
-  </>
-)
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  )
+}
 
 const Skill = ({ title, icon, level, onHover }) => (
   <div className="flex items-center pb-0" onMouseEnter={onHover}>
     {icon && (
-      <Icon width={28} height={28} {...icon} className="mr-3 h-7 w-7 fill-current text-omega-500" />
+      <span role="img" aria-label="skill-icon" className="mr-3 text-2xl">
+        🛠️
+      </span>
     )}
     <small className="font-bold">{title}</small>
     <div className="ml-auto space-x-px">

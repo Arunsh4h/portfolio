@@ -13,8 +13,24 @@ const Companies = ({ title, list }) => (
     {title && <h4 className="mb-4 w-full lg:mb-0 lg:w-auto">{title}</h4>}
     {list &&
       list.map(({ icon }, i) => (
-        <Reveal key={i} animation="fade-down-right          " delay={i * 20}>
-          {icon && <Icon {...icon} className="h-12 w-36 fill-current text-omega-500" />}
+        <Reveal
+          key={i}
+          animation="fade-up"
+          delay={i * 80}
+          duration={400}
+          easing="ease-out-back"
+          style={{
+            transformOrigin: 'center bottom',
+          }}
+        >
+          <div className="transition-transform duration-300 hover:scale-105">
+            {icon && (
+              <Icon
+                {...icon}
+                className="h-12 w-36 fill-current text-omega-500 hover:text-omega-700"
+              />
+            )}
+          </div>
         </Reveal>
       ))}
   </div>

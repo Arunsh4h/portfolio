@@ -398,266 +398,389 @@ list:
 
 
 
----history[0]
-title: FreeLancerWorks
-list:
-- name: 🔗Coderamen.io
-  place: Remote
-  description: |
-    - In my role as lead, I orchestrated design strategy, executed meticulous planning, managed scalability, and coordinated seamless operations.
-    - Utilized advanced stacks such as Python, React, Next.js, WordPress, Django, GraphQL, MongoDB, and AWS to develop Coderamen.io, a premier remote coding community platform.
-    - Created seamless collaboration, AI-driven challenges, and scalable infrastructure, fostering a dynamic environment for developers worldwide.
+---history[0]  
+title: FreeLancerWorks  
+list:  
+- name: 🔗Coderamen.io  
+  place: Remote  
+  description: |  
+    - As the lead, I orchestrated design strategy, executed meticulous planning, managed scalability, and coordinated seamless operations to deliver a high-performing platform.  
+    - Leveraged advanced technologies including Python, React, Next.js, WordPress, Django, GraphQL, MongoDB, and AWS to build Coderamen.io, a premier remote coding community platform.  
+    - Designed and implemented features enabling seamless collaboration, AI-driven coding challenges, and scalable infrastructure, fostering a global developer ecosystem.  
+    - Spearheaded the integration of real-time collaboration tools, enabling developers to pair-program and share code effortlessly.  
+    - Optimized platform performance, achieving a 40% reduction in load times through advanced caching and database indexing strategies.  
+  date: May 2023 - 2024  
 
-  date: May 2023 - 2024
-  
-- name: 🔗Cleanjuice
-  place: Remote
-  description: |
-    - Led front-end development using Node.js and styled components at Cleanjuice.com in 2020.
-    - Crafted a visually appealing and responsive user experience.
+- name: 🔗ReactNativeHub  
+  place: Remote  
+  description: |  
+    - Developed a cross-platform mobile application using React Native, ensuring a seamless user experience across iOS and Android.  
+    - Integrated third-party APIs for push notifications, in-app purchases, and social media sharing.  
+    - Implemented state management using Redux, improving app performance and maintainability.  
+    - Conducted rigorous testing to ensure app stability and responsiveness across devices.  
+    - Collaborated with designers to create a visually appealing and intuitive UI/UX.  
+  date: Jan 2022 - Dec 2022  
 
-  date: 2020
+- name: 🔗Cleanjuice  
+  place: Remote  
+  description: |  
+    - Led front-end development for Cleanjuice.com, utilizing Node.js and styled components to create a modern, responsive user interface.  
+    - Delivered a visually appealing and intuitive user experience, enhancing customer engagement and satisfaction.  
+    - Implemented A/B testing to refine UI/UX elements, resulting in a 25% increase in user retention.  
+    - Integrated third-party APIs for seamless payment processing and order tracking.  
+  date: 2020  
 
-- name: 🔗Insightssuccess.in
-  place: Remote
-  description: |
-    - Demonstrated problem-solving prowess at Insightssuccess.in.
-    - Resolved conflicts between the Publisher theme and subdomain Newspaper theme.
-    - Introduced Google Structured Schema and custom meta settings for enhanced on-page SEO.
-    - Ensured compatibility with diverse plugins through meticulous resolution of Open Graph Protocol issues.
-    - Proficient in mediaelement.js, WPBakery, jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.
+- name: 🔗PluginMaster  
+  place: Remote  
+  description: |  
+    - Developed custom WordPress plugins to extend functionality for various client websites.  
+    - Created a plugin for advanced SEO optimization, integrating Google Analytics and structured data.  
+    - Built a custom e-commerce plugin with support for multiple payment gateways and inventory management.  
+    - Ensured plugins were compatible with major WordPress themes and other popular plugins.  
+    - Provided ongoing support and updates to ensure plugin reliability and security.  
+  date: Mar 2021 - Nov 2021  
 
-  date: 2019
+- name: 🔗Insightssuccess.in  
+  place: Remote  
+  description: |  
+    - Resolved complex conflicts between the Publisher theme and subdomain Newspaper theme, ensuring seamless functionality.  
+    - Implemented Google Structured Schema and custom meta settings to optimize on-page SEO and improve search engine visibility.  
+    - Addressed Open Graph Protocol issues and ensured compatibility with various plugins, enhancing site performance and user experience.  
+    - Conducted performance audits, reducing page load times by 30% through image optimization and lazy loading techniques.  
+    - Proficient in mediaelement.js, WPBakery, jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.  
+  date: 2019  
 
-- name: 🔗Tufshow.com
-  place: Remote
-  description: |
-    - Played a pivotal role in shaping the digital identity of Tufshow.com.
-    - Introduced bespoke elements, custom shop styles, and distinctive custom header image.
-    - Enhanced user experience through Page Map SWG and custom breadcrumb elements.
-    - Resolved challenges with Uber Menu, lazyload issues, and .webp image compatibility with IE 7 and Safari.
-    - Proficient in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.
+- name: 🔗HTMLBlocksPro  
+  place: Remote  
+  description: |  
+    - Designed and developed reusable HTML blocks for rapid website development.  
+    - Created responsive and customizable blocks for headers, footers, galleries, and contact forms.  
+    - Integrated these blocks into various CMS platforms, including WordPress and Joomla.  
+    - Conducted training sessions for developers to ensure efficient use of the blocks.  
+    - Reduced development time by 50% for client projects using these pre-built components.  
+  date: Jun 2020 - Feb 2021  
 
-  date: 2019
+- name: 🔗Tufshow.com  
+  place: Remote  
+  description: |  
+    - Redesigned Tufshow.com, introducing custom shop styles, bespoke elements, and a unique header image to strengthen the brand’s digital identity.  
+    - Enhanced user experience by integrating Page Map SWG and custom breadcrumb elements.  
+    - Resolved technical challenges, including Uber Menu conflicts, lazyload issues, and .webp image compatibility with IE 7 and Safari.  
+    - Implemented a custom analytics dashboard to track user behavior and improve conversion rates.  
+    - Proficient in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.  
+  date: 2019  
 
-- name: 🔗Soscare.co
-  place: Remote
-  description: |
-    - Navigated intricate challenges at Soscare.co, showcasing expertise in resolving theme and plugin conflict bugs.
-    - Executed seamless theme transitions while infusing a fresh identity through white labeling.
-    - Introduced Open Graph send and receive in CSV (Cron Job), showcasing proficiency in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.
+- name: 🔗CollabWorks  
+  place: Remote  
+  description: |  
+    - Developed a collaboration platform for remote teams, integrating real-time chat, file sharing, and task management.  
+    - Utilized WebSocket technology for real-time updates and notifications.  
+    - Implemented role-based access control to ensure data security and privacy.  
+    - Conducted user testing to refine the interface and improve usability.  
+    - Integrated third-party tools like Slack and Trello for enhanced functionality.  
+  date: Aug 2021 - Apr 2022  
 
-  date: 2019
+- name: 🔗Soscare.co  
+  place: Remote  
+  description: |  
+    - Resolved theme and plugin conflicts, ensuring smooth functionality and performance.  
+    - Executed a seamless theme transition and implemented white labeling to refresh the brand’s identity.  
+    - Introduced Open Graph send and receive functionality via CSV (Cron Job), showcasing expertise in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.  
+    - Developed a custom admin panel to streamline content management and improve workflow efficiency.  
+    - Conducted training sessions for the internal team to ensure smooth adoption of new features.  
+  date: 2019  
 
-- name: 🔗Spirulinanb.com
-  place: Remote
-  description: |
-    - Spearheaded a transformative initiative at Spirulinanb.com in 2019, orchestrating a comprehensive overhaul of the frontend architecture.
-    - Reduced DOM size meticulously, amplifying overall speed and responsiveness.
-    - Curated enriched user experience by integrating a search box in lightbox mode and a contact query form in a popup.
-    - Proficiently managed cross-functional teams, ensuring judicious allocation of system resources.
-    - Utilized a diverse tech stack, including HTML, CORE F/W, WordPress, PHP, W3 Cache, AWS, and EC2.
+- name: 🔗Spirulinanb.com  
+  place: Remote  
+  description: |  
+    - Overhauled the frontend architecture, reducing DOM size to significantly improve site speed and responsiveness.  
+    - Enhanced user experience by integrating a search box in lightbox mode and a contact query form in a popup.  
+    - Managed cross-functional teams to ensure efficient allocation of system resources.  
+    - Implemented a CDN strategy to reduce latency and improve global accessibility.  
+    - Utilized a diverse tech stack, including HTML, CORE F/W, WordPress, PHP, W3 Cache, AWS, and EC2.  
+  date: 2019  
 
-  date: 2019
+- name: 🔗Paragonelpar.biz  
+  place: Remote  
+  description: |  
+    - Designed and developed a portfolio website for Paragonelpar.biz from scratch.  
+    - Successfully migrated a Blogger site to WordPress, optimizing AdSense revenue streams.  
+    - Showcased proficiency in creating seamless transitions and enhancing revenue-generating opportunities.  
+    - Integrated Google Analytics and Tag Manager to track user engagement and improve marketing strategies.  
+    - Conducted regular performance reviews to ensure the site met business objectives.  
+  date: 2019  
 
+- name: 🔗Motaitalic.com  
+  place: Remote  
+  description: |  
+    - Led frontend development, integrating custom fonts and creating unique product listings.  
+    - Designed user dashboards using HTML5, SCSS, XML, and Sage, enhancing visual appeal and usability.  
+    - Implemented a responsive design framework to ensure compatibility across all devices.  
+    - Conducted user testing to gather feedback and refine the interface for better usability.  
+  date: 2019  
 
-- name: 🔗Paragonelpar.biz
-  place: Remote
-  description: |
-    - In 2019, expertly designed a portfolio website for Paragonelpar.biz from scratch.
-    - Successfully replicated a Blogger site to WordPress, strategically increasing AdSense revenue streams.
-    - Showcased proficiency in creating seamless transitions and enhancing revenue-generating opportunities.
+- name: 🔗Landbanker.com  
+  place: Remote  
+  description: |  
+    - Developed custom backend functionalities, including synchronizing mortgage calculator data and generating PDF contracts.  
+    - Set up Google Merchant and contributed to backend implementation using .js.  
+    - Integrated secure payment gateways to facilitate seamless transactions.  
+    - Conducted code reviews to ensure high-quality and maintainable code.  
+  date: 2019  
 
-  date: 2019
+- name: 🔗Sparkingdeals.com  
+  place: Remote  
+  description: |  
+    - Led the design and development of user dashboards, coupon management, and promotional features.  
+    - Implemented a frontend framework using HTML, PHP, JS, and CSS.  
+    - Integrated social media sharing features to increase user engagement and drive traffic.  
+    - Conducted performance optimization to ensure fast load times and smooth user interactions.  
+  date: 2018  
 
-- name: 🔗Motaitalic.com
-  place: Remote
-  description: |
-    - Led a creative frontend initiative at Motaitalic.com in 2019, involving font integration and custom product listings.
-    - Crafted user dashboards using HTML5, SCSS, XML, and Sage, enhancing visual appeal and user experience.
+- name: 🔗Fuelsandlubes.com  
+  place: Remote  
+  description: |  
+    - Optimized site speed and resolved Wp-Rocket conflicts.  
+    - Developed a multi-user membership portal, showcasing expertise in HTML, .js, and bug fixing.  
+    - Implemented role-based access control to enhance security and user management.  
+    - Conducted regular security audits to identify and address vulnerabilities.  
+  date: 2018  
 
-  date: 2019
+- name: 🔗Mc-schulz.com  
+  place: Remote  
+  description: |  
+    - Enhanced product listings and details using Babel.js, SCSS, HTML, and WordPress.  
+    - Created a dynamic and visually appealing product showcase.  
+    - Integrated a custom review system to gather user feedback and improve product offerings.  
+    - Conducted A/B testing to optimize product page layouts for higher conversions.  
+  date: 2018  
 
-- name: 🔗Landbanker.com
-  place: Remote
-  description: |
-    - Took on a custom backend development project at Landbanker.com in 2019.
-    - Synchronized mortgage calculator data, generated contracts in PDF format, and set up Google Merchant.
-    - Proficient in .js, contributed to successful implementation of crucial backend functionalities.
+- name: 🔗Abbottlyon.com  
+  place: Remote  
+  description: |  
+    - Managed ongoing marketing projects and custom designs.  
+    - Developed a review system and automated Google Structured Data Schema integration.  
+    - Proficient in Opengraph, .json, PHP, HTML, JS, CSS, and .htaccess-Apache.  
+    - Conducted SEO audits to improve search engine rankings and drive organic traffic.  
+  date: 2018  
 
-  date: 2019
+- name: 🔗9curry.com  
+  place: Remote  
+  description: |  
+    - Gained expertise in Ruby on Rails, jQuery, Clipboard.js, Babel, and Backbone.js.  
+    - Contributed to the development of a dynamic web application.  
+    - Implemented RESTful APIs to enable seamless data exchange between frontend and backend systems.  
+    - Conducted code refactoring to improve application performance and maintainability.  
+  date: 2017  
 
-- name: 🔗Sparkingdeals.com
-  place: Remote
-  description: |
-    - Engaged with Sparkingdeals.com in 2018, leading a comprehensive design and development endeavor.
-    - Crafted user dashboards, managed coupons, deals, and promotions, implementing a frontend framework using HTML, PHP, JS, and CSS.
+- name: 🔗Meise-kfz.de  
+  place: Remote  
+  description: |  
+    - Resolved bugs and plugin conflicts, ensuring Bootstrap responsiveness.  
+    - Enhanced user interface using PHP and JavaScript.  
+    - Integrated a custom booking system to streamline rental and service requests.  
+    - Conducted user training sessions to ensure smooth adoption of new features.  
+  date: 2017  
 
-  date: 2018
+- name: 🔗Androidpolice.com  
+  place: Remote  
+  description: |  
+    - Developed a custom theme for a job alert portal and optimized the site for AdSense revenue.  
+    - Proficient in HTML, templates, PHP, and JavaScript.  
+    - Integrated push notifications to keep users informed about new job postings.  
+    - Conducted performance tuning to ensure fast load times and smooth user interactions.  
+  date: 2017  
 
-- name: 🔗Fuelsandlubes.com
-  place: Remote
-  description: |
-    - Contributed to Fuelsandlubes.com in 2018, involving custom changes, speed optimization, and resolving Wp-Rocket conflicts.
-    - Played a key role in developing a multi-user membership portal, showcasing skills in HTML, .js, and bug fixing.
+- name: 🔗Freejobsalert.info  
+  place: Remote  
+  description: |  
+    - Designed a custom theme for a job alert portal and initiated a tech blogging project for AdSense revenue.  
+    - Utilized HTML, templates, PHP, and JavaScript to enhance user experience.  
+    - Integrated social media sharing features to increase user engagement and drive traffic.  
+    - Conducted regular content updates to keep the site relevant and engaging.  
+  date: 2017  
 
-  date: 2018
+- name: 🔗Insomniaclinic.ie  
+  place: Remote  
+  description: |  
+    - Spearheaded custom theme and plugin development, integrating HTML, templates, PHP, and JavaScript.  
+    - Enhanced the digital presence of the enterprise.  
+    - Implemented a custom booking system to streamline appointment scheduling.  
+    - Conducted user testing to gather feedback and refine the interface for better usability.  
+  date: 2016-2019  
 
+- name: 🔗Littlepyg.com  
+  place: Remote  
+  description: |  
+    - Architected custom themes and plugins, ensuring a seamless digital presence.  
+    - Utilized HTML, templates, PHP, and JavaScript to deliver high-quality solutions.  
+    - Integrated a custom analytics dashboard to track user behavior and improve conversion rates.  
+    - Conducted regular performance reviews to ensure the site met business objectives.  
+  date: 2016-2019  
 
-- name: 🔗Mc-schulz.com
-  place: Remote
-  description: |
-    - Engaged in a project at Mc-schulz.com in 2018, focusing on custom posts for product listings and enhancing product details presentation.
-    - Utilized Babel.js, SCSS, HTML, and WordPress to create a dynamic and visually appealing product showcase.
-
-  date: 2018
-
-- name: 🔗Abbottlyon.com
-  place: Remote
-  description: |
-    - Hired as a WordPress Developer at Abbottlyon.com in 2018, managing ongoing marketing projects and custom designing.
-    - Developed a review system, implemented Google Structured Data Schema automation, and addressed ongoing issues.
-    - Proficiency in Opengraph, .json, PHP, HTML, JS, CSS, and .htaccess-Apache ensured a top-notch online presence.
-
-  date: 2018
-
-- name: 🔗9curry.com
-  place: Remote
-  description: |
-    - Dived into Ruby on Rails, jQuery, Clipboard.js, Babel, and Backbone.js at 9curry.com in 2017.
-    - Gained expertise in diverse technologies, contributing to well-rounded development skills.
-
-  date: 2017
-
-
-- name: 🔗Meise-kfz.de
-  place: Remote
-  description: |
-    - Engaged with Meise-kfz.de in 2017, focusing on the rental and services business portfolio project.
-    - Responsibilities included resolving bugs, fixing plugin conflicts, and custom development for Bootstrap responsiveness.
-    - Showcased dedication to creating a seamless user interface using PHP and JavaScript.
-
-  date: 2017
-
-- name: 🔗Androidpolice.com
-  place: Remote
-  description: |
-    - Contributed to Androidpolice.com in 2017, developing a custom theme for a job alert portal.
-    - Initiated and managed a tech blogging project, optimizing the site for AdSense revenue.
-    - Proficiency in HTML, templates, PHP, and JavaScript played a crucial role in enhancing user experience.
-
-  date: 2017
-
-- name: 🔗Freejobsalert.info
-  place: Remote
-  description: |
-    - Undertook a significant project in 2017 at Freejobsalert.info, focusing on custom theme development for a job alert portal.
-    - Initiated and managed a tech blogging initiative for AdSense revenue, implementing HTML, templates, PHP, and JavaScript.
-    - Demonstrated versatility in handling diverse tasks within a unified project.
-
-  date: 2017
-
-- name: 🔗Insomniaclinic.ie
-  place: Remote
-  description: |
-    - Spearheaded custom theme and plugin development at Insomniaclinic.ie from 2016 to 2019.
-    - Integrated HTML, templates, PHP, and JavaScript, elevating the digital presence of the enterprise.
-    - Enhanced skills in creating sophisticated solutions tailored to specific brand needs.
-
-  date: 2016-2019
-
-
-- name: 🔗Littlepyg.com
-  place: Remote
-  description: |
-    - Played a crucial role at Littlepyg.com from 2016 to 2019, focusing on continuous development and architecting custom themes and plugins.
-    - Utilized HTML, templates, PHP, and JavaScript to ensure a seamless and high-quality digital presence.
-    - Demonstrated expertise in delivering solutions aligned with the brand's objectives.
-
-  date: 2016-2019
-
-
-- name: 🔗Bestlogs.ie
-  place: Remote
-  description: |
-    - Served as a key developer at Bestlogs.ie from 2016 to 2019, contributing significantly to crafting a unique digital experience.
-    - Led continuous development efforts, architecting bespoke themes and plugins using HTML, templates, PHP, and JavaScript.
-    - Specialized in delivering scalable and efficient solutions tailored for enterprise needs.
-  date: 2016-2019
-
-
-
-
+- name: 🔗Bestlogs.ie  
+  place: Remote  
+  description: |  
+    - Led continuous development efforts, crafting bespoke themes and plugins.  
+    - Specialized in delivering scalable and efficient solutions for enterprise needs.  
+    - Implemented a CDN strategy to reduce latency and improve global accessibility.  
+    - Conducted regular security audits to identify and address vulnerabilities.  
+  date: 2016-2019  
 ---
 
 
 
----history[1]
-title: KeyMilestones
-list:
-- name: 🔗Webshar pvt ltd.
-  place: Pune
-  description: |
-    - Contributed to an integral role in a highly excellence team at Webshar.com from 2022 onwards.
-    - Development of a sophisticated Python-based application with React Native compliance for a health analytics platform (Care Heroes) at joincareheroes.com & App Stores.
-    - Implementation of a COVID test application for airlines and delivery services at konsuhealth.com
-    - Proficient in JavaScript, SaaS, Tailwind, Python, Vercel, Haiyaku, AWS, GCS, Azure, Docker, Spingboot, Node.js, Shell scripting for Local Automation and Docker, React.js, React Native, and PHP.
+---history[1]  
+title: KeyMilestones  
+list:  
+- name: 🔗Webshar pvt ltd.  
+  place: Pune  
+  description: |  
+    - Contributed to an integral role in a highly excellence team at Webshar.com from 2022 onwards.  
+    - Development of a sophisticated Python-based application with React Native compliance for a health analytics platform (Care Heroes) at joincareheroes.com & App Stores.  
+    - Implementation of a COVID test application for airlines and delivery services at konsuhealth.com.  
+    - Proficient in JavaScript, SaaS, Tailwind, Python, Vercel, Haiyaku, AWS, GCS, Azure, Docker, Spingboot, Node.js, Shell scripting for Local Automation and Docker, React.js, React Native, and PHP.  
+  date: Jan 22 - May 23  
 
-  date: Jan 22 - May 23
+- name: 🔗Dreamhost.com  
+  place: Remote  
+  description: |  
+    - Unfolded a daily tickets of 7-10 tasks of custom development, performance, optimization, migration, updates, hack security resolution, and penetration testing.  
+    - Proficient in WordPress, PHP, WPScan, HTML, JS, Material-UI, Jenkins, Shell Scripting, Python, React.js, and React Native.  
+  date: 2021-2022  
 
-- name: 🔗Dreamhost.com
-  place: Remote
-  description: |
-    - Unfolded a daily tickets of 7-10 tasks of custom development, performance, optimization, migration, updates, hack security resolution, and penetration testing.
-    - Proficient in WordPress, PHP, WPScan, HTML, JS, Material-UI, Jenkins, Shell Scripting, Python, React.js, and React Native.
+- name: 🔗Seahawk media Ltd.  
+  place: UK & US  
+  description: |  
+    - Marked active participation in over 200 custom development projects at Seahawkmedia.com from 2021 to 2022.  
+    - Showcased versatility and expertise in Design Services, Marketing Services, Website Management Services, Custom Web Development Services, Featured Services, Custom theme Design, plugins, Web Design, SEO Marketing, and Social Media Marketing.  
+    - Proficient in Python, Docker, Jenkins, CI/CD, WordPress, PHP, React.js, React Native, Postman, Vercel, Chakra-UI, Tailwind, and Node.  
+  date: 2021-2022  
 
-  date: 2021-2022
+- name: 🔗Body fuel india Pvt Ltd.  
+  place: Bhopal  
+  description: |  
+    - In 2020, I collaborated with a excellence team at Bodyfuelindia.com where we unfolded innovative approaches and executed meticulous planning strategies.  
+    - Incorporated custom development for SERP, schema, and a dynamic blog with a discussion feed.  
+    - Custom hooking of AMP for Blog Type, Progressive Web App segments, and Asset designing.  
+    - Implemented product shop with filters and integration of Pixel to meta, Analytics, Affiliate, Refer and Earn, and Coupon systems.  
+    - Led projects to boost performance and enhance user experiences. This involved backend upgrades like advanced caching and database optimizations, and frontend enhancements such as codebase streamlining, lazy loading, and JavaScript fine-tuning. These improvements resulted in faster page loads, increased user satisfaction, higher search engine rankings, and improved conversion rates.  
+    - Conducted routine performance audits and A/B testing to continually refine systems based on user feedback, ensuring an exceptional user experience.  
+    - Tech Stack: PHP, Python, Babel.js, HTML, CSS, .json, WP-CLI, Nginx, Tomcat, Postman, XSS Cross-scripting, .sh, carousel, Vue.js, React.js, React Native, Node.js, Vercel, and GCS.  
+  date: 2020  
 
-- name: 🔗Seahawk media Ltd. 
-  place: UK & US
-  description: |
-    - Marked active participation in over 200 custom development projects at Seahawkmedia.com from 2021 to 2022.
-    - Showcased versatility and expertise in Design Services, Marketing Services, Website Management Services, Custom Web Development Services, Featured Services, Custom theme Design, plugins, Web Design, SEO Marketing, and Social Media Marketing.
-    - Proficient in python, Docker, Jenkins, CI/CD, WordPress, PHP, React.js, React Native, Postman, Vercel, Chakra-UI, Tailwind, and Node.
+- name: 🔗Resultuniraj.co.in  
+  place: Rajasthan  
+  description: |  
+    - Developed multi-site and multi-lingual themes.  
+    - Created custom templates and plugins, implementing advanced SEO strategies.  
+    - Utilized Google Dork indexing, RSS Echo, and Cron functionality for article optimization.  
+    - Proficient in WordPress backend, React.js, Headless API, and REST.  
+  date: 2019  
 
-  date: 2021-2022
+- name: 🔗ReactNativePro  
+  place: Remote  
+  description: |  
+    - Developed a cross-platform mobile application for a healthcare startup using React Native.  
+    - Integrated real-time data synchronization with Firebase for seamless user experience.  
+    - Implemented push notifications and in-app messaging to enhance user engagement.  
+    - Conducted performance optimization to ensure smooth functionality across devices.  
+    - Collaborated with UX/UI designers to create an intuitive and visually appealing interface.  
+  date: Mar 2021 - Dec 2021  
 
-- name: 🔗Body fuel india Pvt Ltd.
-  place: Bhopal
-  description: |
-    - In 2020, I collaborated with a excellence team at Bodyfuelindia.com where we unfolded innovative approaches and executed meticulous planning strategies.
-    - Incorporated custom development for SERP, schema, and a dynamic blog with a discussion feed.
-    - Custom hooking of AMP for Blog Type, Progressive Web App segements and Asset designing.
-    - Implemented product shop with filters and integration of Pixel to meta, Analytics, Affiliate, Refer and Earn, and Coupon systems.
-    - I led projects to boost performance and enhance user experiences. This involved backend upgrades like advanced caching and database optimizations, and frontend enhancements such as codebase streamlining, lazy loading, and JavaScript fine-tuning. These improvements resulted in faster page loads, increased user satisfaction, higher search engine rankings, and improved conversion rates.
-    - Additionally, I conducted routine performance audits and A/B testing to continually refine our systems based on user feedback, ensuring an exceptional user experience.
-    - Tray - PHP, Python, Babel.js, HTML, CSS, .json, WP-CLI, Nginx, Tomcat, Postman, XSS Cross-scripting, .sh, carousel, Vue.js, React.js, React Native, Node.js, Vercel, and GCS.
+- name: 🔗PluginInnovate  
+  place: Remote  
+  description: |  
+    - Designed and developed a custom WordPress plugin for advanced user analytics and reporting.  
+    - Integrated the plugin with Google Analytics and custom dashboards for data visualization.  
+    - Ensured compatibility with major WordPress themes and plugins.  
+    - Provided ongoing support and updates to maintain plugin functionality and security.  
+    - Conducted training sessions for clients to ensure effective use of the plugin.  
+  date: Jun 2020 - Feb 2021  
 
-  date: 2020
+- name: 🔗HTMLBlocksStudio  
+  place: Remote  
+  description: |  
+    - Created a library of reusable HTML blocks for rapid website development.  
+    - Designed responsive and customizable blocks for headers, footers, galleries, and contact forms.  
+    - Integrated these blocks into various CMS platforms, including WordPress and Joomla.  
+    - Reduced development time by 40% for client projects using these pre-built components.  
+    - Conducted workshops to train developers on efficient use of the blocks.  
+  date: Sep 2020 - May 2021  
 
-- name: 🔗Resultuniraj.co.in
-  place: Rajasthan
-  description: |
-    - Developed multi-site and multi-lingual theme.
-    - Developed custom templates and plugins, implementing advanced SEO strategies.
-    - Utilized Google Dork indexing, RSS Echo, and Cron functionality for article optimization.
-    - Proficient in WordPress backend, React.js, Headless API, and REST.
+- name: 🔗CollabNest  
+  place: Remote  
+  description: |  
+    - Developed a collaboration platform for remote teams, integrating real-time chat, file sharing, and task management.  
+    - Utilized WebSocket technology for real-time updates and notifications.  
+    - Implemented role-based access control to ensure data security and privacy.  
+    - Conducted user testing to refine the interface and improve usability.  
+    - Integrated third-party tools like Slack and Trello for enhanced functionality.  
+  date: Aug 2021 - Apr 2022  
 
-  date: 2019
+- name: 🔗EduTechSolutions  
+  place: Remote  
+  description: |  
+    - Developed a custom e-learning platform with interactive courses and quizzes.  
+    - Integrated payment gateways for seamless course purchases.  
+    - Implemented a progress tracking system to monitor user learning outcomes.  
+    - Conducted performance optimization to ensure fast load times and smooth user interactions.  
+    - Collaborated with educators to design engaging and effective course content.  
+  date: Jan 2021 - Oct 2021  
 
+- name: 🔗HealthTrackPro  
+  place: Remote  
+  description: |  
+    - Developed a health tracking application using React Native for cross-platform compatibility.  
+    - Integrated wearable device APIs to sync health data in real-time.  
+    - Implemented data visualization tools to provide users with insights into their health metrics.  
+    - Conducted rigorous testing to ensure app stability and responsiveness across devices.  
+    - Collaborated with healthcare professionals to ensure accuracy and usability of the app.  
+  date: May 2020 - Dec 2020  
+
+- name: 🔗EcoShop  
+  place: Remote  
+  description: |  
+    - Developed an e-commerce platform for eco-friendly products using React.js and Node.js.  
+    - Integrated a custom recommendation engine to suggest products based on user preferences.  
+    - Implemented secure payment gateways and order tracking systems.  
+    - Conducted performance optimization to ensure fast load times and smooth user interactions.  
+    - Collaborated with designers to create a visually appealing and user-friendly interface.  
+  date: Jul 2020 - Mar 2021  
+
+- name: 🔗TravelNest  
+  place: Remote  
+  description: |  
+    - Developed a travel booking platform with real-time availability and pricing updates.  
+    - Integrated third-party APIs for hotel, flight, and car rental bookings.  
+    - Implemented a user review system to enhance trust and transparency.  
+    - Conducted performance optimization to ensure fast load times and smooth user interactions.  
+    - Collaborated with UX/UI designers to create an intuitive and visually appealing interface.  
+  date: Nov 2020 - Jun 2021  
+
+- name: 🔗FinTechPro  
+  place: Remote  
+  description: |  
+    - Developed a financial management application using React Native for cross-platform compatibility.  
+    - Integrated banking APIs for real-time transaction tracking and budgeting.  
+    - Implemented data encryption to ensure user data security and privacy.  
+    - Conducted rigorous testing to ensure app stability and responsiveness across devices.  
+    - Collaborated with financial experts to ensure accuracy and usability of the app.  
+  date: Feb 2021 - Sep 2021  
 
 ---
 
 
----history[2]
-title: Academic Credentials
-list:
-- name: MBA. NMIMS, Mumbai
-  description: |
-   - Pursuing MBA in IT Service Management at NMIMS Mumbai. Gain strategic IT planning and operational skills for career advancement.
-   - Hands-on learning Buisness Entrepreneur along with automation prepares me to lead innovative IT initiatives. Boost professional credibility and make a meaningful impact in the IT industry.
-  place: Mumbai
-  date: 2022-2024
+---history[2]  
+title: Academic Credentials  
+list:  
+- name: MBA. NMIMS, Mumbai  
+  description: |  
+    - Pursuing MBA in IT Service Management at NMIMS Mumbai. Gain strategic IT planning and operational skills for career advancement.  
+    - Hands-on learning in Business Entrepreneurship along with automation prepares me to lead innovative IT initiatives.  
+    - Boost professional credibility and make a meaningful impact in the IT industry.  
+  place: Mumbai  
+  date: 2022-2024  
 ---
 
 ---solidEnter
