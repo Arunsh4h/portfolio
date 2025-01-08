@@ -50,7 +50,6 @@ const getRandomLottieAnimation = async () => {
 }
 
 // Background Animation Component
-
 const AnimatedBackground = () => {
   const bgRef = useRef(null)
 
@@ -127,6 +126,7 @@ const AnimatedBackground = () => {
 
   return <div ref={bgRef} className="pointer-events-none fixed inset-0 overflow-hidden" />
 }
+
 const Services01 = ({ main = {}, services = [] }) => {
   const { scrollYProgress } = useViewportScroll()
   const [lottieAnimations, setLottieAnimations] = useState([])
@@ -146,6 +146,9 @@ const Services01 = ({ main = {}, services = [] }) => {
     to: { opacity: 1, transform: 'scale(1)' },
     config: { mass: 1, tension: 180, friction: 12 },
   })
+
+  // Scroll-based transformations for cards
+  const yTransform = useTransform(scrollYProgress, [0, 1], [-50, 50])
 
   // Card animations
   const getCardAnimation = (index) => {
@@ -214,7 +217,6 @@ const Services01 = ({ main = {}, services = [] }) => {
             </div>
             {services?.map((item, i) => {
               const cardAnimation = getCardAnimation(i)
-              const y = useTransform(scrollYProgress, [0, 1], [0, i % 2 === 0 ? -50 : 50])
 
               return (
                 <motion.div
@@ -225,7 +227,7 @@ const Services01 = ({ main = {}, services = [] }) => {
                   transition={cardAnimation.transition}
                   viewport={{ once: true }}
                   className="prose relative overflow-hidden rounded-lg bg-white shadow-lg"
-                  style={{ y, zIndex: 10 }} // Ensure cards are above the background
+                  style={{ y: i % 2 === 0 ? yTransform : yTransform, zIndex: 10 }} // Apply scroll-based transformation
                 >
                   {/* Lottie Animation Background */}
                   {lottieAnimations[i] && (
