@@ -5,8 +5,5 @@
 		"className",
 		"ngClass",
 		"classNameInView"
-	],
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	]
 }
