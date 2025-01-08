@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="SpaceStation">
+  <g id="Space_station" fill="#000000" class="color000000 svgShape">
+    <rect width="52.61" height="15.31" x="151.8" y="244.42" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="52.61" height="15.31" x="292.9" y="244.42" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="15.31" height="41.64" x="240.99" y="166.19" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="15.31" height="41.86" x="240.99" y="296.33" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="17.29" height="24.59" x="113.44" y="282.32" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="17.29" height="24.59" x="113.44" y="197.25" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="17.29" height="24.59" x="367.1" y="282.32" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <rect width="17.29" height="24.59" x="367.1" y="197.25" fill="#b6b6b6" class="colora9afc4 svgShape"></rect>
+    <path d="M207.4 262.74H148.8V241.42h58.6Zm-52.6-6h46.6v-9.32H154.8ZM348.5 262.74H289.9V241.42h58.6Zm-52.6-6h46.6v-9.32H295.9ZM259.3 210.83H238V163.19H259.3Zm-15.31-6h9.31V169.19H244ZM259.3 341.18H238V293.33H259.3Zm-15.31-6h9.31V299.33H244ZM133.73 309.91H110.44V279.32h23.29Zm-17.29-6h11.29V285.32H116.44ZM133.73 224.84H110.44V194.25h23.29Zm-17.29-6h11.29V200.25H116.44ZM387.38 309.91H364.1V279.32h23.28Zm-17.28-6h11.28V285.32H370.1ZM387.38 224.84H364.1V194.25h23.28Zm-17.28-6h11.28V200.25H370.1Z" fill="#696969" class="color5e6175 svgShape"></path>
+    <circle cx="247.92" cy="252.08" r="54.83" fill="#e5e5e5" class="colordee1ec svgShape"></circle>
+    <circle cx="247.92" cy="252.08" r="18.35" fill="#696969" class="color5e6175 svgShape"></circle>
+    <rect width="60.48" height="60.48" x="91.32" y="221.84" rx="15.01" fill="#e5e5e5" class="colordee1ec svgShape"></rect>
+    <rect width="60.48" height="60.48" x="345.5" y="221.84" rx="15.01" fill="#e5e5e5" class="colordee1ec svgShape"></rect>
+    <rect width="60.48" height="60.48" x="218.41" y="105.71" rx="15.01" fill="#e5e5e5" class="colordee1ec svgShape"></rect>
+    <rect width="60.48" height="60.48" x="218.41" y="338.18" rx="15.01" fill="#e5e5e5" class="colordee1ec svgShape"></rect>
+    <path d="M247.92 309.91a57.83 57.83 0 1 1 57.83-57.83A57.89 57.89 0 0 1 247.92 309.91Zm0-109.66a51.83 51.83 0 1 0 51.83 51.83A51.89 51.89 0 0 0 247.92 200.25ZM136.79 285.32H106.33a18 18 0 0 1-18-18V236.85a18 18 0 0 1 18-18h30.46a18 18 0 0 1 18 18v30.46A18 18 0 0 1 136.79 285.32Zm-30.46-60.48a12 12 0 0 0-12 12v30.46a12 12 0 0 0 12 12h30.46a12 12 0 0 0 12-12V236.85a12 12 0 0 0-12-12ZM391 285.32H360.51a18 18 0 0 1-18-18V236.85a18 18 0 0 1 18-18H391a18 18 0 0 1 18 18v30.46A18 18 0 0 1 391 285.32Zm-30.46-60.48a12 12 0 0 0-12 12v30.46a12 12 0 0 0 12 12H391a12 12 0 0 0 12-12V236.85a12 12 0 0 0-12-12ZM263.88 169.19H233.42a18 18 0 0 1-18-18V120.72a18 18 0 0 1 18-18h30.46a18 18 0 0 1 18 18v30.46A18 18 0 0 1 263.88 169.19Zm-30.46-60.48a12 12 0 0 0-12 12v30.46a12 12 0 0 0 12 12h30.46a12 12 0 0 0 12-12V120.72a12 12 0 0 0-12-12ZM263.88 401.66H233.42a18 18 0 0 1-18-18V353.19a18 18 0 0 1 18-18h30.46a18 18 0 0 1 18 18v30.46A18 18 0 0 1 263.88 401.66Zm-30.46-60.48a12 12 0 0 0-12 12v30.46a12 12 0 0 0 12 12h30.46a12 12 0 0 0 12-12V353.19a12 12 0 0 0-12-12Z" fill="#696969" class="color5e6175 svgShape"></path>
+    <rect width="122.64" height="122.64" x="314.42" y="74.6" rx="19.24" fill="#ffffff" class="colorf5f5f5 svgShape"></rect>
+    <rect width="36.29" height="36.29" x="331.33" y="90.22" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="331.33" y="143.71" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="384.91" y="90.22" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="384.91" y="143.71" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="122.64" height="122.64" x="314.42" y="307.1" rx="19.24" fill="#ffffff" class="colorf5f5f5 svgShape"></rect>
+    <rect width="36.29" height="36.29" x="331.33" y="322.72" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="331.33" y="376.2" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="384.91" y="322.72" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="384.91" y="376.2" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="122.64" height="122.64" x="60.24" y="74.6" rx="19.24" fill="#ffffff" class="colorf5f5f5 svgShape"></rect>
+    <rect width="36.29" height="36.29" x="77.15" y="90.22" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="77.15" y="143.71" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="130.73" y="90.22" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="130.73" y="143.71" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="122.64" height="122.64" x="60.24" y="307.1" rx="19.24" fill="#ffffff" class="colorf5f5f5 svgShape"></rect>
+    <path d="M417.82 200.25H333.66A22.27 22.27 0 0 1 311.42 178V93.85A22.27 22.27 0 0 1 333.66 71.6h84.16a22.27 22.27 0 0 1 22.24 22.25V178A22.27 22.27 0 0 1 417.82 200.25ZM333.66 77.6a16.26 16.26 0 0 0-16.24 16.25V178a16.26 16.26 0 0 0 16.24 16.25h84.16A16.27 16.27 0 0 0 434.06 178V93.85A16.27 16.27 0 0 0 417.82 77.6ZM417.82 432.75H333.66a22.27 22.27 0 0 1-22.24-22.25V326.35a22.27 22.27 0 0 1 22.24-22.25h84.16a22.27 22.27 0 0 1 22.24 22.25V410.5A22.27 22.27 0 0 1 417.82 432.75ZM333.66 310.1a16.26 16.26 0 0 0-16.24 16.25V410.5a16.26 16.26 0 0 0 16.24 16.25h84.16a16.27 16.27 0 0 0 16.24-16.25V326.35a16.27 16.27 0 0 0-16.24-16.25ZM163.63 200.25H79.48A22.26 22.26 0 0 1 57.24 178V93.85A22.26 22.26 0 0 1 79.48 71.6h84.15a22.27 22.27 0 0 1 22.25 22.25V178A22.27 22.27 0 0 1 163.63 200.25ZM79.48 77.6A16.26 16.26 0 0 0 63.24 93.85V178a16.26 16.26 0 0 0 16.24 16.25h84.15A16.27 16.27 0 0 0 179.88 178V93.85A16.27 16.27 0 0 0 163.63 77.6ZM163.63 432.75H79.48A22.26 22.26 0 0 1 57.24 410.5V326.35A22.26 22.26 0 0 1 79.48 304.1h84.15a22.27 22.27 0 0 1 22.25 22.25V410.5A22.27 22.27 0 0 1 163.63 432.75ZM79.48 310.1a16.26 16.26 0 0 0-16.24 16.25V410.5a16.26 16.26 0 0 0 16.24 16.25h84.15a16.27 16.27 0 0 0 16.25-16.25V326.35a16.27 16.27 0 0 0-16.25-16.25Z" fill="#696969" class="color5e6175 svgShape"></path>
+    <rect width="36.29" height="36.29" x="77.15" y="322.72" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="77.15" y="376.2" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="130.73" y="322.72" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="36.29" height="36.29" x="130.73" y="376.2" fill="#777777" class="colore1830e svgShape"></rect>
+    <rect width="15.31" height="15.31" x="240.99" y="105.71" fill="#696969" class="color5e6175 svgShape"></rect>
+    <rect width="15.31" height="15.31" x="240.99" y="383.13" fill="#696969" class="color5e6175 svgShape"></rect>
+    <rect width="15.31" height="15.31" x="91.32" y="244.42" fill="#696969" class="color5e6175 svgShape"></rect>
+    <rect width="15.31" height="15.31" x="390.67" y="244.42" fill="#696969" class="color5e6175 svgShape"></rect>
+    <path d="M281.77 439.05a11.95 11.95 0 1 1 11.76-9.88A12 12 0 0 1 281.77 439.05Zm-4.89-8.53a6 6 0 1 0 1.46-8.29 6 6 0 0 0-1.46 8.29ZM336.36 466.71a9.22 9.22 0 1 1 7.54-14.5A9.21 9.21 0 0 1 336.36 466.71Zm0-12.42a3.21 3.21 0 1 0 1.84 5.84A3.21 3.21 0 0 0 336.35 454.29Z" fill="#696969" class="color5e6175 svgShape"></path>
+    <path d="M412,454.28h-6v-6h6Zm10.4-.47-.86-5.93a39.93,39.93,0,0,0,5.44-1.19l1.7,5.75A44.77,44.77,0,0,1,422.38,453.81Zm16.1-5.6-3-5.19a39.76,39.76,0,0,0,4.61-3.13l3.72,4.7A46.46,46.46,0,0,1,438.48,448.21ZM451.33,437l-4.72-3.71a39.23,39.23,0,0,0,3.12-4.61l5.19,3A44.26,44.26,0,0,1,451.33,437Zm7.8-15.14-5.76-1.69a38.43,38.43,0,0,0,1.17-5.44l5.94.85A44.71,44.71,0,0,1,459.13,421.89Zm1.8-16.68h-6v-6h6Zm0-16h-6v-6h6Zm0-16h-6v-4.79h6Z" fill="#b6b6b6" class="colora9afc4 svgShape"></path>
+    <rect width="6" height="21.74" x="245.91" y="48.29" fill="#696969" class="color5e6175 svgShape"></rect>
+    <rect width="6" height="21.74" x="217.49" y="56.09" transform="rotate(-45 220.486 66.962)" fill="#696969" class="color5e6175 svgShape"></rect>
+    <rect width="21.74" height="6" x="265.94" y="62.62" transform="rotate(-44.99 276.838 65.616)" fill="#696969" class="color5e6175 svgShape"></rect>
+    <path d="M36 443.63a12.12 12.12 0 0 0 12.12-12.12 12.12 12.12 0 0 0 12.12 12.12 12.1 12.1 0 0 0-12.12 12.11A12.12 12.12 0 0 0 36 443.63ZM432.93 216.23a21.53 21.53 0 0 0 21.54-21.53A21.53 21.53 0 0 0 476 216.23a21.53 21.53 0 0 0-21.53 21.54A21.54 21.54 0 0 0 432.93 216.23Z" fill="#777777" class="colore1830e svgShape"></path>
+  </g>
+</svg>

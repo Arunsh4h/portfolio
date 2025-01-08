@@ -1,6 +1,6 @@
 [
   {
-    "legend": "Your contact information",
+    "legend": "Your Contact Details",
     "columns": 3,
     "fields": [
       {
@@ -43,100 +43,286 @@
         "autoComplete": "country-name",
         "defaultValue": "Select Country",
         "options": [
-          {
-            "label": "Select Country",
-            "value": "",
-            "disabled": true
-          },
-          {
-            "label": "India",
-            "value": "India"
-          },
-          {
-            "label": "Singapore",
-            "value": "Singapore"
-          },
-          {
-            "label": "China",
-            "value": "China"
-          },
-          {
-            "label": "United States",
-            "value": "United States"
-          },
-          {
-            "label": "Canada",
-            "value": "Canada"
-          },
-          {
-            "label": "Germany",
-            "value": "Germany"
-          },
-          {
-            "label": "France",
-            "value": "France"
-          }
-        ]
+    {
+      "label": "Select Country",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "label": "India",
+      "value": "India"
+    },
+    {
+      "label": "Singapore",
+      "value": "Singapore"
+    },
+    {
+      "label": "China",
+      "value": "China"
+    },
+    {
+      "label": "United States",
+      "value": "United States"
+    },
+    {
+      "label": "Canada",
+      "value": "Canada"
+    },
+    {
+      "label": "Germany",
+      "value": "Germany"
+    },
+    {
+      "label": "France",
+      "value": "France"
+    },
+    {
+      "label": "Japan",
+      "value": "Japan"
+    },
+    {
+      "label": "South Korea",
+      "value": "South Korea"
+    },
+    {
+      "label": "Israel",
+      "value": "Israel"
+    },
+    {
+      "label": "United Kingdom",
+      "value": "United Kingdom"
+    },
+    {
+      "label": "Netherlands",
+      "value": "Netherlands"
+    },
+    {
+      "label": "Sweden",
+      "value": "Sweden"
+    },
+    {
+      "label": "Switzerland",
+      "value": "Switzerland"
+    },
+    {
+      "label": "Australia",
+      "value": "Australia"
+    },
+    {
+      "label": "Finland",
+      "value": "Finland"
+    },
+    {
+      "label": "Estonia",
+      "value": "Estonia"
+    },
+    {
+      "label": "Ireland",
+      "value": "Ireland"
+    },
+    {
+      "label": "Norway",
+      "value": "Norway"
+    },
+    {
+      "label": "Denmark",
+      "value": "Denmark"
+    },
+    {
+      "label": "Taiwan",
+      "value": "Taiwan"
+    },
+    {
+      "label": "Belgium",
+      "value": "Belgium"
+    },
+    {
+      "label": "New Zealand",
+      "value": "New Zealand"
+    },
+    {
+      "label": "Austria",
+      "value": "Austria"
+    },
+    {
+      "label": "United Arab Emirates",
+      "value": "United Arab Emirates"
+    },
+    {
+      "label": "Poland",
+      "value": "Poland"
+    },
+    {
+      "label": "Czech Republic",
+      "value": "Czech Republic"
+    },
+    {
+      "label": "Portugal",
+      "value": "Portugal"
+    },
+    {
+      "label": "Spain",
+      "value": "Spain"
+    }
+  ]
       }
     ]
   },
   {
     "legend": "What services do you need for your project?",
     "columns": 3,
-    "fields": [
-      {
-        "type": "checkbox",
-        "name": "project-type[Website Development]",
-        "label": "Website Development"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[App Development]",
-        "label": "App Development"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Design System]",
-        "label": "Design System"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Website Migration]",
-        "label": "Website Migration"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[E-commerce Site]",
-        "label": "E-commerce Site"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Performance Evaluation]",
-        "label": "Performance Evaluation"
-      }
-    ]
+    
+      "fields": [
+        {
+          "type": "checkbox",
+          "name": "project-type[Website Development]",
+          "label": "Website Development",
+          "description": "Custom websites, CMS development, and web applications"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[App Development]",
+          "label": "App Development",
+          "description": "Mobile and desktop applications, cross-platform solutions"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Design System]",
+          "label": "Design System",
+          "description": "UI/UX frameworks, component libraries, and style guides"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Website Migration]",
+          "label": "Website Migration",
+          "description": "Platform migrations, content transfer, and system upgrades"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[E-commerce Site]",
+          "label": "E-commerce Site",
+          "description": "Online stores, payment systems, and inventory management"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Performance Evaluation]",
+          "label": "Performance Evaluation",
+          "description": "Speed optimization, security audits, and system analysis"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Cloud Solutions]",
+          "label": "Cloud Solutions",
+          "description": "AWS, Azure, and GCP implementations and management"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[API Development]",
+          "label": "API Development",
+          "description": "RESTful services, GraphQL, and microservices architecture"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Security Implementation]",
+          "label": "Security Implementation",
+          "description": "Security audits, compliance, and penetration testing"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Database Design]",
+          "label": "Database Design",
+          "description": "Schema design, optimization, and data migration"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[AI Integration]",
+          "label": "AI Integration",
+          "description": "Machine learning, chatbots, and automation systems"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[DevOps Setup]",
+          "label": "DevOps Setup",
+          "description": "CI/CD pipelines, containerization, and automation"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Blockchain Development]",
+          "label": "Blockchain Development",
+          "description": "Smart contracts, DApps, and cryptocurrency solutions"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[AR/VR Development]",
+          "label": "AR/VR Development",
+          "description": "Augmented and virtual reality applications and experiences"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[IoT Solutions]",
+          "label": "IoT Solutions",
+          "description": "Internet of Things device integration and management"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[Analytics Implementation]",
+          "label": "Analytics Implementation",
+          "description": "Data analytics, reporting, and business intelligence"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[CMS Development]",
+          "label": "CMS Development",
+          "description": "Custom content management systems and integrations"
+        },
+        {
+          "type": "checkbox",
+          "name": "project-type[System Integration]",
+          "label": "System Integration",
+          "description": "Third-party integrations and enterprise system connectivity"
+        }
+      ]
+    
   },
   {
-    "legend": "How much is the anticipated budget?",
+    "legend": "Select Your Investment Range.",
     "columns": 3,
     "fields": [
       {
         "type": "radio",
         "name": "budget",
-        "value": "Less than $2,000",
-        "label": "Less than $2,000"
+        "value": "$5,000 - $25,000",
+        "label": "$5,000 - $25,000"
       },
       {
         "type": "radio",
         "name": "budget",
-        "value": "$2,000 - $10,000",
-        "label": "$2,000 - $10,000"
+        "value": "$25,000 - $75,000",
+        "label": "$25,000 - $75,000"
       },
       {
         "type": "radio",
         "name": "budget",
-        "value": "More than $10,000",
-        "label": "More than $10,000"
+        "value": "$75,000 - $150,000",
+        "label": "$75,000 - $150,000"
+      },
+      {
+        "type": "radio",
+        "name": "budget",
+        "value": "Continuous Development",
+        "label": "Continuous Development"
+      },
+      {
+        "type": "radio",
+        "name": "budget",
+        "value": "Enterprise Solution",
+        "label": "Enterprise Solution"
+      },
+      {
+        "type": "radio",
+        "name": "budget",
+        "value": "Custom Partnership",
+        "label": "Custom Partnership"
       }
     ]
   },
@@ -147,7 +333,7 @@
       {
         "type": "textarea",
         "name": "message",
-        "placeholder": "Project description",
+        "placeholder": "Please describe your project, including key features, technical requirements, timeline, and any specific challenges you'd like to address. Feel free to share your vision, goals, and desired outcomes.",
         "rows": 3
       }
     ]
