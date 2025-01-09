@@ -11,6 +11,8 @@ import SolidEnter from '@/components/SolidEnter'
 import CompaniesBase from '@/components/CompaniesBase'
 import HeroSlider from './HeroSlider'
 
+import { motion } from 'framer-motion';
+
 const HeroPhoto = ({ main }) => (
   <>
     <div className="hidden md:block">
@@ -52,23 +54,33 @@ const Achievements = ({ achievements }) => (
   >
     <Sep line className="hidden md:block" />
     {achievements?.map((item, i) => (
-      <div
-        key={i}
-        className="flex flex-1 flex-col items-center justify-center px-1 py-4 md:flex-row md:justify-start md:p-6"
-      >
-        <h2
+        <motion.div
+          key={i}
           className={classNames(
-            'm-0 md:pr-4',
-            i === 0 && 'text-accent',
-            i === 1 && 'text-beta',
-            i >= 2 && 'text-alpha'
+            'flex flex-1 flex-col items-center justify-center px-1 py-4 md:flex-row md:justify-start md:p-6'
           )}
+          initial={{ x: -100, opacity: 0 }} // Start offscreen to the left
+          animate={{ x: 0, opacity: 1 }} // Animate to the center
+          transition={{
+            delay: i * 0.2, // Staggered delay based on index
+            type: 'spring', // Spring animation for smooth motion
+            stiffness: 100, // Controls the spring stiffness
+            damping: 10, // Controls the spring damping
+          }}
         >
-          {item.number}
-        </h2>
-        <div className="text-white">{item.text}</div>
-      </div>
-    ))}
+          <h2
+            className={classNames(
+              'm-0 md:pr-4',
+              i === 0 && 'text-accent',
+              i === 1 && 'text-beta',
+              i >= 2 && 'text-alpha'
+            )}
+          >
+            {item.number}
+          </h2>
+          <div className="text-white">{item.text}</div>
+        </motion.div>
+      ))}
   </Reveal>
 )
 

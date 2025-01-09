@@ -9,26 +9,40 @@ seo:
 images:
   - src: /herrroq.jpg
     alt: my photo
+    caption: "An investment in knowledge pays the best interest."
   - src: /swip.jpg
     alt: my photo
+    caption: "Where creativity meets elegance."
   - src: /swip1.jpg
     alt: my photo
+    caption: "The two most important days in your life are the day you are born and the day you find out why."
   - src: /swip2.jpg
     alt: my photo
+    caption: "Opportunity is missed by most people because it is dressed in overalls and looks like work."
   - src: /swip3.jpg
     alt: my photo
+    caption: "The human eye is a wonderful device. With a little effort, it can fail to see even the most glaring injustice."
   - src: /swip4.jpg
     alt: my photo
+    caption: "Your journey starts here."
   - src: /swip5.jpg
     alt: my photo
+    caption: "Dream big, swipe forward."
   - src: /swip6.jpg
     alt: my photo
+    caption: "A moment captured, a memory created."
   - src: /swip7.jpg
     alt: my photo
+    caption: "The art of storytelling through visuals."
   - src: /swip8.jpg
     alt: my photo
+    caption: "Life in frames, beautifully swiped."
+  - src: /swip9.jpg
+    alt: my photo
+    caption: "Good things come to those who wait? No. Epic things come to those who hustle."
   - src: /hero-mobile.jpg
     alt: my photo
+    caption: "Your hero image, reimagined."
 ---
 
 

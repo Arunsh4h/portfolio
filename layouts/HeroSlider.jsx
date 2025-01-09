@@ -2,132 +2,165 @@ import React, { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from '@/components/Image'
 
-// Enhanced transitions with valid easing functions
+// Enhanced transitions with smoother animations
 const transitions = [
   {
     initial: {
       opacity: 0,
-      scale: 2,
-      rotate: 45,
-      filter: 'blur(30px) brightness(2)',
+      scale: 1.1,
+      rotate: 2,
+      filter: 'blur(10px)',
       transformOrigin: 'center',
     },
     animate: {
       opacity: 1,
       scale: 1,
       rotate: 0,
-      filter: 'blur(0px) brightness(1)',
+      filter: 'blur(0px)',
       transformOrigin: 'center',
     },
     exit: {
       opacity: 0,
-      scale: 0.5,
-      rotate: -45,
-      filter: 'blur(30px) brightness(0)',
+      scale: 0.95,
+      rotate: -2,
+      filter: 'blur(10px)',
       transformOrigin: 'center',
     },
   },
   {
     initial: {
       opacity: 0,
-      x: '200%',
-      rotateY: 180,
-      scale: 0.5,
-      filter: 'hue-rotate(90deg)',
+      x: '100%',
+      rotateY: 5,
+      filter: 'blur(10px)',
     },
     animate: {
       opacity: 1,
       x: 0,
       rotateY: 0,
-      scale: 1,
-      filter: 'hue-rotate(0deg)',
+      filter: 'blur(0px)',
     },
     exit: {
       opacity: 0,
-      x: '-200%',
-      rotateY: -180,
-      scale: 0.5,
-      filter: 'hue-rotate(-90deg)',
+      x: '-100%',
+      rotateY: -5,
+      filter: 'blur(10px)',
     },
   },
   {
     initial: {
       opacity: 0,
-      scale: 0,
-      rotate: 360,
-      borderRadius: '50%',
-      filter: 'contrast(2) saturate(2)',
+      scale: 0.9,
+      rotate: 1,
+      filter: 'blur(10px)',
     },
     animate: {
       opacity: 1,
       scale: 1,
       rotate: 0,
-      borderRadius: '0%',
-      filter: 'contrast(1) saturate(1)',
+      filter: 'blur(0px)',
     },
     exit: {
       opacity: 0,
-      scale: 0,
-      rotate: -360,
-      borderRadius: '50%',
-      filter: 'contrast(0) saturate(0)',
+      scale: 0.9,
+      rotate: -1,
+      filter: 'blur(10px)',
     },
   },
   {
     initial: {
-      clipPath: 'polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%)',
-      filter: 'brightness(2) contrast(2)',
+      opacity: 0,
+      clipPath: 'inset(5% 5% 5% 5%)',
+      filter: 'blur(10px)',
     },
     animate: {
-      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-      filter: 'brightness(1) contrast(1)',
+      opacity: 1,
+      clipPath: 'inset(0% 0% 0% 0%)',
+      filter: 'blur(0px)',
     },
     exit: {
-      clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
-      filter: 'brightness(0) contrast(0)',
+      opacity: 0,
+      clipPath: 'inset(5% 5% 5% 5%)',
+      filter: 'blur(10px)',
     },
   },
 ]
 
 const hoverEffects = [
   {
-    scale: 1.1,
-    rotate: 5,
-    filter: 'brightness(1.3) contrast(1.2) saturate(1.3)',
+    scale: 1.05,
+    rotate: 1,
+    filter: 'brightness(1.1) contrast(1.05)',
   },
   {
-    scale: 1.15,
-    y: -20,
-    filter: 'hue-rotate(45deg) brightness(1.2)',
+    scale: 1.05,
+    y: -10,
+    filter: 'brightness(1.1)',
   },
   {
-    scale: 0.9,
-    rotate: -5,
-    filter: 'sepia(0.5) brightness(1.2)',
+    scale: 0.95,
+    rotate: -1,
+    filter: 'brightness(1.1)',
   },
   {
-    scale: 1.1,
-    skewX: 10,
-    filter: 'contrast(1.3) brightness(1.2)',
+    scale: 1.05,
+    skewX: 2,
+    filter: 'brightness(1.1)',
   },
 ]
 
+// Enhanced caption variants with more dramatic neon effect
+const captionVariants = {
+  initial: {
+    opacity: 0,
+    y: 30,
+    filter: 'blur(10px)',
+    // textShadow: '0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff',
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    filter: 'blur(0px)',
+    textShadow: [
+      // '0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff',
+      // '0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09',
+      // '0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff',
+    ],
+    transition: {
+      duration: 0.8,
+      ease: [0.4, 0, 0.2, 1],
+      textShadow: {
+        duration: 3,
+        repeat: Infinity,
+        ease: "linear"
+      }
+    }
+  },
+  exit: {
+    opacity: 0,
+    y: -30,
+    filter: 'blur(10px)',
+    // textShadow: '0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff',
+  }
+}
+
+// Overlay variants for smooth transitions
 const overlayVariants = {
   initial: {
     opacity: 0,
-    scale: 1.5,
+    scale: 1.1,
   },
   animate: {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 1,
-      ease: 'easeOut',
+      duration: 0.8,
+      ease: [0.4, 0, 0.2, 1],
     },
   },
   exit: {
     opacity: 0,
-    scale: 0.5,
+    scale: 0.95,
   },
 }
 
@@ -155,7 +188,7 @@ const HeroSlider = ({ images }) => {
   useEffect(() => {
     if (!images || images.length <= 1 || !isAutoPlaying) return
 
-    const timer = setInterval(nextSlide, 5000)
+    const timer = setInterval(nextSlide, 11000)
     return () => clearInterval(timer)
   }, [images, isAutoPlaying, nextSlide])
 
@@ -167,7 +200,7 @@ const HeroSlider = ({ images }) => {
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
-      <AnimatePresence mode="wait" custom={direction}>
+      <AnimatePresence initial={false} mode="wait" custom={direction}>
         <motion.div
           key={currentIndex}
           custom={direction}
@@ -175,58 +208,95 @@ const HeroSlider = ({ images }) => {
           animate={transitions[currentTransition].animate}
           exit={transitions[currentTransition].exit}
           transition={{
-            duration: 1.2,
-            ease: 'easeInOut',
-            opacity: { duration: 0.8 },
+            duration: 0.8,
+            ease: [0.4, 0, 0.2, 1],
+            opacity: { duration: 0.6 },
           }}
           whileHover={hoverEffects[currentHover]}
-          className="relative h-full w-full transform-gpu"
+          className="relative h-full w-full transform-gpu will-change-transform"
         >
           <div className="relative h-full w-full">
             <Image
               src={images[currentIndex].src}
-              width={images[currentIndex].width || 500}
-              height={images[currentIndex].height || 600}
+              width={1920}
+              height={1080}
               alt={images[currentIndex].alt}
               animation="mask-left"
               priority
               className="h-full w-full rounded-lg object-cover shadow-2xl"
             />
 
-            {/* Multiple layered overlays for dramatic effect */}
+            {/* Caption Container with enhanced positioning and backdrop */}
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={`caption-${currentIndex}`}
+                variants={captionVariants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+                className="absolute bottom-32 left-32 top-64 z-20 -translate-x-1/2 transform px-6 text-center"
+              >
+                <motion.div 
+                  className="relative rounded-xl bg-black/50 px-8 py-4 backdrop-blur-sm"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                >
+                  <motion.h2 
+                    className="text-3xl font-bold text-white"
+                    animate={{
+                      scale: [1, 1.02, 1],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: [0.42, 0, 0.58, 1], // Smoother cubic-bezier easing
+                    }}
+                    style={{
+                      fontFamily: "'Poppins', sans-serif", // Modern font
+                      letterSpacing: "-0.025em", // Tighter letter spacing for a sleek look
+                      lineHeight: "1.2", // Better line height for readability
+                    }}
+                  >
+                    {images[currentIndex].caption}
+                  </motion.h2>
+                </motion.div>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Enhanced gradient overlays */}
             <motion.div
               variants={overlayVariants}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="absolute inset-0 bg-gradient-to-br from-purple-600/30 via-transparent to-blue-600/30"
+              className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-transparent to-blue-600/20"
               style={{ mixBlendMode: 'overlay' }}
             />
 
             <motion.div
-              className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 via-transparent to-yellow-500/20"
+              className="absolute inset-0 bg-gradient-to-tr from-pink-500/10 via-transparent to-yellow-500/10"
               style={{ mixBlendMode: 'color' }}
               animate={{
-                opacity: [0, 0.5, 0],
+                opacity: [0, 0.3, 0],
               }}
               transition={{
                 duration: 3,
                 repeat: Infinity,
                 repeatType: 'reverse',
-                ease: 'easeInOut',
+                ease: [0.4, 0, 0.2, 1],
               }}
             />
 
-            {/* Enhanced lighting effects */}
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
               animate={{
                 x: ['100%', '-100%'],
-                opacity: [0, 0.7, 0],
+                opacity: [0, 0.4, 0],
               }}
               transition={{
                 duration: 2.5,
-                ease: 'linear',
+                ease: [0.4, 0, 0.2, 1],
                 repeat: Infinity,
                 repeatDelay: 1,
               }}
@@ -235,13 +305,13 @@ const HeroSlider = ({ images }) => {
             <motion.div
               className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"
               animate={{
-                opacity: [0.3, 0.1, 0.3],
+                opacity: [0.2, 0.1, 0.2],
               }}
               transition={{
                 duration: 3,
                 repeat: Infinity,
                 repeatType: 'reverse',
-                ease: 'easeInOut',
+                ease: [0.4, 0, 0.2, 1],
               }}
             />
           </div>
@@ -254,9 +324,9 @@ const HeroSlider = ({ images }) => {
           whileHover={{ scale: 1.2, rotate: -10 }}
           whileTap={{ scale: 0.8, rotate: 0 }}
           onClick={prevSlide}
-          className="rounded-full bg-white/30 p-3 backdrop-blur-lg transition-all duration-300 hover:bg-white/40"
+          className="rounded-full bg-white/30 p-0 backdrop-blur-lg transition-all duration-300 hover:bg-white/40"
         >
-          <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="h-0 w-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -270,10 +340,22 @@ const HeroSlider = ({ images }) => {
           whileHover={{ scale: 1.2, rotate: 10 }}
           whileTap={{ scale: 0.8, rotate: 0 }}
           onClick={nextSlide}
-          className="rounded-full bg-white/30 p-3 backdrop-blur-lg transition-all duration-300 hover:bg-white/40"
+          className="rounded-full bg-white/30 p-4 backdrop-blur-lg transition-all duration-300 hover:bg-white/40"
         >
-          <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+           <svg
+            className="h-8 w-8 text-white"
+            fill="none"
+            viewBox="0 0 91 91"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M36.6,43.5C31.1,49,25.7,54.8,20.7,60.8c-5.1,6.2-12,13.7-12.7,21.9c-0.1,1.3,1.5,2.5,2.7,2   c7.7-3.1,13.1-11.4,18.6-17.4c6.7-7.3,13.6-14.4,20.9-21c2.8-2.5,1.9-7.3-1.2-9.1C36.3,30,27,18.8,19.7,6.2   C15-1.9,2.2,5.6,7.2,13.5C14.8,25.7,24.6,35.8,36.6,43.5z"
+              fill="#ffffff"
+            />
+            <path
+              d="M72.9,43.5C67.3,49,62,54.8,57,60.8C52,67.1,45,74.5,44.3,82.7c-0.1,1.3,1.5,2.5,2.7,2   c7.7-3.1,13.1-11.4,18.6-17.4c6.7-7.3,13.6-14.4,20.9-21c2.8-2.5,1.9-7.3-1.2-9.1C72.6,30,63.3,18.8,56,6.2   c-4.7-8.1-17.5-0.6-12.5,7.3C51.1,25.7,60.9,35.8,72.9,43.5z"
+              fill="#ffffff"
+            />
           </svg>
         </motion.button>
       </div>
@@ -288,13 +370,13 @@ const HeroSlider = ({ images }) => {
               setCurrentTransition(Math.floor(Math.random() * transitions.length))
               setDirection(idx > currentIndex ? 1 : -1)
             }}
-            whileHover={{ scale: 1.3, y: -2 }}
-            whileTap={{ scale: 0.7, y: 2 }}
+            whileHover={{ scale: 1.2, y: -1 }}
+            whileTap={{ scale: 0.9, y: 1 }}
             className="relative h-3 overflow-hidden rounded-full transition-all duration-300"
           >
             <motion.div
               className={`h-full transition-all duration-500 ${
-                idx === currentIndex ? 'w-12 bg-white' : 'w-3 bg-white/40'
+                idx === currentIndex ? 'w-12 bg-white' : 'w-0 bg-white/40'
               }`}
               layout
             />
