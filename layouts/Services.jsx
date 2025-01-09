@@ -1,12 +1,14 @@
-// Services01.js
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSpring, animated } from 'react-spring';
-import Lottie from 'lottie-react';
+import dynamic from 'next/dynamic';
 import ContentRenderer from '@/components/ContentRenderer';
 import Reveal from '@/components/Reveal';
 import Icon from '@/components/Icon';
-import AnimatedBackground from '@/components/AnimatedBackground'; // Import the new component
+import AnimatedBackground from '@/components/AnimatedBackground';
+
+// Dynamically import Lottie to avoid SSR issues
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 // Utility to get random Lottie animation
 const getRandomLottieAnimation = async () => {
@@ -97,7 +99,7 @@ const Services01 = ({ main = {}, services = [] }) => {
 
   return (
     <>
-      <AnimatedBackground /> {/* Use the new component here */}
+      <AnimatedBackground />
       <animated.div style={springProps} className="relative mx-auto my-auto p-3 md:p-6 lg:p-12">
         <div className="flex flex-col items-center">
           <div className="grid gap-4 md:grid-cols-3 md:gap-12">
