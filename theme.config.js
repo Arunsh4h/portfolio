@@ -134,14 +134,16 @@ export const siteMetaData = {
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'http://localhost:3000',
   authorName: 'Arun Shah',
   siteName: 'Arun Shah',
-  defaultTitle: 'Arun Shah Personal Site',
+  defaultTitle: 'Arun Shah - Full Stack Engineer - Bhopal, Web Architect, Digital Growth Strategist, & Monetization Specialist, along Freelance.',
   titleTemplate: 'Arun Shah | %s',
-  description: 'A short description goes here.',
-  email: 'hello@example.com',
+  description: 'Empowering Businesses with Scalable Web Solutions, Digital Growth Strategies, and Monetization Expertise.',
+  email: 'arunshah23jan@gmail.com',
   locale: 'en_US',
   twitter: {
-    handle: '@handle',
-    site: '@site',
+    handle: '@arunnshah',
+    site: '@arunnshah',
     cardType: 'summary_large_image',
   },
+  // Add a default OG image for better social media sharing
+
 }
