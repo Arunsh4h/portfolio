@@ -53,8 +53,9 @@ images:
 
 <Sep size={12} />
 
-I help businesses solve real digital problems through web development, marketing, and growth strategies. My technical skills cover the essentials - HTML, CSS, JavaScript, PHP, Node.js, Python, React.js, Next.js, and React Native. Whether it's building a solid website, improving your online presence, or finding ways to grow revenue, I focus on practical solutions that work. I believe in keeping things straightforward and delivering results that matter. If you need help with your digital business, let's talk about how we can make it better together.
+Here we overcome your  digital challenges through innovative web development, strategic marketing, & scalable growth solutions is at the core of my expertise. Leveraging front-end technologies like HTML5, CSS3, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap, and WordPress (Gutenberg & custom blocks), I create responsive, user-focused interfaces that leave a lasting impact. On the back-end, proficiency in Python (Django, Flask), PHP, Node.js (Express), & databases like MySQL, PostgreSQL, and MongoDB enables the development of robust and efficient systems. My expertise extends to Web3 technologies, including Ethereum, Solidity, smart contracts, & tools like Web3.js, Ethers.js, & Truffle, allowing for the creation of decentralized applications (dApps) & blockchain-integrated solutions.
 
+ I believe in keeping things straight forward & delivering results that matter. Let's craft a solid webApps, enhancing digital presence, delivering enterprise-level systems! my approach focuses on driving measurable growth & exceptional user experiences.
 
 
 ---achievements

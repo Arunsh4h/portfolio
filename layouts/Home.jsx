@@ -50,7 +50,7 @@ const Achievements = ({ achievements }) => (
   <Reveal
     animation="fade-in slide-in-left"
     className={classNames(
-      'prose prose-invert relative z-10 flex flex-wrap md:mt-12',
+      'prose prose-invert relative z-10 flex flex-wrap md:mt-0',
       'md:bg-gradient-omega-900 md:shadow-2xl'
     )}
   >
