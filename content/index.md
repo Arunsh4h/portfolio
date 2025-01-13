@@ -3,6 +3,7 @@ layout: Home
 seo:
   title: Arun Shah - Full Stack Engineer, Web Architect, Digital Growth Strategist, & Monetization Specialist - Bhopal
   description: Arun Shah is a results-driven Full Stack Engineer and Digital Growth Strategist specializing in scalable web development, cutting-edge technologies, SEO optimization, content creation, revenue generation, and automation. With expertise in React, Next.js, WordPress, Python, and cloud platforms, Arun crafts high-performance solutions that enhance user experience and drive business growth.
+  ogImageUrl: /nn.png
 ---
 
 ---main
