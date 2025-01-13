@@ -53,9 +53,9 @@ images:
 
 <Sep size={12} />
 
-Here we overcome your  digital challenges through innovative web development, strategic marketing, & scalable growth solutions is at the core of my expertise. Leveraging front-end technologies like HTML5, CSS3, JavaScript, React.js, Next.js, Tailwind CSS, Bootstrap, and WordPress (Gutenberg & custom blocks), I create responsive, user-focused interfaces that leave a lasting impact. On the back-end, proficiency in Python (Django, Flask), PHP, Node.js (Express), & databases like MySQL, PostgreSQL, and MongoDB enables the development of robust and efficient systems. My expertise extends to Web3 technologies, including Ethereum, Solidity, smart contracts, & tools like Web3.js, Ethers.js, & Truffle, allowing for the creation of decentralized applications (dApps) & blockchain-integrated solutions.
+We bridge the gap between sales success and digital innovation by crafting tailored solutions that drive growth. Through advanced web and app development using React.js, Next.js, TypeScript, and decoupled architectures, we create seamless, user-centric experiences. On the back-end, our expertise in Python (Django, Flask), PHP, Node.js, MongoDB, and headless WordPress ensures robust, scalable systems. Personally, I bring specialized knowledge in Web3 technologies—Ethereum, Solidity, smart contracts, and tools like Web3.js, Ethers.js, and Truffle—to build decentralized applications (dApps) and blockchain-powered solutions. Combined with strategic marketing, performance audits, and system optimizations, we empower businesses to scale efficiently, adapt to change, and thrive in a rapidly evolving digital landscape.
 
- I believe in keeping things straight forward & delivering results that matter. Let's craft a solid webApps, enhancing digital presence, delivering enterprise-level systems! my approach focuses on driving measurable growth & exceptional user experiences.
+ I believe in keeping things straight forward & delivering results that matter. Let's craft a solid webApps, enhancing digital presence, delivering enterprise-level systems! [check my dots.](/about)  
 
 
 ---achievements
