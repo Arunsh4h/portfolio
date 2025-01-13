@@ -688,3 +688,14 @@ h3.rounded.bg-black.pl-2.pb-1.pt-3.font-serif.text-3xl.font-bold.text-blue-600 {
   .nikbody {
     font-family: 'Junter', sans-serif;
   }
+
+
+
+  @keyframes shine {
+    0% {
+      transform: translateX(-100%) translateY(-100%);
+    }
+    100% {
+      transform: translateX(100%) translateY(100%);
+    }
+  }

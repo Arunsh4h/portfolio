@@ -234,7 +234,7 @@ function StatusTracker() {
         animate="visible"
       >
         {' '}
-        <Sep line className="hidden md:block" />
+        <Sep line className="invisible hidden md:block	" />
         <div className="  bg-gradient-omega-900 hover:bg-gradient-omega-800 flex cursor-pointer items-center gap-2 rounded-full p-2 px-4 shadow-lg">
           <motion.div
             className="relative flex items-center"
@@ -249,13 +249,13 @@ function StatusTracker() {
             className="text-sm font-medium text-white "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0 }}
           >
             <motion.span
               className="animate-pulse text-sm font-medium text-white "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0 }}
             >
               {' '}
               Active • <span></span>
@@ -278,38 +278,40 @@ function StatusTracker() {
             transition={{ delay: 0.4 }}
           >
             <motion.span
-      className="text-[9px] font-medium text-gray-800 opacity-80"
-      animate={{ opacity: [0 ] }}
-      transition={{ duration: 15 }}
-      whileHover={{
-        opacity: 1,
-        color: '#FFD900', // Golden color
-        textShadow: '0 0 1px #FFD700, 0 0 1px #FFD700', // Glowing effect
-        transition: {
-            duration: 5,
-            
-            easings: ["easeIn", "easeOut"],
-          },
-      }}
-    >
-                ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  उद्धरेदात्मनात्मानं नात्मानमवसादयेत्। आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः 
-            </motion.span>
-            <motion.span
-              className="text-[7px] font-medium text-gray-800 opacity-80"
-              animate={{ opacity: [0 ] }}
+              className="text-[9px] font-medium text-gray-800 opacity-80"
+              animate={{ opacity: [0] }}
               transition={{ duration: 15 }}
               whileHover={{
                 opacity: 1,
                 color: '#FFD900', // Golden color
                 textShadow: '0 0 1px #FFD700, 0 0 1px #FFD700', // Glowing effect
                 transition: {
-                    duration: 3,
-                    
-                    easings: ["easeIn", "easeOut"],
-                  },
+                  duration: 5,
+
+                  easings: ['easeIn', 'easeOut'],
+                },
               }}
             >
-               ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  What you seek is seeking you
+              ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ उद्धरेदात्मनात्मानं
+              नात्मानमवसादयेत्। आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः
+            </motion.span>
+            <motion.span
+              className="text-[7px] font-medium text-gray-800 opacity-80"
+              animate={{ opacity: [0] }}
+              transition={{ duration: 15 }}
+              whileHover={{
+                opacity: 1,
+                color: '#FFD900', // Golden color
+                textShadow: '0 0 1px #FFD700, 0 0 1px #FFD700', // Glowing effect
+                transition: {
+                  duration: 3,
+
+                  easings: ['easeIn', 'easeOut'],
+                },
+              }}
+            >
+              ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ What you seek is
+              seeking you
             </motion.span>
           </motion.div>
         </div>

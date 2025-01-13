@@ -53,9 +53,9 @@ images:
 
 <Sep size={12} />
 
-We bridge the gap between sales success and digital innovation by crafting tailored solutions that drive growth. Through advanced web and app development using React.js, Next.js, TypeScript, and decoupled architectures, we create seamless, user-centric experiences. On the back-end, our expertise in Python (Django, Flask), PHP, Node.js, MongoDB, and headless WordPress ensures robust, scalable systems. Personally, I bring specialized knowledge in Web3 technologies—Ethereum, Solidity, smart contracts, and tools like Web3.js, Ethers.js, and Truffle—to build decentralized applications (dApps) and blockchain-powered solutions. Combined with strategic marketing, performance audits, and system optimizations, we empower businesses to scale efficiently, adapt to change, and thrive in a rapidly evolving digital landscape.
+We connect the dots between sales & digital mastery, delivering innovative web and app development, strategic marketing, and performance optimization. Using cutting-edge tools like React.js, Next.js, Python (Django, Flask), Node.js, & headless WordPress, we build responsive, user-focused interfaces & robust back-end systems. Our expertise in Web3—Ethereum, Solidity, smart contracts, & tools like Web3.js and Truffle—enables us to create decentralized applications (dApps) & blockchain-integrated solutions. From audits to enhancements, we fine-tune systems for scalability & efficiency, ensuring businesses are equipped to grow, adapt, & lead in the digital era.
 
- I believe in keeping things straight forward & delivering results that matter. Let's craft a solid webApps, enhancing digital presence, delivering enterprise-level systems! [check my dots.](/about)  
+ I believe in keeping things straight forward & delivering results that matter!
 
 
 ---achievements
