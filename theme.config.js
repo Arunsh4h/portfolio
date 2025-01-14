@@ -146,6 +146,5 @@ export const siteMetaData = {
     site: '@arunnshah',
     cardType: 'summary_large_image',
   },
-  // Add a default OG image for better social media sharing
-  defaultImage: `${siteUrl}/default-og-image.png`, // Ensure this image exists in your public folder
+  defaultImage: `${siteUrl}/legit.gif`, 
 };
