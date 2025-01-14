@@ -12,9 +12,7 @@ const Seo = (props) => {
     ...seo,
   }
 
-  const ogImageUrl = images?.[0]?.src
-    ? metaData.siteUrl + images[0].src
-    : metaData.siteUrl + '/public/nn.png'
+  const ogImageUrl = images?.[0]?.src ? metaData.siteUrl + images[0].src : undefined
 
   const openGraph = {
     url: pageUrl,
