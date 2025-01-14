@@ -449,7 +449,7 @@ m52 -9 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10
           >
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
               <motion.div
-                className="from-red-950 relative w-full max-w-2xl overflow-hidden rounded-xl bg-gradient-to-br to-gray-900 p-1"
+                className="relative w-full max-w-2xl overflow-hidden rounded-xl p-1"
                 initial={{ scale: 0.8, opacity: 0, y: 20 }} // Start slightly smaller, transparent, and shifted down
                 animate={{ scale: 1, opacity: 1, y: 0 }} // Scale up to full size, fully visible, and centered
                 exit={{ scale: 0.8, opacity: 0, y: 20 }} // Exit by scaling down and fading out
@@ -459,6 +459,16 @@ m52 -9 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10
                   duration: 0.3, // Very fast transition
                 }}
               >
+                {/* GIF Background with Opacity */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{
+                    backgroundImage: "url('/bn.gif')", // Set the GIF as the background
+                  }}
+                />
+                {/* Semi-transparent Overlay */}
+                <div className="absolute inset-0 bg-black/95" />{' '}
+                {/* Adjust opacity here (e.g., bg-black/50 for 50% opacity) */}
                 {/* Shining Line */}
                 <div
                   className="absolute -top-1 -left-1 h-[2px] w-[200px] rotate-45 transform bg-gradient-to-r from-transparent via-yellow-400 to-transparent"
@@ -475,9 +485,8 @@ m52 -9 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10
                   <div className="animate-spin-reverse absolute inset-4 rounded-full border-2 border-purple-500" />
                   <div className="absolute inset-8 animate-pulse rounded-full border border-purple-400" />
                 </div>
-
                 {/* Content Container */}
-                <div className="relative rounded-lg bg-gray-700/10 p-8">
+                <div className="relative rounded-lg bg-gray-700/10 p-8 backdrop-blur-sm">
                   {/* Close Button */}
                   <button
                     onClick={closePopup}
@@ -490,14 +499,6 @@ m52 -9 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10
 
                   {/* Title with Animated Sharingan Design */}
                   <div className="mb-6 flex items-center space-x-4">
-                    <div className="h-50 w-50 overflow-hidden rounded-full">
-                      <img
-                        src="/bn.gif"
-                        alt="Sharingan"
-                        className="h-50 w-50 rounded-full object-cover"
-                        style={{ height: '70px', width: '70px' }}
-                      />
-                    </div>
                     <h3 className="bg-gradient-to-r from-red-500 to-yellow-500 bg-clip-text text-3xl font-bold text-transparent">
                       {selectedItem.name}
                     </h3>
@@ -505,16 +506,42 @@ m52 -9 c0 -5 -4 -10 -10 -10 -5 0 -10 5 -10 10 0 6 5 10 10 10 6 0 10 -4 10
 
                   {/* Content */}
                   <div className="space-y-5 text-gray-100">
+                    {/* Place */}
                     <p className="font-serif text-2xl text-yellow-400">{selectedItem.place}</p>
+
+                    {/* Date */}
                     <p className="text-sm text-gray-400">{selectedItem.date}</p>
 
-                    <ul className="space-y-2">
+                    {/* List Items with Small Layout and Blue Hover Effect */}
+                    <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
                       {selectedItem.description.split('\n').map(
                         (point, index) =>
                           point.trim() && (
-                            <li key={index} className="flex items-start space-x-2">
-                              <span className="mt-1.5 h-2 w-2 rounded-full bg-red-500" />
-                              <span className="flex-1">{point}</span>
+                            <li
+                              key={index}
+                              className="group relative flex cursor-pointer items-start space-x-2 rounded-lg  p-2 transition-all hover:bg-blue-500/10"
+                            >
+                              {/* Blue Hover Overlay */}
+                              <div className="absolute inset-0  opacity-0 transition-opacity group-hover:opacity-100" />
+
+                              {/* Red Dot */}
+                              {/* <span className="mt-1.5 h-2 w-2 rounded-full bg-red-500" /> */}
+
+                              {/* Text */}
+                              <span
+                                className={`flex-1 text-sm text-white ${
+                                  // Random font families
+                                  [
+                                    'font-serif', // Serif font
+                                    'font-sans', // Sans-serif font
+                                    'font-mono', // Monospace font
+                                    'font-bold', // Bold font
+                                    'font-extralight', // Italic font
+                                  ][index % 5] // Cycle through fonts
+                                }`}
+                              >
+                                {point}
+                              </span>
                             </li>
                           )
                       )}

@@ -235,7 +235,8 @@ function StatusTracker() {
       >
         {' '}
         <Sep line className="invisible hidden md:block	" />
-        <div className="  bg-gradient-omega-900 hover:bg-gradient-omega-800 flex cursor-pointer items-center gap-2 rounded-full p-2 px-4 shadow-lg">
+        <div className="bg-gradient-omega-900 hover:bg-gradient-omega-800 flex cursor-pointer items-center gap-2 rounded-full p-2 px-4 opacity-5 shadow-lg transition-opacity duration-300 hover:opacity-100">
+          {' '}
           <motion.div
             className="relative flex items-center"
             variants={pulseVariants}
@@ -244,15 +245,14 @@ function StatusTracker() {
             <span className="absolute -top-4 -left-2 text-green-800">●</span>
             <div className="h-2 w-2 rounded-full bg-green-500" />
           </motion.div>
-
           <motion.span
-            className="text-sm font-medium text-white "
+            className="text-xs font-medium text-white "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0 }}
           >
             <motion.span
-              className="animate-pulse text-sm font-medium text-white "
+              className="animate-pulse text-xs font-medium text-white "
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0 }}
@@ -263,14 +263,12 @@ function StatusTracker() {
             {userDetails?.device?.type || 'Unknown'} •{' '}
             {locationAddress?.city || userDetails?.network?.city || 'Loading...'}
           </motion.span>
-
           <span className="mr-4"></span>
           <span class="relative flex h-2 w-5">
             <span class="absolute inline-flex h-full  w-full  animate-ping rounded-full bg-white opacity-75"></span>
             <span class="relative inline-flex h-2 w-5 animate-pulse rounded-full bg-orange-500"></span>
             <span class="relative inline-flex h-2 w-5 animate-pulse rounded-full bg-green-500"></span>
           </span>
-
           <motion.div
             className="flex flex-col items-center"
             initial={{ opacity: 0 }}
