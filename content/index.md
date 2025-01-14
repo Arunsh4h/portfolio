@@ -20,7 +20,7 @@ images:
   - src: /swip2.jpg
     alt: my photo
     caption: "Opportunity is missed by most people because it is dressed in overalls and looks like work."
-  - src: /swip3.jpg
+  - src: /swip3.gif
     alt: my photo
     caption: "The human eye is a wonderful device. With a little effort, it can fail to see even the most glaring injustice."
   - src: /swip4.jpg
