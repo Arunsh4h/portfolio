@@ -129,9 +129,11 @@ export const mdxConfig = {
  * Global SEO configuration for next-seo plugin
  * https://github.com/garmeeh/next-seo
  */
+const isProduction = process.env.NODE_ENV === 'production';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (isProduction ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
 
 export const siteMetaData = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || 'http://localhost:3000',
+  siteUrl,
   authorName: 'Arun Shah',
   siteName: 'Arun Shah',
   defaultTitle: 'Arun Shah - Full Stack Engineer - Bhopal, Web Architect, Digital Growth Strategist, & Monetization Specialist, along Freelance.',
@@ -145,5 +147,5 @@ export const siteMetaData = {
     cardType: 'summary_large_image',
   },
   // Add a default OG image for better social media sharing
-
-}
+  defaultImage: `${siteUrl}/default-og-image.png`, // Ensure this image exists in your public folder
+};

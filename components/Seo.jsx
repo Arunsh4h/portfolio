@@ -7,15 +7,18 @@ const Seo = (props) => {
 
   const metaData = {
     ...siteMetaData,
-    title,
-    description,
+    title: title || siteMetaData.defaultTitle,
+    description: description || siteMetaData.description,
     ...seo,
   }
 
-  const ogImageUrl = images?.[0]?.src ? metaData.siteUrl + images[0].src : undefined
+  // Use the provided image or fallback to the default OpenGraph image
+  const ogImageUrl = images?.[0]?.src
+    ? `${siteMetaData.siteUrl}${images[0].src}`
+    : siteMetaData.defaultImage
 
   const openGraph = {
-    url: pageUrl,
+    url: pageUrl || siteMetaData.siteUrl,
     title: metaData.title,
     description: metaData.description,
     images: [{ url: ogImageUrl }],
