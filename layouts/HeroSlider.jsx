@@ -111,12 +111,7 @@ const hoverEffects = [
 
 // Enhanced caption variants with more dramatic neon effect
 const captionVariants = {
-  initial: {
-    opacity: 0,
-    y: 30,
-    filter: 'blur(10px)',
-    // textShadow: '0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff',
-  },
+  initial: { opacity: 0, y: 30, filter: 'blur(10px)' },
   animate: {
     opacity: 1,
     y: 0,
@@ -132,16 +127,16 @@ const captionVariants = {
       textShadow: {
         duration: 3,
         repeat: Infinity,
-        ease: "linear"
-      }
-    }
+        ease: 'linear',
+      },
+    },
   },
   exit: {
     opacity: 0,
     y: -30,
     filter: 'blur(10px)',
     // textShadow: '0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff',
-  }
+  },
 }
 
 // Overlay variants for smooth transitions
@@ -186,13 +181,12 @@ const HeroSlider = ({ images }) => {
   }, [images])
 
   useEffect(() => {
-    if (!images || images.length <= 1 || !isAutoPlaying) return
-
+    if (!images?.length || !isAutoPlaying) return
     const timer = setInterval(nextSlide, 11000)
     return () => clearInterval(timer)
   }, [images, isAutoPlaying, nextSlide])
 
-  if (!images || images.length === 0) return null
+  if (!images?.length) return null
 
   return (
     <div
@@ -204,145 +198,66 @@ const HeroSlider = ({ images }) => {
         <motion.div
           key={currentIndex}
           custom={direction}
-          initial={transitions[currentTransition].initial}
-          animate={transitions[currentTransition].animate}
-          exit={transitions[currentTransition].exit}
-          transition={{
-            duration: 0.8,
-            ease: [0.4, 0, 0.2, 1],
-            opacity: { duration: 0.6 },
-          }}
-          whileHover={hoverEffects[currentHover]}
-          className="relative h-full w-full transform-gpu will-change-transform"
+          variants={transitions}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+          className="relative h-full w-full transform-gpu"
         >
-          <div className="relative h-full w-full">
-            <Image
-              src={images[currentIndex].src}
-              width={1920}
-              height={1080}
-              alt={images[currentIndex].alt}
-              animation="mask-left"
-              priority
-              className="h-full w-full rounded-lg object-cover shadow-2xl"
-            />
+          <Image
+            src={images[currentIndex].src}
+            width={1920}
+            height={1080}
+            alt={images[currentIndex].alt}
+            animation="mask-left"
+            priority
+            className="h-full w-full rounded-lg object-cover shadow-2xl"
+          />
 
-            {/* Caption Container with enhanced positioning and backdrop */}
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={`caption-${currentIndex}`}
-                variants={captionVariants}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                className="absolute bottom-32 left-32 top-64 z-20 -translate-x-1/2 transform px-6 text-center"
-              >
-                <motion.div 
-                  className="relative rounded-xl bg-black/50 px-8 py-4 backdrop-blur-sm"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                >
-                  <motion.h2 
-                    className="text-3xl font-bold text-white"
-                    animate={{
-                      scale: [1, 1.02, 1],
-                    }}
-                    transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: [0.42, 0, 0.58, 1], // Smoother cubic-bezier easing
-                    }}
-                    style={{
-                      fontFamily: "'Poppins', sans-serif", // Modern font
-                      letterSpacing: "-0.025em", // Tighter letter spacing for a sleek look
-                      lineHeight: "1.2", // Better line height for readability
-                    }}
-                  >
-                    {images[currentIndex].caption}
-                  </motion.h2>
-                </motion.div>
-              </motion.div>
-            </AnimatePresence>
-
-            {/* Enhanced gradient overlays */}
+          {/* Caption */}
+          <AnimatePresence mode="wait">
             <motion.div
-              variants={overlayVariants}
+              key={`caption-${currentIndex}`}
+              variants={captionVariants}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-transparent to-blue-600/20"
-              style={{ mixBlendMode: 'overlay' }}
-            />
+              className="absolute bottom-32 left-32 top-64 z-20 -translate-x-1/2 transform"
+            >
+              <motion.div className="rounded-xl bg-black/50 px-8 py-4 backdrop-blur-sm">
+                <h2 className="text-3xl font-bold text-white">{images[currentIndex].caption}</h2>
+              </motion.div>
+            </motion.div>
+          </AnimatePresence>
 
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-tr from-pink-500/10 via-transparent to-yellow-500/10"
-              style={{ mixBlendMode: 'color' }}
-              animate={{
-                opacity: [0, 0.3, 0],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                repeatType: 'reverse',
-                ease: [0.4, 0, 0.2, 1],
-              }}
-            />
-
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
-              animate={{
-                x: ['100%', '-100%'],
-                opacity: [0, 0.4, 0],
-              }}
-              transition={{
-                duration: 2.5,
-                ease: [0.4, 0, 0.2, 1],
-                repeat: Infinity,
-                repeatDelay: 1,
-              }}
-            />
-
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"
-              animate={{
-                opacity: [0.2, 0.1, 0.2],
-              }}
-              transition={{
-                duration: 3,
-                repeat: Infinity,
-                repeatType: 'reverse',
-                ease: [0.4, 0, 0.2, 1],
-              }}
-            />
-          </div>
+          {/* Overlays */}
+          <motion.div
+            variants={overlayVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"
+          />
         </motion.div>
       </AnimatePresence>
 
-      {/* Enhanced navigation arrows */}
+      {/* Navigation Buttons */}
       <div className="absolute inset-0 flex items-center justify-between px-4">
         <motion.button
-          whileHover={{ scale: 1.2, rotate: -10 }}
-          whileTap={{ scale: 0.8, rotate: 0 }}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
           onClick={prevSlide}
-          className="rounded-full bg-white/30 p-0 backdrop-blur-lg transition-all duration-300 hover:bg-white/40"
-        >
-          <svg className="h-0 w-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={3}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </motion.button>
+          className="rounded-full bg-white/30 p-0 backdrop-blur-lg transition-all hover:bg-white/40"
+        ></motion.button>
 
         <motion.button
-          whileHover={{ scale: 1.2, rotate: 10 }}
-          whileTap={{ scale: 0.8, rotate: 0 }}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
           onClick={nextSlide}
-          className="rounded-full bg-white/30 p-4 backdrop-blur-lg transition-all duration-300 hover:bg-white/40"
+          className="rounded-full bg-white/30 p-4 backdrop-blur-lg transition-all hover:bg-white/40"
         >
-           <svg
+          <svg
             className="h-8 w-8 text-white"
             fill="none"
             viewBox="0 0 91 91"
@@ -360,36 +275,31 @@ const HeroSlider = ({ images }) => {
         </motion.button>
       </div>
 
-      {/* Enhanced progress indicators */}
-      <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 transform space-x-3">
+      {/* Progress Indicators */}
+      <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 space-x-3">
         {images.slice(0, -1).map((_, idx) => (
           <motion.button
             key={idx}
             onClick={() => {
               setCurrentIndex(idx)
-              setCurrentTransition(Math.floor(Math.random() * transitions.length))
               setDirection(idx > currentIndex ? 1 : -1)
             }}
-            whileHover={{ scale: 1.2, y: -1 }}
-            whileTap={{ scale: 0.9, y: 1 }}
-            className="relative h-3 overflow-hidden rounded-full transition-all duration-300"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+            className="relative h-3 overflow-hidden rounded-full"
           >
             <motion.div
               className={`h-full transition-all duration-500 ${
-                idx === currentIndex ? 'w-12 bg-white' : 'w-0 bg-white/40'
+                idx === currentIndex ? 'w-12 bg-white' : 'w-3 bg-white/40'
               }`}
               layout
             />
             {idx === currentIndex && (
               <motion.div
-                className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"
+                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600"
                 initial={{ x: '-100%' }}
                 animate={{ x: '100%' }}
-                transition={{
-                  duration: 5,
-                  repeat: Infinity,
-                  ease: 'linear',
-                }}
+                transition={{ duration: 11, repeat: Infinity, ease: 'linear' }}
               />
             )}
           </motion.button>
