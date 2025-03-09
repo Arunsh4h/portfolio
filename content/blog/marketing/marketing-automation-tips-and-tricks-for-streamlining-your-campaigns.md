@@ -2640,5 +2640,5 @@ By incorporating these additional 60 advanced optimization techniques, you can s
 
 ---
 
-If you have any questions or need assistance with implementing advanced performance optimizations, feel free to [contact us](mailto:webdevexpert@example.com). We're here to help you achieve peak performance for your website!
+If you have any questions or need assistance with implementing advanced performance optimizations, feel free to [contact us](mailto:arunshah23jan@gmail.com). We're here to help you achieve peak performance for your website!
 

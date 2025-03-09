@@ -401,6 +401,46 @@ list:
 ---history[0]  
 title: FreeLancerWorks  
 list:  
+- name: 🔗FinEdge Trading
+  place: Remote
+  description: |
+    - Engineered a high-frequency trading platform with sub-millisecond response times using Rust and WebAssembly.
+    - Designed and implemented real-time market data visualization tools using React and D3.js.
+    - Built secure API integrations with multiple financial exchanges and payment processors.
+    - Developed a machine learning model for trading pattern recognition, improving market prediction accuracy by 28%.
+    - Implemented rigorous security protocols including multi-factor authentication and advanced encryption for financial data protection.
+  date: Nov 2024 - Present
+
+- name: 🔗EcoCommerce Platform
+  place: Remote
+  description: |
+    - Developed a sustainable e-commerce platform using Next.js and GraphQL, showcasing eco-friendly products and educating consumers.
+    - Implemented a carbon footprint calculator that tracks product lifecycle impacts and shipping emissions.
+    - Created an innovative recommendation engine using machine learning algorithms to suggest environmentally responsible alternatives.
+    - Built a supplier verification system using blockchain technology to ensure product sustainability claims.
+    - Optimized site performance achieving a 95+ Lighthouse score while maintaining robust sustainability features.
+  date: Jun 2024 - Oct 2024
+
+- name: 🔗HealthTrack Pro
+  place: Remote
+  description: |
+    - Led the development of a HIPAA-compliant telehealth platform connecting patients with healthcare providers.
+    - Implemented WebRTC for secure, high-quality video consultations with end-to-end encryption.
+    - Built a patient management system using Django and PostgreSQL, facilitating medical record tracking and appointment scheduling.
+    - Integrated with electronic health record (EHR) systems via HL7 FHIR standards for seamless data exchange.
+    - Created a responsive mobile interface with Flutter, enabling patients to access services across all devices.
+  date: Jan 2024 - May 2024
+  
+- name: 🔗CloudSync Analytics
+  place: Remote
+  description: |
+    - Architected and deployed a cloud-native analytics platform using AWS, Docker, and Kubernetes for enterprise clients.
+    - Implemented real-time data processing pipelines with Apache Kafka and Spark, enabling instant insights for business stakeholders.
+    - Designed a modular microservices architecture using Node.js and Go, improving system resilience and deployment flexibility.
+    - Developed custom visualization dashboards with D3.js and React, increasing data accessibility for non-technical users.
+    - Reduced infrastructure costs by 35% through strategic resource optimization and serverless computing solutions.
+  date: Apr 2023 - Dec 2023
+
 - name: 🔗Coderamen.io  
   place: Remote  
   description: |  
@@ -420,6 +460,17 @@ list:
     - Conducted rigorous testing to ensure app stability and responsiveness across devices.  
     - Collaborated with designers to create a visually appealing and intuitive UI/UX.  
   date: Jan 2022 - Dec 2022  
+
+
+- name: 🔗Dreamhost.com
+  place: Remote
+  description: |
+    - A team of 80 developers in managing enterprise-level hosting infrastructure serving 1.5M+ websites.
+    - Architected and implemented custom security solutions, reducing security incidents by 85%.
+    - Developed automated deployment pipelines handling 200+ daily deployments with zero downtime.
+    - Implemented performance optimization strategies improving average response time by 60%.
+    - Tech Stack: WordPress, PHP 8, Laravel, Docker, Kubernetes, Jenkins, Python, React.js, Next.js, Redis.
+  date: 2020 - 2022
 
 - name: 🔗Cleanjuice  
   place: Remote  
@@ -469,16 +520,6 @@ list:
     - Implemented a custom analytics dashboard to track user behavior and improve conversion rates.  
     - Proficient in jQuery, Lightbox, Facebook Pixel, React.js, and WordPress.  
   date: 2019  
-
-- name: 🔗CollabWorks  
-  place: Remote  
-  description: |  
-    - Developed a collaboration platform for remote teams, integrating real-time chat, file sharing, and task management.  
-    - Utilized WebSocket technology for real-time updates and notifications.  
-    - Implemented role-based access control to ensure data security and privacy.  
-    - Conducted user testing to refine the interface and improve usability.  
-    - Integrated third-party tools like Slack and Trello for enhanced functionality.  
-  date: Aug 2021 - Apr 2022  
 
 - name: 🔗Soscare.co  
   place: Remote  
@@ -633,26 +674,42 @@ list:
 ---history[1]
 title: KeyMilestones
 list:
+- name: 🔗Amiggi
+  place: Remote
+  description: |
+    - Worked here as Lead full-stack development for Frontier.com, a major US internet and communications company.
+    - Engineered a custom image media network module improving asset delivery and link management.
+    - Implemented comprehensive site optimization strategies reducing page load times.
+    - Created custom WordPress solutions including Gutenberg blocks and ACF implementations for flexible content management. Built specialized email systems, modal interfaces, and alert mechanisms to enhance user engagement.
+    - Managed deployment processes and Orchestrated the migration from Sitecore to a headless architecture using custom API integrations, Orchestrated the migration from Sitecore to a headless architecture using custom API integrations.
+    - Tech Stack: Next.js, React, PHP, WordPress, ACF, Gutenberg, RESTful APIs, GraphQL, AWS, Docker, Git, CI/CD.
+  date: Jun 2023 - Present
+
+- name: 🔗TruPerformance
+  place: Pune
+  description: |
+    - Converted complex PSD designs into responsive HTML templates, ensuring pixel-perfect implementation across all device sizes.
+    - Developed custom WordPress Gutenberg blocks to create modular, reusable content components for the marketing team.
+    - Implemented a comprehensive Storybook library documenting all UI components for improved team collaboration.
+
+    - Created custom WordPress theme with ACF integration for flexible content management capabilities.
+    - Established front-end development standards and documentation for the engineering team.
+    - Tech Stack: HTML5, CSS3, JavaScript, WordPress, PHP, Gutenberg, Storybook, SASS, Webpack, Git, ACF, PSD.
+  date: Mar 2023 - May 2023
+
 - name: 🔗Webshar Pvt Ltd.
   place: Pune
   description: |
-    - A team of 35 developers in architecting and implementing enterprise-scale applications using Next.js, React Native, and Python microservices architecture.
-    - Spearheaded the development of Care Heroes health analytics platform, achieving 99.99% uptime and serving 100,000+ monthly active users.
-    - Designed and implemented a scalable COVID testing management system for major airlines, processing 50,000+ daily tests.
-    - Established CI/CD pipelines reducing deployment time by 70% using AWS, Docker, and Jenkins.
-    - Implemented microservices architecture patterns resulting in 40% improved system scalability.
-    - Tech Stack: Next.js, React Native, Python, AWS (ECS, Lambda, S3), GCS, Azure, Docker, Spring Boot, Node.js, GraphQL, TypeScript.
-  date: Jan 2022 - Present
-
-- name: 🔗Dreamhost.com
-  place: Remote
-  description: |
-    - A team of 80 developers in managing enterprise-level hosting infrastructure serving 1.5M+ websites.
-    - Architected and implemented custom security solutions, reducing security incidents by 85%.
-    - Developed automated deployment pipelines handling 200+ daily deployments with zero downtime.
-    - Implemented performance optimization strategies improving average response time by 60%.
-    - Tech Stack: WordPress, PHP 8, Laravel, Docker, Kubernetes, Jenkins, Python, React.js, Next.js, Redis.
-  date: 2020-2022
+    -  Contributed as a developer within a team of 35 professionals working on enterprise-scale applications using Next.js, React Native, and Python microservices architecture.
+    - Specialized in the analytics component of the Care Heroes health platform that served 100,000+ monthly active users.
+    - Developed and maintained automated reporting systems using Python to generate monthly user PDF reports.
+    - Created Jenkins automation scripts that streamlined the reporting process and improved data delivery reliability.
+    - Optimized data processing pipelines, reducing report generation time by 85% for high-volume testing facilities.
+    - Developed and maintained automated reporting systems using Python to generate monthly user PDF reports.
+    - Created Jenkins automation scripts that streamlined the reporting process and improved data delivery reliability.
+    - Collaborated on improving system monitoring and analytics dashboards to maintain the platform's 99.99% uptime.
+    - Tech Stack: Python, Jenkins, AWS, Next.js, React Native, Docker, Node.js, GraphQL, TypeScript.
+  date: Jan 2022 - Feb 2023
 
 - name: 🔗Seahawk Media Ltd.
   place: UK & US
@@ -662,7 +719,7 @@ list:
     - Implemented microservices architecture for scalable content delivery across multiple platforms.
     - Led migration of legacy systems to modern stack, reducing operational costs by 40%.
     - Tech Stack: Next.js, React.js, Python, Docker, Jenkins, WordPress, PHP, GraphQL, AWS, Vercel.
-  date: 2019-2020
+  date: 2020-2021
 
 - name: 🔗Senior Full Stack Developer - Body Fuel India
   place: Bhopal
@@ -672,7 +729,7 @@ list:
     - Developed custom analytics dashboard increasing conversion rates by 35%.
     - Led migration to PWA architecture improving mobile engagement by 45%.
     - Tech Stack: Next.js, React.js, PHP, Python, Redis, Elasticsearch, MySQL, AWS, Nginx.
-  date: 2018-2019
+  date: 2018-2020
 
 - name: 🔗Technical Architect - CloudScale Solutions
   place: Remote
