@@ -6,6 +6,7 @@ import Typewriter from '@/components/Typewriter'
 import Reveal from '@/components/Reveal'
 import Image from '@/components/Image'
 import MarqueeSection from '@/components/MarqueeSection'
+import PasswordProtectedContent from '@/components/PasswordProtectedContent' // Import the component
 
 const History = ({ title, list }) => {
   const [selectedItem, setSelectedItem] = useState(null)
@@ -32,6 +33,7 @@ const History = ({ title, list }) => {
         animation="fade-in scale-x"
         className="h-1.5 bg-gradient-to-r from-black via-beta to-alpha"
       />
+
       <div className="mt-6 flex flex-col md:mt-4">
         {list?.map((item, i) => (
           <React.Fragment key={`item-${i}`}>
@@ -605,80 +607,85 @@ const Layout = ({ personal_info = {}, cta = {}, skills_header, skills, history }
   const [hoveredSkill, setHoveredSkill] = useState(null)
 
   return (
-    <div className="mx-auto">
-      <div className="prose prose-invert md:flex">
-        <div className="relative flex h-screen basis-1/3 flex-col justify-between pb-24 md:h-auto md:items-center md:py-12">
-          <div className="not-prose absolute top-0 left-0 h-full w-full bg-omega-900 ">
-            {hoveredSkill?.pro?.src ? (
-              <Image
-                src={hoveredSkill.pro.src}
-                alt={hoveredSkill.icon.alt}
-                animation="fade-in zoom-out"
-                className="object-cover"
-                priority
-                fill
-              />
-            ) : (
-              personal_info.images?.[0] && (
+    <PasswordProtectedContent passwordList={['yourname', 'password1', 'password2']}>
+      <div className="mx-auto">
+        <div className="prose prose-invert md:flex">
+          <div className="relative flex h-screen basis-1/3 flex-col justify-between pb-24 md:h-auto md:items-center md:py-12">
+            <div className="not-prose absolute top-0 left-0 h-full w-full bg-omega-900 ">
+              {hoveredSkill?.pro?.src ? (
                 <Image
-                  src={personal_info.images[0].src}
-                  alt={personal_info.images[0].alt}
+                  src={hoveredSkill.pro.src}
+                  alt={hoveredSkill.icon.alt}
                   animation="fade-in zoom-out"
                   className="object-cover"
                   priority
                   fill
                 />
-              )
-            )}
-            <div className="absolute top-0 left-0 z-20 h-full w-full bg-gradient-to-b from-transparent via-transparent to-black/90" />
-          </div>
-          <div className="z-10 bg-black p-6 text-center">
-            <h3 className="inline">{personal_info.name}</h3>
-          </div>
-          <div className="z-10 p-6 text-center md:p-8">
-            <ContentRenderer source={cta} />
-          </div>
-        </div>
-        <div className="basis-2/3">
-          {skills_header && (
-            <div className="p-6 md:p-12 ">
-              <h3 className="mb-2  ">{skills_header.title}</h3>
-              {skills_header.list && (
-                <h3 className="inline text-xl sm:text-xl md:text-3xl ">
-                  <Typewriter lines={skills_header.list} lineClassName="text-gradient-500" />
-                </h3>
+              ) : (
+                personal_info.images?.[0] && (
+                  <Image
+                    src={personal_info.images[0].src}
+                    alt={personal_info.images[0].alt}
+                    animation="fade-in zoom-out"
+                    className="object-cover"
+                    priority
+                    fill
+                  />
+                )
               )}
+              <div className="absolute top-0 left-0 z-20 h-full w-full bg-gradient-to-b from-transparent via-transparent to-black/90" />
             </div>
-          )}
-
-          {skills && (
-            <div className="grid grid-cols-1 items-start divide-y divide-omega-700 shadow-xl">
-              {skills.map((props, i) => (
-                <SkillSet key={i} {...props} onSkillHover={setHoveredSkill} />
-              ))}
+            <div className="z-10 bg-black p-6 text-center">
+              <h3 className="inline">{personal_info.name}</h3>
             </div>
-          )}
+            <div className="z-10 p-6 text-center md:p-8">
+              <ContentRenderer source={cta} />
+            </div>
+          </div>
+          <div className="basis-2/3">
+            {skills_header && (
+              <div className="p-6 md:p-12 ">
+                <h3 className="mb-2  ">{skills_header.title}</h3>
+                {skills_header.list && (
+                  <h3 className="inline text-xl sm:text-xl md:text-3xl ">
+                    <Typewriter lines={skills_header.list} lineClassName="text-gradient-500" />
+                  </h3>
+                )}
+              </div>
+            )}
 
-          <Reveal animation="fade-in slide-in-top" className="prose p-6 dark:prose-invert md:p-12">
-            <ContentRenderer source={personal_info} />
-          </Reveal>
-        </div>
-      </div>
+            {skills && (
+              <div className="grid grid-cols-1 items-start divide-y divide-omega-700 shadow-xl">
+                {skills.map((props, i) => (
+                  <SkillSet key={i} {...props} onSkillHover={setHoveredSkill} />
+                ))}
+              </div>
+            )}
 
-      {history && (
-        <div className="prose flex-wrap justify-between bg-white p-2 md:flex">
-          {history.map((props, i) => (
-            <div
-              key={i}
-              className="neon-scroller flex-1 md:p-2 "
-              style={{ overflow: 'auto', maxHeight: '450px' }}
+            <Reveal
+              animation="fade-in slide-in-top"
+              className="prose p-6 dark:prose-invert md:p-12"
             >
-              <History {...props} />
-            </div>
-          ))}
+              <ContentRenderer source={personal_info} />
+            </Reveal>
+          </div>
         </div>
-      )}
-    </div>
+
+        {history && (
+          <div className="prose flex-wrap justify-between bg-white p-2 md:flex">
+            {history.map((props, i) => (
+              <div
+                key={i}
+                className="neon-scroller flex-1 md:p-2 "
+                style={{ overflow: 'auto', maxHeight: '450px' }}
+              >
+                <History {...props} />
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </PasswordProtectedContent>
   )
 }
 
