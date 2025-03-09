@@ -769,14 +769,26 @@ const TicTacToePasswordGame = ({ children }) => {
               </motion.div>
               <Typewriter lineClassName="text-gradient-500">
                 <motion.p
-                  className="mb-6 pt-4 pb-4 text-center text-xl "
+                  className="mb-0 w-full overflow-hidden break-words px-4 py-3 text-center text-base sm:text-lg md:text-xl"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
                 >
-                  🔐 Hint: My name, my nicknames, and cities I love can be used as the password.
+                  🔐 Hint: My name, my nicknames, and cities
                 </motion.p>
               </Typewriter>
+
+              <Typewriter lineClassName="text-gradient-500">
+                <motion.p
+                  className="mb-0 w-full overflow-hidden break-words pb-4 text-center text-base sm:text-lg md:text-xl"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                >
+                  i love can be used as the password.
+                </motion.p>
+              </Typewriter>
+
               {/* Replace original password input with AnimatedPasswordInput */}
               <AnimatedPasswordInput
                 password={password}
