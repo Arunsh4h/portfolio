@@ -55,31 +55,33 @@ const contact = async (req, res) => {
     // Setup Brevo SDK client
     const defaultClient = SibApiV3Sdk.ApiClient.instance
     const apiKey = defaultClient.authentications['api-key']
-    apiKey.apiKey = process.env.BREVO_API_KEY  
+    apiKey.apiKey = process.env.BREVO_API_KEY
     // Create transactional email API instance
     const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi()
-    
+
     // Set up sender
     const sendSmtpEmail = new SibApiV3Sdk.SendSmtpEmail()
-    
+
     sendSmtpEmail.subject = req.body.subject || subject || 'Contact form entry'
     sendSmtpEmail.htmlContent = html
     sendSmtpEmail.sender = {
       name: 'Contact Form',
-      email: sender
+      email: sender,
     }
-    sendSmtpEmail.to = [{
-      email: recipient,
-      name: 'Recipient'
-    }]
+    sendSmtpEmail.to = [
+      {
+        email: recipient,
+        name: 'Recipient',
+      },
+    ]
     sendSmtpEmail.replyTo = {
-      email: email
+      email: email,
     }
-    
+
     // Send the email
     const data = await apiInstance.sendTransacEmail(sendSmtpEmail)
     console.log('Email sent successfully. MessageId:', data.messageId)
-    
+
     // Return status 201 to match what the form expects
     return res.status(201).json({ message: 'Email sent successfully' })
   } catch (error) {

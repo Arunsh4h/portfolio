@@ -129,16 +129,20 @@ export const mdxConfig = {
  * Global SEO configuration for next-seo plugin
  * https://github.com/garmeeh/next-seo
  */
-const isProduction = process.env.NODE_ENV === 'production';
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || (isProduction ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000');
+const isProduction = process.env.NODE_ENV === 'production'
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (isProduction ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
 
 export const siteMetaData = {
   siteUrl,
   authorName: 'Arun Shah',
   siteName: 'Arun Shah',
-  defaultTitle: 'Arun Shah - Full Stack Engineer - Bhopal, Web Architect, Digital Growth Strategist, & Monetization Specialist, along Freelance.',
+  defaultTitle:
+    'Arun Shah - Full Stack Engineer - Bhopal, Web Architect, Digital Growth Strategist, & Monetization Specialist, along Freelance.',
   titleTemplate: 'Arun Shah | %s',
-  description: 'Empowering Businesses with Scalable Web Solutions, Digital Growth Strategies, and Monetization Expertise.',
+  description:
+    'Empowering Businesses with Scalable Web Solutions, Digital Growth Strategies, and Monetization Expertise.',
   email: 'arunshah23jan@gmail.com',
   locale: 'en_US',
   twitter: {
@@ -146,5 +150,5 @@ export const siteMetaData = {
     site: '@arunnshah',
     cardType: 'summary_large_image',
   },
-  defaultImage: `${siteUrl}/legit.gif`, 
-};
+  defaultImage: `${siteUrl}/legit.gif`,
+}
