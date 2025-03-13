@@ -277,7 +277,7 @@ const validationRules = {
     required: 'Project description is required',
     minLength: {
       value: 100,
-      message: 'Please provide at least 10 characters',
+      message: 'Please provide at least 100 characters',
     },
     maxLength: {
       value: 10000,
