@@ -55,7 +55,7 @@ const contact = async (req, res) => {
     // Setup Brevo SDK client
     const defaultClient = SibApiV3Sdk.ApiClient.instance
     const apiKey = defaultClient.authentications['api-key']
-    apiKey.apiKey = process.env.BREVO_API_KEY || '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'
+    apiKey.apiKey = process.env.BREVO_API_KEY 
     
     // Create transactional email API instance
     const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi()
