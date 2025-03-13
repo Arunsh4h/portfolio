@@ -1,32 +1,39 @@
+// FormCheckbox.jsx - Improved version with better alignment
 import React from 'react'
 import { useFormContext } from 'react-hook-form'
+import classNames from 'clsx'
 
-const FormCheckbox = React.forwardRef((props, ref) => {
-  const { id, label, value, type = 'checkbox', name } = props
-  const { setValue } = useFormContext()
+const FormCheckbox = React.forwardRef(
+  ({ name, label, className, value, defaultChecked, error, required, ...rest }, ref) => {
+    const methods = useFormContext()
 
-  const handleChange = (e) => {
-    const { value, checked } = e.target
-    setValue(e.target.name, value ? value : checked)
+    return (
+      <div className={classNames('flex w-full items-start', className)}>
+        <div className="flex h-5 items-center">
+          <input
+            id={name}
+            name={name}
+            type="checkbox"
+            className="h-4 w-4 cursor-pointer rounded border-gray-500 text-alpha focus:ring-alpha-500"
+            defaultChecked={defaultChecked}
+            value={value}
+            ref={ref}
+            required={required}
+            {...rest}
+          />
+        </div>
+
+        <label
+          htmlFor={name}
+          className="ml-2 block cursor-pointer select-none text-sm text-omega-300"
+        >
+          {label}
+          {required && <span className="ml-1 text-red-500">*</span>}
+        </label>
+      </div>
+    )
   }
-
-  return (
-    <>
-      <input
-        ref={ref}
-        id={id}
-        name={name}
-        type={type}
-        value={value}
-        className="h-6 w-6 border-omega-300 text-accent-600 focus:ring-accent-500"
-        onChange={handleChange}
-      />
-      <label htmlFor={id} className="ml-3 block">
-        {label}
-      </label>
-    </>
-  )
-})
+)
 
 FormCheckbox.displayName = 'FormCheckbox'
 
