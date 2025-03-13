@@ -512,9 +512,8 @@ const Contact01 = ({ main = {} }) => {
     const sensitivePatterns = [
       /\b(?:\d[ -]*?){13,16}\b/, // Credit card numbers
       /\b\d{3}[-\s]?\d{2}[-\s]?\d{4}\b/, // SSN
-      /\b(?:[A-Za-z0-9]+(?:\+[A-Za-z0-9]+)?\@[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)+)\b/g, // Email addresses
+      /\b(?:[A-Za-z0-9]+(?:\+[A-Za-z0-9]+)?@[A-Za-z0-9]+(?:\.[A-Za-z0-9]+)+)\b/g, // Email addresses
     ]
-
     let hasSensitiveContent = false
 
     sensitivePatterns.forEach((pattern) => {
