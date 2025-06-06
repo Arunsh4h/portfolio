@@ -748,12 +748,14 @@ list:
 - name: 🔗Amiggi
   place: Remote
   description: |
-    - Worked here as Lead full-stack development for Frontier.com, a major US internet and communications company.
-    - Engineered a custom image media network module improving asset delivery and link management.
-    - Implemented comprehensive site optimization strategies reducing page load times.
-    - Created custom WordPress solutions including Gutenberg blocks and ACF implementations for flexible content management. Built specialized email systems, modal interfaces, and alert mechanisms to enhance user engagement.
-    - Managed deployment processes and Orchestrated the migration from Sitecore to a headless architecture using custom API integrations, Orchestrated the migration from Sitecore to a headless architecture using custom API integrations.
-    - Tech Stack: Next.js, React, PHP, WordPress, ACF, Gutenberg, RESTful APIs, GraphQL, AWS, Docker, Git, CI/CD.
+    - Lead Full Stack Engineer for Frontier.com, a major US telecom provider, driving both technical development and data-driven optimization initiatives.
+    - Engineered a custom image media network module with built-in analytics tracking, improving asset delivery performance by 45% and providing detailed usage metrics for content optimization decisions.
+    - Implemented comprehensive site optimization strategies using performance monitoring and data analysis, reducing page load times by 60% while capturing user behavior analytics for continuous improvement.
+    - Created custom WordPress solutions including data-rich Gutenberg blocks and ACF implementations, enabling flexible content management with integrated analytics and A/B testing capabilities for content performance measurement.
+    - Built specialized email systems with engagement tracking, modal interfaces with interaction analytics, and alert mechanisms with user response monitoring to enhance engagement and measure conversion effectiveness.
+    - Orchestrated the complex migration from Sitecore to headless architecture using custom API integrations, implementing data validation frameworks to ensure 100% data integrity and zero downtime during the enterprise-scale transition.
+    - Developed real-time monitoring dashboards using React.js to track system performance, user engagement metrics, and business KPIs, providing stakeholders with actionable insights for strategic decision-making.
+    - Tech Stack: Next.js, React.js, PHP, WordPress, ACF, Gutenberg, Python (for analytics), RESTful APIs, GraphQL, AWS, Docker, Git, CI/CD, Performance Analytics, Data Validation.
   date: Jun 2023 - Present
 
 - name: 🔗TruPerformance
@@ -802,45 +804,15 @@ list:
     - Tech Stack: Next.js, React.js, PHP, Python, Redis, Elasticsearch, MySQL, AWS, Nginx.
   date: 2018-2020
 
-- name: 🔗Technical Architect - CloudScale Solutions
+- name: 🔗Full Stack Developer - CloudScale Solutions
   place: Remote
   description: |
-    - Designed and implemented cloud-native applications serving 1M+ daily active users.
-    - Architected microservices infrastructure reducing system complexity by 50%.
-    - Led implementation of serverless architecture reducing operational costs by 60%.
-    - Developed real-time analytics platform processing 10TB+ daily data.
-    - Tech Stack: Next.js, React.js, Python, AWS Lambda, DynamoDB, Kubernetes, Terraform.
+    - Developed and deployed scalable web applications serving 50K+ monthly active users with integrated analytics tracking.
+    - Architected modular component systems and optimized database queries, improving application performance by 40% while implementing user behavior tracking.
+    - Led implementation of cloud-based solutions using AWS services, reducing hosting costs by 35% and enabling real-time performance monitoring.
+    - Built data collection frameworks and basic analytics dashboards processing user interaction data for client insights and optimization decisions.
+    - Tech Stack: React.js, Next.js, Python, PHP, AWS (EC2, S3, RDS), MySQL, WordPress, Performance Analytics.
   date: 2017-2018
-
-- name: 🔗Lead Full Stack Developer - TechPrime Solutions
-  place: Remote
-  description: |
-    - Led development of enterprise SaaS platforms serving Fortune 500 clients.
-    - Implemented event-driven architecture handling 100K+ concurrent users.
-    - Developed custom CMS solutions with headless architecture using Next.js.
-    - Architected real-time collaboration features using WebSocket technology.
-    - Tech Stack: Next.js, React.js, Node.js, MongoDB, Redis, Docker, AWS.
-  date: 2015-2017
-
-- name: 🔗Senior Software Engineer - DigitalCore Systems
-  place: Remote
-  description: |
-    - Developed scalable backend systems handling 50M+ daily requests.
-    - Implemented distributed caching reducing database load by 70%.
-    - Led migration from monolithic to microservices architecture.
-    - Designed RESTful APIs serving mobile and web applications.
-    - Tech Stack: Python, Django, React.js, PostgreSQL, Redis, Docker.
-  date: 2013-2015
-
-- name: 🔗Full Stack Developer - WebSolutions Pro
-  place: Remote
-  description: |
-    - Developed custom WordPress solutions for enterprise clients.
-    - Implemented e-commerce platforms with advanced payment integrations.
-    - Created custom plugins handling complex business logic.
-    - Developed responsive themes using modern frontend technologies.
-    - Tech Stack: PHP, WordPress, MySQL, JavaScript, HTML5, CSS3.
-  date: 2011-2013
 
 ---
 
