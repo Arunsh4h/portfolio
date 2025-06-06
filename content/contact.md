@@ -15,9 +15,6 @@ seo:
   ### _Tell us about your project vision_
 </PageTitle>
 
-
-
-
 ## Have a project in mind or a challenge to tackle? I'm here to listen.
 
 As a seasoned full stack developer and data scientist, I specialize in understanding your needs and delivering customized solutions to help you reach your goals. Collaboration and clear communication are at the heart of what I do, so I invite you to share your ideas, questions, or vision with me.
