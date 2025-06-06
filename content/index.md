@@ -50,13 +50,13 @@ images:
 
 # <Typewriter>Arunn Shah</Typewriter>
 
-# *Web Developer,* *Marketeer,* *Contentor* <span>&</span> *Growth Consultant*
+# Full Stack Engineer, Data Scientist, AI/ML Statistical Modeler <span>&</span> Technology Consultant
 
 <Sep size={12} />
 
-I connect the dots between data insights & digital mastery, delivering innovative web development, data analytics platforms, and performance optimization. Using cutting-edge tools like Python (Django, Flask, Pandas, NumPy), React.js, Next.js, ML/AI frameworks, Node.js, & statistical modeling, I build responsive data dashboards & robust analytical back-end systems. My expertise in Web3—Ethereum, Solidity, smart contracts, & tools like Web3.js and Truffle—enables us to create decentralized applications (dApps) & blockchain-integrated solutions. we scale statistical modeling, business intelligence, predictive analytics, & tools like Scikit-Learn to create data-driven applications & enterprise analytics solutions. From data audits to system enhancements, I fine-tune platforms for scalability & statistical accuracy, ensuring businesses are equipped to make data-driven decisions, adapt, grow & lead through quantitative excellence.
+I connect the dots between data insights & digital mastery, delivering innovative web development, data analytics platforms, and performance optimization. Using cutting-edge tools like Python (Django, Flask, Pandas, NumPy), React.js, Next.js, ML/AI frameworks, Node.js, & statistical modeling, I build responsive data dashboards & robust analytical back-end systems. My expertise in Web3—Ethereum, Solidity, smart contracts, & tools like Web3.js and Truffle—enables us to create decentralized applications (dApps) & blockchain-integrated solutions. we scale statistical modeling, business intelligence, predictive analytics, & tools like Scikit-Learn to create data-driven applications & enterprise analytics solutions.
 
- I believe in keeping things straight forward & delivering results that matter!
+From data audits to system enhancements, I fine-tune platforms for scalability & statistical accuracy, ensuring businesses are equipped to make data-driven decisions, adapt, grow & lead through quantitative excellence. I believe in keeping things straight forward & delivering results that matter!
 
 
 ---achievements
