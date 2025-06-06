@@ -95,7 +95,7 @@ list:
       src: /proImage/python.jpg
     icon:
       src: /icons/python.svg
-  - title: Jupyter Notebooks
+  - title: JupyterN
     level: 5
     pro:
       src: /proImage/python.jpg
@@ -235,7 +235,7 @@ list:
     level: 4
     icon:
       src: /icons/nodedotjs.svg
-  - title: Python Django
+  - title: Django
     level: 4
     pro:
       src: /proImage/python.jpg
