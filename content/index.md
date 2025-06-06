@@ -50,7 +50,7 @@ images:
 
 # <Typewriter>Arunn Shah</Typewriter>
 
-# *Full Stack Engineer,* *Data Scientist,* *AI/ML Expert Modeler* <span>&</span> *Technology Consultant*
+# *Full Stack Engineer,* *Data Scientist,* *AI/ML Modeler* <span>&</span> *Technology Consultant*
 
 <Sep size={12} />
 
