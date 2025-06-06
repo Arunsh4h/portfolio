@@ -15,22 +15,17 @@ images:
 ---
 ##### <span>01.</span> About me
 
-
-
-
 Hello, I'm a seasoned Full Stack Developer & Data Scientist with over 9 years of hands-on experience. I specialize in Python, React.js, statistical modeling, ML/AI frameworks, Next.js, quantitative analytics, web development, and cloud infrastructure. I've honed my skills through numerous projects spanning web development and data-driven solutions, evolving from full-stack development to enterprise data science applications.
 
 I have a knack for generating business insights and building scalable web applications with expertise in CI/CD, automation, Docker, Kubernetes, and cloud technologies. What sets me apart is my meticulous attention to both code quality and data accuracy, ensuring I build robust development frameworks and analytical solutions that guarantee stakeholder satisfaction across web and data science domains.
 
 ##### <span>02.</span> Interests In Developement
 
-Covering a wide range of encompassing React Native, Node.js, Python, PHP, react.js, next.js and WordPress. I'm also well-versed in front-end technologies such as HTML, javascript, CSS and have experience with frameworks like Tailwind, Bootstrap, and Material UI. I am keenly enthusiastic in data science, AI Automation and actively exploring open-source technologies. Staying ahead of industry trends, allows me to continually grow & adapt my skills to meet the ever-evolving needs of my intrests. I thrive in dynamic teams and eagerly embrace challenges
+Covering a wide range of technologies encompassing Python, React.js, Next.js, Node.js, PHP and React Native. with well-versed in data science to implement the frameworks such as Pandas, NumPy, Scikit-learn, TensorFlow and have experience with visualization tools like Tableau, Matplotlib, and Plotly. I am keenly enthusiastic about quantitative analytics, statistical modeling, machine learning and actively exploring advanced data science technologies. My expertise spans from full-stack development to enterprise analytics, allowing me to build complete data-driven solutions. I thrive in dynamic teams and eagerly embrace complex analytical challenges that drive business value through data insights.
 
 ##### <span>03.</span> Preferences
 
 Ready to contribute to your organization's success.
-
-
 
 ---cta
 ---
@@ -42,37 +37,165 @@ Let's super-charge your business today!
   Get a Free Price Quote
 </Button>
 
-
-
 ---skills_header
 title: I'm Specialized in
 list:
-  - Front-End Design
-  - Back-End Development
-  - Modern Frameworks
-  - Mobile App Development
-  - Database Management
-  - User Experience (UX) Design
-  - Cloud Computing
-  - DevOps Practices
-  - E-commerce Solutions
-  - Artificial Intelligence
-  - Cybersecurity
-  - Data Analytics
-  - Machine Learning
-  - Game Development
-  - IoT (Internet of Things)
-  - Blockchain Technology
-  - Virtual Reality (VR) Development
-  - Augmented Reality (AR) Development
-  - Natural Language Processing (NLP)
+  - Full Stack Development
+  - Statistical Modeling
+  - Machine Learning & AI
+  - Quantitative Analysis
+  - Business Intelligence
+  - Data Science & Analytics
+  - Python Development
+  - React.js & Next.js
+  - Database Architecture
+  - Cloud Computing & AWS
+  - DevOps & CI/CD
+  - ETL Data Pipelines
+  - Real-time Analytics
+  - Financial Modeling
+  - Predictive Analytics
+  - API Development
+  - Performance Optimization
+  - Blockchain & Web3
+  - MLOps & Model Deployment
 ---
 
 
-
 ---skills[0]
-title: Web Design and Development
+title: Data Science & Analytics
 list:
+  - title: Python
+    level: 5
+    pro: 
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Pandas
+    level: 5
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: NumPy
+    level: 5
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Scikit-learn
+    level: 5
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: TensorFlow
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Jupyter Notebooks
+    level: 5
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Matplotlib
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Seaborn
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Plotly
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Tableau
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Power BI
+    level: 3
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Apache Spark
+    level: 3
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Kafka
+    level: 3
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Airflow
+    level: 3
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: MLflow
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+---
+
+---skills[1]
+title: Web Development & Frameworks
+list:
+  - title: React.js
+    level: 5
+    pro:
+      src: /proImage/react.jpg
+    icon:
+      src: /icons/react.svg
+  - title: Next.js
+    level: 4
+    pro:
+      src: /proImage/nextjs.jpg
+    icon:
+      src: /icons/nextjs.svg
+  - title: TypeScript
+    level: 4
+    pro:
+      src: /proImage/javascript.jpg
+    icon:
+      src: /icons/javascript.svg
+  - title: JavaScript
+    level: 4
+    pro:
+      src: /proImage/javascript.jpg
+    icon:
+      src: /icons/javascript.svg
+  - title: React Native
+    level: 3
+    pro:
+      src: /proImage/rn.jpg
+    icon:
+      src: /icons/rn.svg
+  - title: Redux
+    level: 4
+    pro:
+      src: /proImage/redux.jpg
+    icon:
+      src: /icons/redux.svg
   - title: HTML5
     level: 5
     pro: 
@@ -85,157 +208,98 @@ list:
       src: /proImage/css3.jpg
     icon:
       src: /icons/css3.svg
-  - title: JavaScript
+  - title: Tailwind
     level: 4
-    pro:
-      src: /proImage/javascript.jpg
     icon:
-      src: /icons/javascript.svg
-  - title: React.js
-    level: 5
-    pro:
-      src: /proImage/react.jpg
+      src: /icons/tailwind.svg
+  - title: Material UI
+    level: 4
     icon:
-      src: /icons/react.svg
-  - title: React Native
-    level: 3
-    pro:
-      src: /proImage/rn.jpg
+      src: /icons/material-ui.svg
+  - title: Bootstrap
+    level: 4
     icon:
-      src: /icons/rn.svg
-  - title: Ember.js
-    level: 3
-    pro:
-      src: /proImage/ember.jpg
-    icon:
-      src: /icons/ember.svg
-  - title: Backbone.js
-    level: 3
-    pro:
-      src: /proImage/backbone.jpg
-    icon:
-      src: /icons/backbone.svg
+      src: /icons/bootstrap.svg
   - title: jQuery
     level: 5
     pro:
       src: /proImage/jquery.jpg
     icon:
       src: /icons/jquery.svg
-  - title: Redux
-    level: 4
-    pro:
-      src: /proImage/redux.jpg
-    icon:
-      src: /icons/redux.svg
-  - title: Next.js
-    level: 4
-    pro:
-      src: /proImage/nextjs.jpg
-    icon:
-      src: /icons/nextjs.svg
-  - title: Gatsby.js
-    level: 4
-    icon:
-      src: /icons/gatsby.svg
-  - title: Tailwind
-    level: 4
-    icon:
-      src: /icons/tailwind.svg
-  - title: Bootstrap
-    level: 4
-    icon:
-      src: /icons/bootstrap.svg
-  - title: Material UI
-    level: 4
-    icon:
-      src: /icons/material-ui.svg
-  - title: Ant Design
-    level: 4
-    icon:
-      src: /icons/ant-design.svg
 ---
 
-
-
----skills[1]
-########################################
-### Skills
-########################################
-title: Backend Development
+---skills[2]
+title: Backend Development & APIs
 list:
   - title: Node.js
     level: 4
     icon:
       src: /icons/nodedotjs.svg
-  - title: Express-route
+  - title: Python Django
+    level: 4
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: PHP Laravel
+    level: 4
+    pro:
+      src: /proImage/laravel.jpg
+    icon:
+      src: /icons/laravel.svg
+  - title: Express.js
     level: 3
     icon:
       src: /icons/express.svg
-  - title: Python
-    level: 3
-    icon:
-      src: /icons/python.svg
-  - title: Meteor.js
-    level: 3
-    icon:
-      src: /icons/meteor.svg
-  - title: DynamoDB
-    level: 3
-    icon:
-      src: /icons/aws-dynamodb.svg
-  - title: GraphQL
-    level: 4
-    icon:
-      src: /icons/graphql.svg
-  - title: Laravel
-    level: 3
-    icon:
-      src: /icons/laravel.svg
-  - title: Socket.IO
-    level: 4
-    icon:
-      src: /icons/socketio.svg
-  - title: Heroku
-    level: 4
-    icon:
-      src: /icons/heroku.svg
   - title: REST API
     level: 5
     icon:
       src: /icons/restful-api.svg
-  - title: MicroServArch
+  - title: GraphQL
+    level: 4
+    icon:
+      src: /icons/graphql.svg
+  - title: MicroServices
     level: 4
     icon:
       src: /icons/microservices.svg
-  - title: Auth
+  - title: Authentication
     level: 5
     icon:
       src: /icons/authentication.svg
----
-
-
----skills[2]
-########################################
-### Skills
-########################################
-title: Database Management
-list:
-  - title: MySQL
+  - title: Socket.IO
     level: 4
     icon:
-      src: /icons/mysql.svg
+      src: /icons/socketio.svg
+  - title: API Design
+    level: 5
+    icon:
+      src: /icons/restful-api.svg
+  - title: Server Architecture
+    level: 4
+    icon:
+      src: /icons/microservices.svg
+  - title: Performance Opt
+    level: 5
+    icon:
+      src: /icons/cicd.svg
+---
+
+---skills[3]
+title: Database & Data Engineering
+list:
   - title: PostgreSQL
     level: 4
     icon:
       src: /icons/postgresql.svg
+  - title: MySQL
+    level: 4
+    icon:
+      src: /icons/mysql.svg
   - title: MongoDB
     level: 4
     icon:
       src: /icons/mongodb.svg
-  - title: MariaDB
-    level: 4
-    icon:
-      src: /icons/mariadb.svg
   - title: Redis
     level: 4
     icon:
@@ -244,63 +308,45 @@ list:
     level: 4
     icon:
       src: /icons/elasticsearch.svg
+  - title: Data Warehousing
+    level: 4
+    icon:
+      src: /icons/database-optimization.svg
+  - title: ETL Pipelines
+    level: 5
+    pro:
+      src: /proImage/python.jpg
+    icon:
+      src: /icons/python.svg
+  - title: Data Modeling
+    level: 4
+    icon:
+      src: /icons/data-modeling.svg
+  - title: Database Optimization
+    level: 5
+    icon:
+      src: /icons/database-optimization.svg
+  - title: Time-series DB
+    level: 4
+    icon:
+      src: /icons/elasticsearch.svg
+  - title: Data Quality
+    level: 5
+    icon:
+      src: /icons/data-modeling.svg
   - title: Firebase
     level: 3
     icon:
       src: /icons/firebase.svg
-  - title: Micro SQL
-    level: 4
-    icon:
-      src: /icons/mssql.svg
-  - title: ArangoDB
-    level: 3
-    icon:
-      src: /icons/arangodb.svg
-  - title: Aws SimpleDB
-    level: 3
-    icon:
-      src: /icons/amazon-simpledb.svg
-  - title: Database Opt
-    level: 5
-    icon:
-      src: /icons/database-optimization.svg
-  - title: DataSchema
-    level: 4
-    icon:
-      src: /icons/data-modeling.svg
 ---
 
-
----skills[3]
-########################################
-### Skills
-########################################
-title: Cloud and Infrastructure
+---skills[4]
+title: Cloud & DevOps
 list:
-  - title: EC2,S3,RDS
+  - title: AWS (EC2,S3,RDS)
     level: 5
     icon:
       src: /icons/aws.svg
-  - title: Azure
-    level: 4
-    icon:
-      src: /icons/azure.svg
-  - title: DigitalOcean
-    level: 4
-    icon:
-      src: /icons/digitalocean.svg
-  - title: Linode
-    level: 4
-    icon:
-      src: /icons/linode.svg
-  - title: Vultr
-    level: 4
-    icon:
-      src: /icons/vultr.svg
-  - title: OpenStack
-    level: 3
-    icon:
-      src: /icons/openstack.svg
   - title: Docker
     level: 4
     icon:
@@ -309,93 +355,120 @@ list:
     level: 4
     icon:
       src: /icons/kubernetes.svg
+  - title: CI/CD Pipelines
+    level: 5
+    icon:
+      src: /icons/cicd.svg
   - title: Terraform
     level: 4
     icon:
       src: /icons/terraform.svg
-  - title: GKE
+  - title: Azure
+    level: 4
+    icon:
+      src: /icons/azure.svg
+  - title: GCP/GKE
     level: 4
     icon:
       src: /icons/gke.svg
-  - title: PowerAuto
+  - title: DigitalOcean
     level: 4
     icon:
-      src: /icons/power-automate.svg
-  - title: (CI/CD)
-    level: 5
+      src: /icons/digitalocean.svg
+  - title: Serverless
+    level: 4
+    icon:
+      src: /icons/aws.svg
+  - title: Monitoring
+    level: 4
     icon:
       src: /icons/cicd.svg
+  - title: Infrastructure as Code
+    level: 4
+    icon:
+      src: /icons/terraform.svg
+  - title: Load Balancing
+    level: 4
+    icon:
+      src: /icons/aws.svg
 ---
 
-
----skills[4]
-########################################
-### Skills
-########################################
-title: WordPress Development
+---skills[5]
+title: Blockchain & Web3
 list:
-  - title: WP Themes
+  - title: Solidity
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/wordpress-themes.svg
-  - title: WP Plugins
+      src: /icons/javascript.svg
+  - title: Smart Contracts
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/wordpress-plugins.svg
-  - title: WooCommerce
+      src: /icons/javascript.svg
+  - title: Ethereum
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/woocommerce.svg
-  - title: Elementor
+      src: /icons/javascript.svg
+  - title: Web3.js
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/elementor.svg
-  - title: Divi
+      src: /icons/javascript.svg
+  - title: DeFi Protocols
+    level: 3
+    pro:
+      src: /proImage/javascript.jpg
+    icon:
+      src: /icons/javascript.svg
+  - title: NFT Development
+    level: 3
+    pro:
+      src: /proImage/javascript.jpg
+    icon:
+      src: /icons/javascript.svg
+  - title: dApp Development
     level: 4
+    pro:
+      src: /proImage/react.jpg
     icon:
-      src: /icons/divi.svg
-  - title: Gutenberg
+      src: /icons/react.svg
+  - title: Token Economics
+    level: 3
+    pro:
+      src: /proImage/javascript.jpg
+    icon:
+      src: /icons/javascript.svg
+  - title: Cross-chain
+    level: 3
+    pro:
+      src: /proImage/javascript.jpg
+    icon:
+      src: /icons/javascript.svg
+  - title: Wallet Integration
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/gutenberg.svg
-  - title: ACF
+      src: /icons/javascript.svg
+  - title: Smart Contract Audit
     level: 4
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/acf.svg
-  - title: Performance
-    level: 5
+      src: /icons/javascript.svg
+  - title: DAO Development
+    level: 3
+    pro:
+      src: /proImage/javascript.jpg
     icon:
-      src: /icons/jetpack.svg
-  - title: Schema & SEO
-    level: 4
-    icon:
-      src: /icons/all-in-one-seo.svg
-  - title: Custom Dev~
-    level: 4
-    icon:
-      src: /icons/gravity-forms.svg
-  - title: Hack Resolve
-    level: 5
-    icon:
-      src: /icons/contact-form-7.svg
-  - title: OptinMonster
-    level: 4
-    icon:
-      src: /icons/optinmonster.svg
-  - title: HeadlessAPI
-    level: 4
-    icon:
-      src: /icons/gutenberg-blocks.svg
-  - title: ThriveArch
-    level: 4
-    icon:
-      src: /icons/thrive-architect.svg
-  - title: WP Security
-    level: 5
-    icon:
-      src: /icons/wordpress-security.svg
+      src: /icons/javascript.svg
 ---
-
 
 
 ---history[0]  
@@ -434,22 +507,22 @@ list:
 - name: 🔗CloudSync Analytics
   place: Remote
   description: |
-    - Architected and deployed a cloud-native analytics platform using AWS, Docker, and Kubernetes for enterprise clients.
-    - Implemented real-time data processing pipelines with Apache Kafka and Spark, enabling instant insights for business stakeholders.
-    - Designed a modular microservices architecture using Node.js and Go, improving system resilience and deployment flexibility.
-    - Developed custom visualization dashboards with D3.js and React, increasing data accessibility for non-technical users.
-    - Reduced infrastructure costs by 35% through strategic resource optimization and serverless computing solutions.
+    - Architected and deployed a cloud-native analytics platform using AWS, Docker, and Kubernetes, processing 1M+ daily data points for enterprise clients.
+    - Implemented real-time data processing pipelines with Apache Kafka and Spark, enabling instant statistical insights and predictive analytics for business stakeholders.
+    - Designed a modular microservices architecture using Python and Node.js, improving system resilience and ML model deployment flexibility.
+    - Developed custom BI dashboards with React and D3.js, providing executives with real-time KPI monitoring and data-driven decision support.
+    - Reduced infrastructure costs by 35% through strategic resource optimization and serverless computing, while improving analytics processing speed by 60%.
   date: Apr 2023 - Dec 2023
 
-- name: 🔗Coderamen.io  
+- name: 🔗Coderamen.io Data Platform
   place: Remote  
   description: |  
-    - As the lead, I orchestrated design strategy, executed meticulous planning, managed scalability, and coordinated seamless operations to deliver a high-performing platform.  
-    - Leveraged advanced technologies including Python, React, Next.js, WordPress, Django, GraphQL, MongoDB, and AWS to build Coderamen.io, a premier remote coding community platform.  
-    - Designed and implemented features enabling seamless collaboration, AI-driven coding challenges, and scalable infrastructure, fostering a global developer ecosystem.  
-    - Spearheaded the integration of real-time collaboration tools, enabling developers to pair-program and share code effortlessly.  
-    - Optimized platform performance, achieving a 40% reduction in load times through advanced caching and database indexing strategies.  
-  date: May 2023 - 2024  
+    - Led the development of an advanced analytics platform, orchestrating data strategy, statistical modeling, and scalable ML infrastructure to deliver measurable business insights.  
+    - Leveraged cutting-edge technologies including Python, React, Next.js, Django, PostgreSQL, and AWS to build a comprehensive data-driven developer platform with integrated analytics.  
+    - Designed and implemented predictive analytics features, A/B testing frameworks, and real-time user behavior analysis, driving 40% improvement in platform engagement.  
+    - Spearheaded the integration of ML-powered recommendation systems and statistical models for personalized developer experiences and skill assessment.  
+    - Optimized data processing performance, achieving 50% reduction in query response times through advanced database indexing and statistical sampling strategies.  
+  date: May 2023 - 2024
 
 - name: 🔗ReactNativeHub  
   place: Remote  
@@ -669,8 +742,6 @@ list:
   date: 2016-2019  
 ---
 
-
-
 ---history[1]
 title: KeyMilestones
 list:
@@ -773,17 +844,24 @@ list:
 
 ---
 
-
 ---history[2]  
 title: Academic Credentials  
 list:  
-- name: MBA. NMIMS, Mumbai  
+- name: MBA in IT Service Management, NMIMS Mumbai  
   description: |  
-    - Pursuing MBA in IT Service Management at NMIMS Mumbai. Gain strategic IT planning and operational skills for career advancement.  
-    - Hands-on learning in Business Entrepreneurship along with automation prepares me to lead innovative IT initiatives.  
-    - Boost professional credibility and make a meaningful impact in the IT industry.  
+    - Completed MBA in IT Service Management at NMIMS Mumbai, specializing in strategic IT planning and data-driven business operations.  
+    - Developed expertise in Business Entrepreneurship, quantitative analysis, and automation strategies for leading analytical initiatives.  
+    - Enhanced strategic thinking and leadership capabilities to drive data transformation and deliver measurable business impact in enterprise environments.  
   place: Mumbai  
   date: 2022-2024  
+
+- name: Bachelor of Business Administration (BBA), Barkatullah University  
+  description: |  
+    - Earned BBA with focus on Marketing and Business Analytics, building foundational knowledge in statistical analysis and market research.  
+    - Developed understanding of business processes, consumer behavior, and quantitative methods essential for data science applications.  
+    - Gained expertise in business strategy and operations that complements technical skills for comprehensive data-driven solutions.  
+  place: Bhopal  
+  date: 2018-2021  
 ---
 
 ---solidEnter

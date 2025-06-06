@@ -2,7 +2,7 @@
 layout: Contact 
 seo:
   title: Contact Us - Let's Discuss Your Next Project 
-  description: Reach out to discuss your project needs. We're excited to learn about your goals and explore how we can help.
+  description: Reach out to discuss your project needs. I am excited to learn about your goals and explore how we can help.
 ---
 
 
@@ -18,15 +18,15 @@ seo:
 
 
 
-**Have a project in mind or a challenge to tackle? We’re here to listen.**
+## Have a project in mind or a challenge to tackle? I'm here to listen.
 
-Our team of seasoned professionals specializes in understanding your needs and delivering customized solutions to help you reach your goals. Collaboration and clear communication are at the heart of what we do, so we invite you to share your ideas, questions, or vision with us.  
+As a seasoned full stack developer and data scientist, I specialize in understanding your needs and delivering customized solutions to help you reach your goals. Collaboration and clear communication are at the heart of what I do, so I invite you to share your ideas, questions, or vision with me.
 
-Getting started is simple: fill out the contact form below with your details, or reach out directly via email or phone. We typically respond within 1 business day.  
+Getting started is simple: fill out the contact form below with your details, or reach out directly via email or phone. I typically respond within 1 business day.
 
-Whether you’re a startup or a global enterprise, we’re committed to providing fast, professional, and tailored service to drive measurable results.  
+Whether you're a startup looking for rapid development or an enterprise needing advanced analytics solutions, I'm committed to providing fast, professional, and tailored service that drives measurable results.
 
-Let’s turn your vision into reality—contact us today!
+**Let's turn your development or data vision into reality—contact me today!**
 
 <Sep size="12" />
 

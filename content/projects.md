@@ -7,9 +7,7 @@ seo:
 
 ---github
 repositories:
-  - leerob/leerob.io
-  - jxnblk/mdx-deck
-  - vercel/og-image
+  - github.com/arunsh4h
 ---
 
 <PageTitle>
