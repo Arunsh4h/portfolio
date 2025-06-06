@@ -423,3 +423,22 @@ icon:
     - <strong>Team Training & Knowledge Transfer</strong>
     - <strong>Change Management & Adoption Strategy</strong>
 </small>
+
+---services[19]
+title: Quantum Computing Solutions
+icon:
+  src: /icons/quantum.svg
+---
+
+<small>
+   ⚛️ Step into the future with our quantum computing solutions. We help organizations prepare for and leverage the revolutionary power of quantum computing to solve complex problems.
+
+    - <strong>Quantum Algorithm Development & Optimization</strong>
+    - <strong>Quantum Machine Learning Implementation</strong>
+    - <strong>Quantum-Classical Hybrid Systems</strong>
+    - <strong>Quantum Cryptography & Security Solutions</strong>
+    - <strong>Quantum Simulation & Modeling</strong>
+    - <strong>Error Correction & Noise Mitigation</strong>
+    - <strong>Quantum Software Development Kit Integration</strong>
+    - <strong>Quantum-Ready Infrastructure Planning</strong>
+</small>
