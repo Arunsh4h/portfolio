@@ -45,16 +45,16 @@ We don't just write code – we architect solutions that transform challenges in
 
 Experience our commitment to excellence through:
 
-- Strategic Design Thinking & Innovation
-- Enterprise-Grade Web & Mobile Solutions
-- Full Stack Development Excellence
-- Cutting-Edge Design Tools & Methodologies
-- Advanced Development Frameworks & Tools
-- Git-Based Version Control & Collaboration
-- Continuous Integration/Deployment (CI/CD)
-- Performance Monitoring & Optimization
-- Security Implementation & Compliance
-- 24/7 Support & Maintenance
+- Strategic Data Science Thinking & Innovation
+- Enterprise-Grade Analytics & Web Solutions  
+- Full Stack Development & Data Science Excellence
+- Cutting-Edge Statistical Tools & ML Methodologies
+- Advanced Analytics Frameworks & Development Tools
+- Git-Based Version Control & Data Pipeline Collaboration
+- Continuous Integration/Deployment (CI/CD) & Model Deployment
+- Performance Monitoring & Data Quality Optimization
+- Security Implementation & Data Governance Compliance
+- 24/7 Analytics Support & System Maintenance
 
 <Sep size="12" />
 

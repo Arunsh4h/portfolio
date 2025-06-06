@@ -18,9 +18,9 @@ images:
 
 
 
-Hello, I'm a seasoned Full Stack Web Developer with over 6 years of hands-on experience. I specialize in a range of technologies, including React.js, WordPress, PHP, Next.js, Python, and React Native. Over the years, I've honed my skills by working on numerous ongoing projects, always seeking opportunities to automate and improve processes. Throughout my career, I've had the privilege of working on a variety of international projects, constantly expanding my knowledge and honing my skills.
+Hello, I'm a seasoned Full Stack Developer & Data Scientist with over 9 years of hands-on experience. I specialize in Python, React.js, statistical modeling, ML/AI frameworks, Next.js, quantitative analytics, web development, and cloud infrastructure. I've honed my skills through numerous projects spanning web development and data-driven solutions, evolving from full-stack development to enterprise data science applications.
 
-I have a knack for generating leads and possess expertise in CI/CD, Automation, Docker, Kubernetes, and various cloud technologies. What sets me apart is my meticulous attention to detail, ensuring that I replicate websites flawlessly and guarantee client satisfaction. I'm driven by passion and dedicated to consistently delivering exceptional results
+I have a knack for generating business insights and building scalable web applications with expertise in CI/CD, automation, Docker, Kubernetes, and cloud technologies. What sets me apart is my meticulous attention to both code quality and data accuracy, ensuring I build robust development frameworks and analytical solutions that guarantee stakeholder satisfaction across web and data science domains.
 
 ##### <span>02.</span> Interests In Developement
 

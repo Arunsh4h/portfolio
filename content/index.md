@@ -1,8 +1,8 @@
 ---
 layout: Home
 seo:
-  title: Arun Shah - Full Stack Engineer, Web Architect, Digital Growth Strategist, & Monetization Specialist - Bhopal
-  description: Arun Shah is a results-driven Full Stack Engineer and Digital Growth Strategist specializing in scalable web development, cutting-edge technologies, SEO optimization, content creation, revenue generation, and automation. With expertise in React, Next.js, WordPress, Python, and cloud platforms, Arun crafts high-performance solutions that enhance user experience and drive business growth.
+  title: Arun Shah - Lead Full Stack Developer & Data Scientist, Quantitative Analytics Expert, Web Architect - Bhopal
+  description: Arun Shah is a results-driven Full Stack Developer and Data Scientist specializing in quantitative analytics, statistical modeling, and scalable web development. With 9+ years of expertise in Python, React.js, ML/AI frameworks, cloud infrastructure, and business intelligence, Arun architects high-performance web architecture with data platforms that transform business insights and drive measurable growth.
   ogImageUrl: /legit.gif
 ---
 
@@ -54,18 +54,18 @@ images:
 
 <Sep size={12} />
 
-We connect the dots between sales & digital mastery, delivering innovative web and app development, strategic marketing, and performance optimization. Using cutting-edge tools like React.js, Next.js, Python (Django, Flask), Node.js, & headless WordPress, we build responsive, user-focused interfaces & robust back-end systems. Our expertise in Web3—Ethereum, Solidity, smart contracts, & tools like Web3.js and Truffle—enables us to create decentralized applications (dApps) & blockchain-integrated solutions. From audits to enhancements, we fine-tune systems for scalability & efficiency, ensuring businesses are equipped to grow, adapt, & lead in the digital era.
+I connect the dots between data insights & digital mastery, delivering innovative web development, data analytics platforms, and performance optimization. Using cutting-edge tools like Python (Django, Flask, Pandas, NumPy), React.js, Next.js, ML/AI frameworks, Node.js, & statistical modeling, I build responsive data dashboards & robust analytical back-end systems. My expertise in Web3—Ethereum, Solidity, smart contracts, & tools like Web3.js and Truffle—enables us to create decentralized applications (dApps) & blockchain-integrated solutions. we scale statistical modeling, business intelligence, predictive analytics, & tools like Scikit-Learn to create data-driven applications & enterprise analytics solutions. From data audits to system enhancements, I fine-tune platforms for scalability & statistical accuracy, ensuring businesses are equipped to make data-driven decisions, adapt, grow & lead through quantitative excellence.
 
  I believe in keeping things straight forward & delivering results that matter!
 
 
 ---achievements
-- number: 10+
-  text: Years of Web Dev & Digital Strategy
+- number: 9+
+  text: Years of Development & Analytics Expertise
 - number: 200+
-  text: Projects
-- number: 500+
-  text: Custom Developement
+  text: Projects Across Web Dev & Data Science
+- number: 50+
+  text: ML Models & Analytics Frameworks Built
 ---
 
 
