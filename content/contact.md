@@ -24,7 +24,9 @@ As a seasoned full stack developer and data scientist, I specialize in understan
 
 Getting started is simple: fill out the contact form below with your details, or reach out directly via email or phone. I typically respond within 1 business day.
 
-Whether you're a startup looking for rapid development or an enterprise needing advanced analytics solutions, I'm committed to providing fast, professional, and tailored service that drives measurable results.
+Whether you're a startup looking for rapid development or an enterprise needing advanced analytics solutions, I'm committed to providing fast, professional, and tailored service that drives measurable results through data-driven insights and scalable technology.
+
+Let's turn your data and development vision into reality—contact me today!
 
 **Let's turn your development or data vision into reality—contact me today!**
 
