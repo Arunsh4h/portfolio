@@ -50,7 +50,7 @@ A fast-growing fashion retailer from Tel Aviv was struggling with their legacy m
 - **Extreme scalability**: Handle 100x traffic spikes during flash sales
 - **AI personalization**: Individual shopping experiences for 5M+ users
 - **Real-time analytics**: Sub-second insights for business decisions
-- **Global performance**: <2s load time across 50+ countries
+- **Global performance**: 2s load time across 50+ countries
 - **Omnichannel integration**: Seamless online/offline inventory sync
 
 ## Technical Architecture
