@@ -36,7 +36,7 @@ attributes:
   - label: False Positive Rate
     value: 0.02%
   - label: Response Time
-    value: <100ms
+    value: < 100ms
 ---
 
 ## Executive Summary
@@ -289,7 +289,7 @@ class RealTimeFraudScorer:
         asyncio.create_task(self.cache_warmer())
     
     async def process_transaction(self, transaction):
-        """Process single transaction with <100ms latency"""
+        """Process single transaction with < 100ms latency"""
         start_time = time.perf_counter()
         
         try:

@@ -34,7 +34,7 @@ attributes:
   - label: Attribution Accuracy
     value: 96.3%
   - label: Processing Latency
-    value: <50ms
+    value: < 50ms
 ---
 
 ## Executive Summary
@@ -825,7 +825,7 @@ const TrafficAttributionDashboard = () => {
         <MetricCard
           title="Processing Latency"
           value={`${trafficData?.processing_latency}ms`}
-          target="<50ms"
+          target="< 50ms"
           icon={<SpeedIcon />}
         />
       </div>
@@ -881,7 +881,7 @@ const TrafficAttributionDashboard = () => {
 ### Technical Performance
 - **API Response Time**: p99 < 100ms
 - **System Uptime**: 99.98%
-- **Data Freshness**: <5 second lag
+- **Data Freshness**: < 5 second lag
 - **Attribution Coverage**: 98.7% of user journeys
 - **Model Confidence**: 94.2% average confidence score
 
@@ -926,7 +926,7 @@ const TrafficAttributionDashboard = () => {
 - Fallback mechanisms for missing data
 
 ### 2. Real-Time Attribution Complexity
-**Challenge**: Computing complex attribution models in <50ms
+**Challenge**: Computing complex attribution models in < 50ms
 **Solution**:
 - Pre-computed attribution weights with incremental updates
 - Efficient graph algorithms for journey reconstruction

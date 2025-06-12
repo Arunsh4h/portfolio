@@ -34,7 +34,7 @@ attributes:
   - label: GMV
     value: $120M+
   - label: Order Processing
-    value: <5 seconds
+    value: < 5 seconds
 ---
 
 ## Executive Summary

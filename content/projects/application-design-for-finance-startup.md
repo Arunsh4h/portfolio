@@ -30,7 +30,7 @@ attributes:
   - label: Daily Transactions
     value: 1M+
   - label: Latency
-    value: <1ms
+    value: < 1ms
   - label: Uptime
     value: 99.999%
   - label: Data Points/sec

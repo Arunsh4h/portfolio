@@ -962,7 +962,7 @@ const DeFiTradingInterface = () => {
 - **Yield Generated**: $150M+ annual protocol revenue
 
 ### Technical Performance
-- **Transaction Confirmation**: <15 seconds average
+- **Transaction Confirmation**: 15 seconds average
 - **Gas Optimization**: 40% lower than competitors
 - **Uptime**: 99.98% across all components
 - **MEV Protection**: 95% success rate

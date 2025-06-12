@@ -34,7 +34,7 @@ attributes:
   - label: Daily Interactions
     value: 1B+
   - label: Response Time
-    value: <50ms
+    value: < 50ms
   - label: Uptime
     value: 99.99%
 ---
@@ -859,7 +859,7 @@ async def websocket_endpoint(websocket: WebSocket, user_id: int):
 - Multi-region deployment in 15+ locations
 - Smart CDN routing with edge compute
 - Regional database replicas
-- Achieved <200ms global response times
+- Achieved 200ms global response times
 
 ### 4. Content Moderation
 **Challenge**: Inappropriate content scaling with user growth

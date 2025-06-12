@@ -1001,7 +1001,7 @@ const AnonymousDatasetDashboard = () => {
 
 ### Technical Performance
 - **System Uptime**: 99.99%
-- **Privacy Validation**: <100ms response time
+- **Privacy Validation**: < 100ms response time
 - **Data Quality**: 95%+ utility preservation
 - **Security**: Zero privacy breaches
 - **Compliance**: 100% GDPR adherence

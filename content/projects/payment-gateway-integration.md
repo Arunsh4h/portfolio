@@ -959,7 +959,7 @@ const QuantumFinTechDashboard = () => {
         <MetricCard
           title="Processing Speed"
           value={`${transactionData?.avg_processing_time}ms`}
-          target="<100ms"
+          target="< 100ms"
           icon={<Zap className="w-6 h-6" />}
           color="purple"
         />

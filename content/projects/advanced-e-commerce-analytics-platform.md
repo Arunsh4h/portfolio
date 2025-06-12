@@ -36,7 +36,7 @@ attributes:
   - label: Conversion Rate
     value: 4.8%
   - label: Page Load Time
-    value: <1.2s
+    value: < 1.2s
 ---
 
 ## Executive Summary

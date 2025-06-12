@@ -32,7 +32,7 @@ attributes:
   - label: Data Volume
     value: 100TB+ Daily
   - label: Pipeline Latency
-    value: <5 minutes
+    value: < 5 minutes
   - label: Cost Reduction
     value: 62%
   - label: Accuracy
@@ -590,7 +590,7 @@ class DataQualityFramework:
 ## Key Features Delivered
 
 ### 1. Real-time Production Monitoring
-- Live dashboard with <1s latency
+- Live dashboard with < 1s latency
 - 360° factory floor visibility
 - Automated alert system
 - Mobile app for floor managers

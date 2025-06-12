@@ -32,7 +32,7 @@ attributes:
   - label: Daily Volume
     value: $10B+
   - label: Latency
-    value: <500ns
+    value: < 500ns
   - label: Orders/Second
     value: 2M+
   - label: Uptime
@@ -80,7 +80,7 @@ private:
         OrderList orders;  // Custom lock-free linked list
         
         // Memory pool for order allocation
-        thread_local static OrderPool<1024> order_pool;
+        thread_local static OrderPool< 1024> order_pool;
     };
     
     // Pre-allocated price level arrays for performance
@@ -95,7 +95,7 @@ private:
     std::atomic<uint64_t> last_update_timestamp{0};
     
 public:
-    // Add order with minimal latency (target <100ns)
+    // Add order with minimal latency (target < 100ns)
     __attribute__((hot, flatten))
     inline OrderResult add_order(const Order& order) noexcept {
         const auto start_time = rdtsc();  // CPU cycle counter
@@ -256,7 +256,7 @@ private:
     std::atomic<uint64_t> last_breach_timestamp{0};
     
 public:
-    // Ultra-fast risk check (target <50ns)
+    // Ultra-fast risk check (target < 50ns)
     __attribute__((hot, flatten))
     inline RiskCheckResult check_order_risk(const Order& order) noexcept {
         // Pre-trade risk checks
@@ -910,11 +910,11 @@ class MarketDataProcessor:
 - **Regulatory**: 100% MiFID II compliance
 
 ### Technical Performance
-- **Memory Usage**: <8GB for full system
-- **CPU Utilization**: <15% under normal load
-- **Network Latency**: <50μs to exchange
+- **Memory Usage**: < 8GB for full system
+- **CPU Utilization**: < 15% under normal load
+- **Network Latency**: < 50μs to exchange
 - **Data Processing**: 100GB+ daily market data
-- **Backup/Recovery**: <30 seconds failover time
+- **Backup/Recovery**: < 20 seconds failover time
 
 ## Technical Stack
 
@@ -947,7 +947,7 @@ class MarketDataProcessor:
 - Custom FPGA-based market data parser
 - Lock-free data structures throughout
 - CPU affinity and memory pinning
-- Achieved <500ns p99 latency
+- Achieved < 500ns p99 latency
 
 ### 2. Risk Management at Scale
 **Challenge**: Real-time risk monitoring for 2M+ orders/second

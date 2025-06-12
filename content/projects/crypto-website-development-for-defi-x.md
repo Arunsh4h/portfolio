@@ -34,7 +34,7 @@ attributes:
   - label: Daily Volume
     value: $50M+
   - label: Transaction Speed
-    value: <100ms
+    value: < 100ms
   - label: Uptime
     value: 99.99%
 ---

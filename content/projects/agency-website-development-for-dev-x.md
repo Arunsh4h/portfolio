@@ -680,7 +680,7 @@ const DevOpsIntelligenceDashboard = () => {
             </div>
             <div className="flex items-center">
               <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
-              <span className="text-sm text-gray-600">Critical (<70%)</span>
+              <span className="text-sm text-gray-600">Critical (< 70%)</span>
             </div>
           </div>
           
