@@ -2,7 +2,7 @@
 layout: Post
 title: Real-time Financial Trading System - $10B+ Daily Volume with Ultra-Low Latency
 description: Architected a high-frequency trading system processing $10B+ daily volume with sub-microsecond latency. Built with C++, Python, PostgreSQL, and FPGA acceleration for a leading European investment bank.
-date: '2024-01-02'
+date: '2022-01-02'
 tags:
   - fintech
   - high-frequency-trading
