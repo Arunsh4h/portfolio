@@ -2,11 +2,11 @@
 layout: Post
 title: Real-time Financial Trading System - $10B+ Daily Volume with Ultra-Low Latency
 description: Architected a high-frequency trading system processing $10B+ daily volume with sub-microsecond latency. Built with C++, Python, PostgreSQL, and FPGA acceleration for a leading European investment bank.
-date: '2024-11-02'
+date: '2024-01-02'
 tags:
   - fintech
   - high-frequency-trading
-  - c++
+  - kafka-web3
   - python
   - postgresql
   - real-time
@@ -15,20 +15,20 @@ logo:
   src: /icons/logo-1.svg
   alt: Trading System
 images:
-  - src: /projects/project-11.jpg
+  - src: /projects/project-10.jpg
     alt: Trading Dashboard
     overlay:
       src: /projects/project-9-mobile.jpg
       alt: Mobile Trading App
   - src: /projects/project-10.jpg
     alt: Real-time Market Data
-  - src: /projects/project-11.jpg
+  - src: /projects/project-10.jpg
     alt: Risk Management Console
 attributes:
   - label: Duration
-    value: 8 Months
+    value: 5 Months
   - label: Role
-    value: Lead Architect
+    value: Data Architect
   - label: Daily Volume
     value: $10B+
   - label: Latency
