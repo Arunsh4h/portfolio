@@ -12,23 +12,23 @@ tags:
   - real-time
   - low-latency
 logo:
-  src: /icons/trading.svg
+  src: /icons/logo-1.svg
   alt: Trading System
 images:
-  - src: /projects/project-6.jpg
+  - src: /projects/project-11.jpg
     alt: Trading Dashboard
     overlay:
-      src: /projects/project-6-mobile.png
+      src: /projects/project-9-mobile.jpg
       alt: Mobile Trading App
   - src: /projects/project-10.jpg
     alt: Real-time Market Data
-  - src: /projects/project-12.jpg
+  - src: /projects/project-11.jpg
     alt: Risk Management Console
 attributes:
   - label: Duration
-    value: 12 Months
+    value: 8 Months
   - label: Role
-    value: Lead System Architect
+    value: Lead Architect
   - label: Daily Volume
     value: $10B+
   - label: Latency
@@ -41,7 +41,7 @@ attributes:
 
 ## Executive Summary
 
-Led the complete redesign and implementation of a next-generation high-frequency trading system for a major European investment bank based in Frankfurt, achieving sub-microsecond latency while processing $10B+ in daily trading volume. As the lead system architect, I designed a cutting-edge platform that handles 2M+ orders per second, reduces trading costs by 45%, and generates $200M+ in annual alpha through advanced algorithmic strategies.
+Led the complete redesign and implementation of a next-generation high-frequency trading system for a major European investment bank based in Frankfurt, achieving sub-microsecond latency while processing $10B+ in daily trading volume. As the system architect, I designed a cutting-edge platform that handles 2M+ orders per second, reduces trading costs by 45%, and generates $200M+ in annual alpha through advanced algorithmic strategies.
 
 ## The Challenge
 

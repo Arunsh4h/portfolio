@@ -12,7 +12,7 @@ tags:
   - machine-learning
   - real-time-analytics
 logo:
-  src: /icons/ecommerce.svg
+  src: /icons/logo-1.svg
   alt: E-commerce Platform
 images:
   - src: /projects/project-5.jpg

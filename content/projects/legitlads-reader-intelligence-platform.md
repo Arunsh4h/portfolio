@@ -16,14 +16,10 @@ logo:
   src: /icons/nlp.svg
   alt: Reader Intelligence Platform
 images:
-  - src: /projects/legitlads-dashboard.jpg
+  - src: /projects/project-7.jpg
     alt: Reader Behavior Analytics Dashboard
     overlay:
-      src: /projects/legitlads-mobile.jpg
-      alt: Mobile Reading Analytics
-  - src: /projects/legitlads-heatmap.jpg
-    alt: Content Engagement Heatmap
-  - src: /projects/legitlads-psychology.jpg
+  - src: /projects/project-8.jpg
     alt: Psychological Profiling Interface
 attributes:
   - label: Duration

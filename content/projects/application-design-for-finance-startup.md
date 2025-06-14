@@ -26,7 +26,7 @@ attributes:
   - label: Duration
     value: 5 Months
   - label: Role
-    value: Lead Full Stack Developer
+    value: Full Stack Developer
   - label: Daily Transactions
     value: 1M+
   - label: Latency

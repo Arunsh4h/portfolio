@@ -13,17 +13,17 @@ tags:
   - fastapi
   - postgresql
 logo:
-  src: /icons/analytics.svg
+  src: /icons/logo-1.svg
   alt: Youth Analytics Platform
 images:
-  - src: /projects/viral-trill-dashboard.jpg
+  - src: /projects/project-1.png
     alt: Real-time Analytics Dashboard
     overlay:
-      src: /projects/viral-trill-mobile.jpg
+      src: /projects/project-1-mobile.png
       alt: Mobile Analytics Interface
-  - src: /projects/viral-trill-insights.jpg
+  - src: /projects/project-2.png
     alt: Youth Behavior Insights
-  - src: /projects/viral-trill-prediction.jpg
+  - src: /projects/project-3.png
     alt: Viral Content Prediction Engine
 attributes:
   - label: Duration
