@@ -1,17 +1,43 @@
 ---
-title: "NeuralChain - AI-Powered Blockchain Consensus & Optimization Platform"
-description: "Revolutionary blockchain infrastructure using neural networks for consensus optimization, smart contract acceleration, and cross-chain interoperability with 100k+ TPS capability"
-date: "2024-01-20"
-updatedDate: "2024-12-06"
-tags: ["Blockchain", "AI/ML", "Consensus Algorithms", "Smart Contracts", "Web3", "Cryptocurrency", "DeFi"]
-featured: true
-technologies: ["Next.js", "React", "Rust", "Solidity", "PyTorch", "Go", "PostgreSQL", "Redis", "Ethereum", "Polkadot", "Docker", "Kubernetes"]
-category: "Blockchain Infrastructure"
-status: "Completed"
-duration: "16 months"
-team: "18 engineers"
-repository: "Private"
-client: "Deutsche Blockchain Initiative"
+layout: Post
+title: NeuralChain - AI-Powered Blockchain Consensus & Optimization Platform
+description: Revolutionary blockchain infrastructure using neural networks for consensus optimization, smart contract acceleration, and cross-chain interoperability with 100K+ TPS capability. Serving 2.3M+ active users with 99.97% uptime.
+date: '2024-01-20'
+tags:
+  - blockchain
+  - ai
+  - consensus-algorithms
+  - smart-contracts
+  - web3
+  - cryptocurrency
+  - defi
+  - rust
+logo:
+  src: /icons/blockchain.svg
+  alt: Neural Blockchain Platform
+images:
+  - src: /projects/neuralchain-dashboard.jpg
+    alt: AI Blockchain Console
+    overlay:
+      src: /projects/neuralchain-mobile.jpg
+      alt: Mobile Blockchain Interface
+  - src: /projects/neuralchain-consensus.jpg
+    alt: Neural Consensus Visualization
+  - src: /projects/neuralchain-analytics.jpg
+    alt: Blockchain Analytics Dashboard
+attributes:
+  - label: Duration
+    value: 16 Months
+  - label: Team Size
+    value: Lead + 18 Engineers
+  - label: Transaction Speed
+    value: 100K+ TPS
+  - label: Active Users
+    value: 2.3M+
+  - label: Validator Nodes
+    value: 500+
+  - label: Daily Volume
+    value: $2.4B
 ---
 
 # NeuralChain - AI-Powered Blockchain Consensus & Optimization Platform

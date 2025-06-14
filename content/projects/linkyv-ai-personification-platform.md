@@ -1,16 +1,43 @@
 ---
-title: "LinkyV - AI-Powered Personification & Digital Identity Training Platform"
-description: "Advanced AI platform for personality modeling, digital identity creation, and personification training using machine learning, NLP, and behavioral psychology to generate authentic digital personas"
-date: "2024-05-10"
-updatedDate: "2024-12-06"
-tags: ["AI/ML", "NLP", "Personification", "Digital Identity", "Computer Vision", "Behavioral Modeling", "Deep Learning"]
-featured: true
-technologies: ["Next.js", "React", "FastAPI", "PyTorch", "Transformers", "PostgreSQL", "Redis", "Apache Kafka", "OpenAI GPT", "Whisper", "Docker", "Kubernetes", "AWS"]
-category: "AI Platform"
-status: "Completed"
-duration: "12 months"
-team: "16 engineers"
-repository: "Private"
+layout: Post
+title: LinkyV - AI-Powered Personification & Digital Identity Training Platform
+description: Advanced AI platform for personality modeling, digital identity creation, and personification training using machine learning, NLP, and behavioral psychology to generate authentic digital personas. Generated 50K+ unique personas with 94% authenticity score.
+date: '2024-05-10'
+tags:
+  - ai
+  - machine-learning
+  - nlp
+  - personification
+  - digital-identity
+  - computer-vision
+  - behavioral-modeling
+  - deep-learning
+logo:
+  src: /icons/ai.svg
+  alt: AI Personification Platform
+images:
+  - src: /projects/linkyv-dashboard.jpg
+    alt: AI Persona Generation Dashboard
+    overlay:
+      src: /projects/linkyv-mobile.jpg
+      alt: Mobile Persona Interface
+  - src: /projects/linkyv-training.jpg
+    alt: AI Training Pipeline
+  - src: /projects/linkyv-personas.jpg
+    alt: Generated Digital Personas
+attributes:
+  - label: Duration
+    value: 12 Months
+  - label: Team Size
+    value: Lead + 16 Engineers
+  - label: Generated Personas
+    value: 50K+
+  - label: Authenticity Score
+    value: 94%
+  - label: Enterprise Clients
+    value: 8 Companies
+  - label: Training Effectiveness
+    value: 156% Improvement
 ---
 
 # LinkyV - AI-Powered Personification & Digital Identity Training Platform

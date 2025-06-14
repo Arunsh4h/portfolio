@@ -1,17 +1,43 @@
 ---
-title: "QuantumPay - Next-Generation Fintech Infrastructure Platform"
-description: "Enterprise-grade quantum-resistant financial infrastructure with real-time processing, AI fraud detection, and multi-blockchain integration for global financial institutions"
-date: "2024-02-15"
-updatedDate: "2024-12-06"
-tags: ["Fintech", "Quantum Computing", "Blockchain", "Real-time Processing", "AI/ML", "Security", "Microservices"]
-featured: true
-technologies: ["Next.js", "FastAPI", "Go", "Rust", "PostgreSQL", "Apache Kafka", "Redis", "Kubernetes", "AWS", "Ethereum", "Hyperledger", "TensorFlow"]
-category: "Fintech Infrastructure"
-status: "Completed"
-duration: "14 months"
-team: "22 engineers"
-repository: "Private"
-client: "European Central Bank Consortium"
+layout: Post
+title: QuantumPay - Next-Generation Fintech Infrastructure Platform
+description: Enterprise-grade quantum-resistant financial infrastructure with real-time processing, AI fraud detection, and multi-blockchain integration for global financial institutions. Processing €47B+ daily transactions with 99.999% uptime.
+date: '2024-02-15'
+tags:
+  - fintech
+  - quantum-computing
+  - blockchain
+  - real-time
+  - ai
+  - security
+  - microservices
+  - cryptocurrency
+logo:
+  src: /icons/blockchain.svg
+  alt: Quantum Fintech Platform
+images:
+  - src: /projects/quantumpay-dashboard.jpg
+    alt: Quantum Financial Dashboard
+    overlay:
+      src: /projects/quantumpay-mobile.jpg
+      alt: Mobile Banking Interface
+  - src: /projects/quantumpay-security.jpg
+    alt: Quantum Security Console
+  - src: /projects/quantumpay-analytics.jpg
+    alt: Real-time Financial Analytics
+attributes:
+  - label: Duration
+    value: 14 Months
+  - label: Team Size
+    value: Lead + 22 Engineers
+  - label: Daily Volume
+    value: €47B+
+  - label: Transaction Speed
+    value: 2.3M TPS
+  - label: Uptime
+    value: 99.999%
+  - label: EU Countries
+    value: 15
 ---
 
 # QuantumPay - Next-Generation Fintech Infrastructure Platform

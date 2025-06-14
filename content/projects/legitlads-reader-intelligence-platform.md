@@ -1,16 +1,43 @@
 ---
-title: "LegitLads - Advanced Reader Behavior Intelligence & Content Optimization Platform"
-description: "Enterprise-grade reader analytics platform leveraging behavioral psychology, NLP, and machine learning to decode reading patterns, emotional engagement, and content optimization strategies"
-date: "2024-04-20"
-updatedDate: "2024-12-06"
-tags: ["NLP", "Reader Analytics", "Machine Learning", "Behavioral Psychology", "Content Intelligence", "Real-time Processing"]
-featured: true
-technologies: ["Next.js", "React", "FastAPI", "PostgreSQL", "Redis", "Apache Kafka", "spaCy", "BERT", "Docker", "Kubernetes", "AWS", "Neo4j"]
-category: "Content Intelligence"
-status: "Completed"
-duration: "10 months"
-team: "14 engineers"
-repository: "Private"
+layout: Post
+title: LegitLads - Advanced Reader Behavior Intelligence & Content Optimization Platform
+description: Enterprise-grade reader analytics platform leveraging behavioral psychology, NLP, and machine learning to decode reading patterns, emotional engagement, and content optimization strategies. Analyzing 1.8M+ monthly readers with 89% accuracy.
+date: '2024-04-20'
+tags:
+  - nlp
+  - reader-analytics
+  - machine-learning
+  - behavioral-psychology
+  - content-intelligence
+  - real-time
+  - nextjs
+  - fastapi
+logo:
+  src: /icons/nlp.svg
+  alt: Reader Intelligence Platform
+images:
+  - src: /projects/legitlads-dashboard.jpg
+    alt: Reader Behavior Analytics Dashboard
+    overlay:
+      src: /projects/legitlads-mobile.jpg
+      alt: Mobile Reading Analytics
+  - src: /projects/legitlads-heatmap.jpg
+    alt: Content Engagement Heatmap
+  - src: /projects/legitlads-psychology.jpg
+    alt: Psychological Profiling Interface
+attributes:
+  - label: Duration
+    value: 10 Months
+  - label: Team Size
+    value: Lead + 14 Engineers
+  - label: Monthly Readers
+    value: 1.8M+
+  - label: Prediction Accuracy
+    value: 89%
+  - label: Response Time
+    value: <50ms
+  - label: Engagement Improvement
+    value: 312%
 ---
 
 # LegitLads - Advanced Reader Behavior Intelligence & Content Optimization Platform

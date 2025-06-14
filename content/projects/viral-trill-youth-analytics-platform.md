@@ -1,16 +1,43 @@
 ---
-title: "Viral Trill - Youth Analytics & Behavioral Intelligence Platform"
-description: "Enterprise-grade analytics platform for youth engagement data mining, viral content optimization, and behavioral prediction modeling across social media ecosystems"
-date: "2024-03-15"
-updatedDate: "2024-12-06"
-tags: ["Analytics", "Machine Learning", "Next.js", "Real-time Processing", "Social Media", "Youth Psychology"]
-featured: true
-technologies: ["Next.js", "React", "FastAPI", "PostgreSQL", "Redis", "Apache Kafka", "TensorFlow", "Docker", "Kubernetes", "AWS", "ElasticSearch"]
-category: "Enterprise Analytics"
-status: "Completed"
-duration: "8 months"
-team: "12 engineers"
-repository: "Private"
+layout: Post
+title: Viral Trill - Youth Analytics & Behavioral Intelligence Platform
+description: Enterprise-grade analytics platform for youth engagement data mining, viral content optimization, and behavioral prediction modeling across social media ecosystems. Processing 2.3M+ daily interactions with 94% prediction accuracy.
+date: '2024-03-15'
+tags:
+  - analytics
+  - machine-learning
+  - nextjs
+  - real-time
+  - social-media
+  - youth-psychology
+  - fastapi
+  - postgresql
+logo:
+  src: /icons/analytics.svg
+  alt: Youth Analytics Platform
+images:
+  - src: /projects/viral-trill-dashboard.jpg
+    alt: Real-time Analytics Dashboard
+    overlay:
+      src: /projects/viral-trill-mobile.jpg
+      alt: Mobile Analytics Interface
+  - src: /projects/viral-trill-insights.jpg
+    alt: Youth Behavior Insights
+  - src: /projects/viral-trill-prediction.jpg
+    alt: Viral Content Prediction Engine
+attributes:
+  - label: Duration
+    value: 8 Months
+  - label: Team Size
+    value: Lead + 12 Engineers
+  - label: Daily Interactions
+    value: 2.3M+
+  - label: Prediction Accuracy
+    value: 94.7%
+  - label: Processing Speed
+    value: 50K events/sec
+  - label: Global Markets
+    value: 12 Countries
 ---
 
 # Viral Trill - Youth Analytics & Behavioral Intelligence Platform
