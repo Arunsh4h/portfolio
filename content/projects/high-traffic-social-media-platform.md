@@ -15,14 +15,14 @@ logo:
   src: /icons/social-linkedin.svg
   alt: Social Media Platform
 images:
-  - src: /projects/project-1.jpg
+  - src: /projects/project-1.png
     alt: Social Media Dashboard
     overlay:
       src: /projects/project-1-mobile.png
       alt: Mobile Social App
-  - src: /projects/project-2.jpg
+  - src: /projects/project-2.png
     alt: Real-time Feed Algorithm
-  - src: /projects/project-3.jpg
+  - src: /projects/project-3.png
     alt: User Analytics
 attributes:
   - label: Duration

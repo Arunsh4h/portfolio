@@ -16,14 +16,14 @@ logo:
   src: /icons/blockchain.svg
   alt: Quantum Fintech Platform
 images:
-  - src: /projects/quantumpay-dashboard.jpg
+  - src: /projects/project-12.jpg
     alt: Quantum Financial Dashboard
     overlay:
-      src: /projects/quantumpay-mobile.jpg
+      src: /projects/project-12-mobile.jpg
       alt: Mobile Banking Interface
-  - src: /projects/quantumpay-security.jpg
+  - src: /projects/project-13-mobile.jpg
     alt: Quantum Security Console
-  - src: /projects/quantumpay-analytics.jpg
+  - src: /projects/project-6.jpg
     alt: Real-time Financial Analytics
 attributes:
   - label: Duration

@@ -15,7 +15,7 @@ logo:
   src: /icons/ai.svg
   alt: AI Fraud Detection
 images:
-  - src: /projects/project-4.jpg
+  - src: /projects/project-4.png
     alt: Fraud Detection Dashboard
     overlay:
       src: /projects/project-4-mobile.png

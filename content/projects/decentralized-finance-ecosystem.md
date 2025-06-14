@@ -15,12 +15,12 @@ logo:
   src: /icons/blockchain.svg
   alt: DeFi Ecosystem
 images:
-  - src: /projects/project-2.jpg
+  - src: /projects/project-2.png
     alt: DeFi Protocol Dashboard
     overlay:
       src: /projects/project-2-mobile.png
       alt: Mobile DeFi Interface
-  - src: /projects/project-4.jpg
+  - src: /projects/project-4.png
     alt: Cross-chain Bridge
   - src: /projects/project-7.jpg
     alt: Yield Farming Analytics

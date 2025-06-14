@@ -16,14 +16,14 @@ logo:
   src: /icons/ai.svg
   alt: AI Personification Platform
 images:
-  - src: /projects/linkyv-dashboard.jpg
+  - src: /projects/project-4.png
     alt: AI Persona Generation Dashboard
     overlay:
-      src: /projects/linkyv-mobile.jpg
+      src: /projects/project-4-mobile.png
       alt: Mobile Persona Interface
-  - src: /projects/linkyv-training.jpg
+  - src: /projects/project-10.jpg
     alt: AI Training Pipeline
-  - src: /projects/linkyv-personas.jpg
+  - src: /projects/project-11.jpg
     alt: Generated Digital Personas
 attributes:
   - label: Duration

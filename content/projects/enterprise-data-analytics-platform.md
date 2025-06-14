@@ -15,7 +15,7 @@ logo:
   src: /icons/analytics.svg
   alt: Data Analytics Platform
 images:
-  - src: /projects/project-3.jpg
+  - src: /projects/project-3.png
     alt: Analytics Dashboard
     overlay:
       src: /projects/project-3-mobile.png

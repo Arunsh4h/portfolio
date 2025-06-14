@@ -16,14 +16,14 @@ logo:
   src: /icons/blockchain.svg
   alt: Neural Blockchain Platform
 images:
-  - src: /projects/neuralchain-dashboard.jpg
+  - src: /projects/project-9.png
     alt: AI Blockchain Console
     overlay:
-      src: /projects/neuralchain-mobile.jpg
+      src: /projects/project-9-mobile.jpg
       alt: Mobile Blockchain Interface
-  - src: /projects/neuralchain-consensus.jpg
+  - src: /projects/project-5.jpg
     alt: Neural Consensus Visualization
-  - src: /projects/neuralchain-analytics.jpg
+  - src: /projects/project-8.jpg
     alt: Blockchain Analytics Dashboard
 attributes:
   - label: Duration
