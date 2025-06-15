@@ -2,7 +2,7 @@
 layout: Post
 title: LinkyV - AI-Powered Personification & Digital Identity Training Platform
 description: Advanced AI platform for personality modeling, digital identity creation, and personification training using machine learning, NLP, and behavioral psychology to generate authentic digital personas. Generated 50K+ unique personas with 94% authenticity score.
-date: '2024-05-10'
+date: '2020-05-10'
 tags:
   - ai
   - machine-learning

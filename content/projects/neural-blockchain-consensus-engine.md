@@ -2,7 +2,7 @@
 layout: Post
 title: NeuralChain - AI-Powered Blockchain Consensus & Optimization Platform
 description: Revolutionary blockchain infrastructure using neural networks for consensus optimization, smart contract acceleration, and cross-chain interoperability with 100K+ TPS capability. Serving 2.3M+ active users with 99.97% uptime.
-date: '2024-01-20'
+date: '2023-01-20'
 tags:
   - blockchain
   - ai

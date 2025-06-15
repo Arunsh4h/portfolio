@@ -2,7 +2,7 @@
 layout: Post
 title: Anonymous Dataset Feeder & Analytics MVP - Privacy-Preserving Data Science Platform
 description: Developed an innovative anonymous dataset aggregation platform that processes 10TB+ of soft non-privacy-preserved data for ML model training. Built with advanced anonymization algorithms, federated learning, and quantum-resistant encryption to serve data science teams while ensuring complete user privacy.
-date: '2024-10-18'
+date: '2024-01-18'
 tags:
   - data-science
   - privacy-technology

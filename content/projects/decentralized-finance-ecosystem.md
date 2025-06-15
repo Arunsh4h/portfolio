@@ -2,7 +2,7 @@
 layout: Post
 title: Decentralized Finance Ecosystem - $2B+ TVL Multi-Chain Protocol Suite
 description: Architected a comprehensive DeFi protocol ecosystem with $2B+ total value locked, featuring automated market makers, yield farming, and cross-chain bridges. Built with Solidity, Next.js, and advanced smart contract security.
-date: '2024-08-18'
+date: '2023-08-18'
 tags:
   - blockchain
   - defi

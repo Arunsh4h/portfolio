@@ -2,7 +2,7 @@
 layout: Post
 title: Advanced Real-Estate FinTech Platform - AI-Powered Mortgage Analytics & Loan Origination System
 description: Engineered a comprehensive real estate fintech platform processing $500M+ in loan applications with AI-powered risk assessment, automated underwriting, and real-time property valuation. Built with Next.js, Python ML pipelines, and enterprise-grade security.
-date: '2024-01-28'
+date: '2021-01-28'
 tags:
   - fintech
   - real-estate

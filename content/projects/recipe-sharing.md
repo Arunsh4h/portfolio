@@ -2,7 +2,7 @@
 layout: Post
 title: AI-Powered Nutritional Intelligence Platform - Personalized Health Analytics & Behavioral Psychology Engine
 description: Architected a revolutionary nutritional intelligence platform leveraging computer vision for food recognition, behavioral psychology AI, and federated learning to serve 25M+ users with personalized health analytics while maintaining complete privacy compliance.
-date: '2024-01-10'
+date: '2019-01-10'
 tags:
   - artificial-intelligence
   - computer-vision

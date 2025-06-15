@@ -2,7 +2,7 @@
 layout: Post
 title: High-Traffic Social Media Platform - Scaling to 100M+ Users with Microservices
 description: Architected and delivered a global social media platform handling 100M+ active users with 1B+ daily interactions. Built with Next.js, Python microservices, PostgreSQL, and Redis to achieve 99.99% uptime at massive scale.
-date: '2024-07-25'
+date: '2019-07-25'
 tags:
   - scalability
   - microservices

@@ -2,7 +2,7 @@
 layout: Post
 title: Enterprise Data Analytics Platform - Processing 100TB+ Daily for Fortune 500
 description: Designed and implemented a comprehensive data analytics platform processing 100TB+ daily for a Fortune 500 manufacturing company. Built with Python, Apache Spark, Next.js, and advanced ML pipelines achieving 85% faster insights delivery.
-date: '2024-06-10'
+date: '2021-06-10'
 tags:
   - data-science
   - python
