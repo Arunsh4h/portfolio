@@ -2,7 +2,7 @@
 layout: Post
 title: Building a Job Alert Portal with Newsletter Integration using HTML, PHP, JavaScript, and WordPress ACF
 description: Learn how to create a job alert portal with seamless newsletter integration, combining HTML, PHP, JavaScript, and WordPress ACF to streamline job notifications and enhance user engagement.
-date: '2023-01-20'
+date: '2018-01-20'
 tags:
   - web-development
   - job-portal

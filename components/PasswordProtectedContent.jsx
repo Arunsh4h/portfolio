@@ -773,27 +773,29 @@ const TicTacToePasswordGame = ({ children }) => {
                   className="h-auto w-full max-w-md"
                 />
               </motion.div>
-              <Typewriter lineClassName="text-gradient-500">
-                <motion.p
-                  className="mb-0 w-full overflow-hidden break-words px-4 py-3 text-center text-base sm:text-lg md:text-xl"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.5 }}
-                >
-                  🔐 Hint: My name, my nicknames, and cities
-                </motion.p>
-              </Typewriter>
-
-              <Typewriter lineClassName="text-gradient-500">
-                <motion.p
-                  className="mb-0 w-full overflow-hidden break-words pb-4 text-center text-base sm:text-lg md:text-xl"
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3, duration: 0.5 }}
-                >
-                  i love can be used as the password.
-                </motion.p>
-              </Typewriter>
+              <div className="flex flex-wrap justify-center px-4 py-3 text-center text-base sm:text-lg md:text-xl">
+                <Typewriter lineClassName="text-gradient-500">
+                  <motion.span
+                    className="whitespace-nowrap"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                  >
+                    🔐 Hint: My nicknames, and the cities I love
+                  </motion.span>
+                </Typewriter>
+                &nbsp;
+                <Typewriter lineClassName="text-gradient-500">
+                  <motion.span
+                    className="whitespace-nowrap"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                  >
+                    can be used as the password.
+                  </motion.span>
+                </Typewriter>
+              </div>
 
               {/* Replace original password input with AnimatedPasswordInput */}
               <AnimatedPasswordInput

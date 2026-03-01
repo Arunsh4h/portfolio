@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:legitlads.com)",
+      "WebFetch(domain:linkyv.com)",
+      "WebFetch(domain:viraltrill.com)",
+      "Bash(rg:*)",
+      "Bash(grep:*)",
+      "Bash(true)"
+    ],
+    "deny": []
+  }
+}
