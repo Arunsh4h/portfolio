@@ -13,5 +13,10 @@ module.exports = {
     'react/prop-types': 0,
     'no-unused-vars': 0,
     'react/no-unescaped-entities': 0,
+    'react/no-deprecated': 'warn',
+    'react-hooks/exhaustive-deps': 'warn',
+    '@next/next/no-img-element': 'warn',
+    '@next/next/no-page-custom-font': 'warn',
+    '@next/next/no-css-tags': 'warn',
   },
 }
