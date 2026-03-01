@@ -1,141 +1,126 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from '@/components/Image'
+import classNames from 'clsx'
 
 // Enhanced transitions with smoother animations
 const transitions = [
   {
     initial: {
       opacity: 0,
-      scale: 1.1,
-      rotate: 2,
-      filter: 'blur(10px)',
-      transformOrigin: 'center',
+      scale: 1.08,
+      filter: 'blur(8px)',
     },
     animate: {
       opacity: 1,
       scale: 1,
-      rotate: 0,
       filter: 'blur(0px)',
-      transformOrigin: 'center',
     },
     exit: {
       opacity: 0,
-      scale: 0.95,
-      rotate: -2,
-      filter: 'blur(10px)',
-      transformOrigin: 'center',
+      scale: 0.96,
+      filter: 'blur(8px)',
     },
   },
   {
     initial: {
       opacity: 0,
-      x: '100%',
-      rotateY: 5,
-      filter: 'blur(10px)',
+      x: '80%',
+      filter: 'blur(8px)',
     },
     animate: {
       opacity: 1,
       x: 0,
-      rotateY: 0,
       filter: 'blur(0px)',
     },
     exit: {
       opacity: 0,
-      x: '-100%',
-      rotateY: -5,
-      filter: 'blur(10px)',
+      x: '-80%',
+      filter: 'blur(8px)',
     },
   },
   {
     initial: {
       opacity: 0,
-      scale: 0.9,
-      rotate: 1,
-      filter: 'blur(10px)',
+      scale: 0.92,
+      y: 30,
+      filter: 'blur(8px)',
     },
     animate: {
       opacity: 1,
       scale: 1,
-      rotate: 0,
+      y: 0,
       filter: 'blur(0px)',
     },
     exit: {
       opacity: 0,
-      scale: 0.9,
-      rotate: -1,
-      filter: 'blur(10px)',
+      scale: 0.92,
+      y: -30,
+      filter: 'blur(8px)',
     },
   },
   {
     initial: {
       opacity: 0,
-      clipPath: 'inset(5% 5% 5% 5%)',
-      filter: 'blur(10px)',
+      clipPath: 'circle(0% at 50% 50%)',
     },
     animate: {
       opacity: 1,
-      clipPath: 'inset(0% 0% 0% 0%)',
+      clipPath: 'circle(100% at 50% 50%)',
+    },
+    exit: {
+      opacity: 0,
+      clipPath: 'circle(0% at 50% 50%)',
+    },
+  },
+  {
+    initial: {
+      opacity: 0,
+      rotateY: 15,
+      x: 100,
+      filter: 'blur(8px)',
+    },
+    animate: {
+      opacity: 1,
+      rotateY: 0,
+      x: 0,
       filter: 'blur(0px)',
     },
     exit: {
       opacity: 0,
-      clipPath: 'inset(5% 5% 5% 5%)',
-      filter: 'blur(10px)',
+      rotateY: -15,
+      x: -100,
+      filter: 'blur(8px)',
     },
   },
 ]
 
-const hoverEffects = [
-  {
-    scale: 1.05,
-    rotate: 1,
-    filter: 'brightness(1.1) contrast(1.05)',
-  },
-  {
-    scale: 1.05,
-    y: -10,
-    filter: 'brightness(1.1)',
-  },
-  {
-    scale: 0.95,
-    rotate: -1,
-    filter: 'brightness(1.1)',
-  },
-  {
-    scale: 1.05,
-    skewX: 2,
-    filter: 'brightness(1.1)',
-  },
-]
-
-// Enhanced caption variants with more dramatic neon effect
+// Enhanced caption variants
 const captionVariants = {
-  initial: { opacity: 0, y: 30, filter: 'blur(10px)' },
+  initial: {
+    opacity: 0,
+    y: 40,
+    filter: 'blur(8px)',
+    scale: 0.95,
+  },
   animate: {
     opacity: 1,
     y: 0,
     filter: 'blur(0px)',
-    textShadow: [
-      // '0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff',
-      // '0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f09, 0 0 80px #f09, 0 0 90px #f09, 0 0 100px #f09, 0 0 150px #f09',
-      // '0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 100px #0ff, 0 0 150px #0ff',
-    ],
+    scale: 1,
     transition: {
-      duration: 0.8,
-      ease: [0.4, 0, 0.2, 1],
-      textShadow: {
-        duration: 3,
-        repeat: Infinity,
-        ease: 'linear',
-      },
+      duration: 0.7,
+      ease: [0.25, 0.46, 0.45, 0.94],
     },
   },
   exit: {
     opacity: 0,
     y: -30,
-    filter: 'blur(10px)',
-    // textShadow: '0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff',
+    filter: 'blur(8px)',
+    scale: 0.95,
+    transition: {
+      duration: 0.4,
+    },
   },
 }
 
@@ -162,7 +147,6 @@ const overlayVariants = {
 const HeroSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [currentTransition, setCurrentTransition] = useState(0)
-  const [currentHover, setCurrentHover] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const [direction, setDirection] = useState(1)
 
@@ -170,27 +154,32 @@ const HeroSlider = ({ images }) => {
     setCurrentIndex((prev) => (prev + 1) % (images.length - 1))
     setDirection(1)
     setCurrentTransition(Math.floor(Math.random() * transitions.length))
-    setCurrentHover(Math.floor(Math.random() * hoverEffects.length))
   }, [images])
 
   const prevSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + (images.length - 1)) % (images.length - 1))
     setDirection(-1)
     setCurrentTransition(Math.floor(Math.random() * transitions.length))
-    setCurrentHover(Math.floor(Math.random() * hoverEffects.length))
   }, [images])
 
   useEffect(() => {
     if (!images?.length || !isAutoPlaying) return
-    const timer = setInterval(nextSlide, 11000)
+    const timer = setInterval(nextSlide, 8000)
     return () => clearInterval(timer)
   }, [images, isAutoPlaying, nextSlide])
 
   if (!images?.length) return null
 
+  const currentTransitionSet = transitions[currentTransition]
+
   return (
     <div
-      className="with-back-plate perspective-1000 relative hidden h-full w-full overflow-hidden md:block"
+      className={classNames(
+        'with-back-plate relative h-full w-full overflow-hidden',
+        'hidden md:block',
+        'rounded-2xl shadow-2xl shadow-black/30'
+      )}
+      style={{ perspective: '1000px' }}
       onMouseEnter={() => setIsAutoPlaying(false)}
       onMouseLeave={() => setIsAutoPlaying(true)}
     >
@@ -198,11 +187,10 @@ const HeroSlider = ({ images }) => {
         <motion.div
           key={currentIndex}
           custom={direction}
-          variants={transitions}
-          initial="initial"
-          animate="animate"
-          exit="exit"
-          transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+          initial={currentTransitionSet.initial}
+          animate={currentTransitionSet.animate}
+          exit={currentTransitionSet.exit}
+          transition={{ duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="relative h-full w-full transform-gpu"
         >
           <Image
@@ -212,7 +200,7 @@ const HeroSlider = ({ images }) => {
             alt={images[currentIndex].alt}
             animation="mask-left"
             priority
-            className="h-full w-full rounded-lg object-cover shadow-2xl"
+            className="h-full w-full rounded-2xl object-cover"
           />
 
           {/* Caption */}
@@ -223,87 +211,152 @@ const HeroSlider = ({ images }) => {
               initial="initial"
               animate="animate"
               exit="exit"
-              className="absolute bottom-32 left-32 top-64 z-20 -translate-x-1/2 transform"
+              className={classNames(
+                'absolute z-20',
+                'bottom-20 left-8 right-8',
+                'lg:bottom-24 lg:left-12 lg:right-auto lg:max-w-lg',
+                'xl:bottom-28 xl:left-16 xl:max-w-xl'
+              )}
             >
-              <motion.div className="rounded-xl bg-black/50 px-8 py-4 backdrop-blur-sm">
-                <h2 className="text-3xl font-bold text-white">{images[currentIndex].caption}</h2>
+              <motion.div
+                className={classNames(
+                  'rounded-xl px-5 py-3 backdrop-blur-md',
+                  'bg-gradient-to-r from-black/70 via-black/60 to-black/40',
+                  'border border-white/10',
+                  'lg:px-6 lg:py-4',
+                  'xl:px-8 xl:py-5'
+                )}
+              >
+                <h2
+                  className={classNames(
+                    'text-lg font-semibold leading-relaxed text-white',
+                    'lg:text-xl',
+                    'xl:text-2xl'
+                  )}
+                >
+                  {images[currentIndex].caption}
+                </h2>
               </motion.div>
             </motion.div>
           </AnimatePresence>
 
-          {/* Overlays */}
+          {/* Gradient overlays */}
           <motion.div
             variants={overlayVariants}
             initial="initial"
             animate="animate"
             exit="exit"
-            className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/50"
+            className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-t from-black/60 via-transparent to-black/20"
+          />
+          <motion.div
+            variants={overlayVariants}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-r from-black/30 via-transparent to-transparent"
           />
         </motion.div>
       </AnimatePresence>
 
       {/* Navigation Buttons */}
-      <div className="absolute inset-0 flex items-center justify-between px-4">
+      <div className="absolute inset-0 flex items-center justify-between px-4 lg:px-6">
         <motion.button
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.8 }}
+          whileHover={{ scale: 1.15, backgroundColor: 'rgba(255,255,255,0.4)' }}
+          whileTap={{ scale: 0.9 }}
           onClick={prevSlide}
-          className="rounded-full bg-white/30 p-0 backdrop-blur-lg transition-all hover:bg-white/40"
-        ></motion.button>
-
-        <motion.button
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 0.8 }}
-          onClick={nextSlide}
-          className="rounded-full bg-white/30 p-4 backdrop-blur-lg transition-all hover:bg-white/40"
+          className={classNames(
+            'flex h-10 w-10 items-center justify-center rounded-full',
+            'bg-white/20 backdrop-blur-md',
+            'border border-white/20',
+            'transition-all duration-300',
+            'lg:h-12 lg:w-12'
+          )}
+          aria-label="Previous slide"
         >
           <svg
-            className="h-8 w-8 text-white"
+            className="h-5 w-5 rotate-180 text-white lg:h-6 lg:w-6"
             fill="none"
-            viewBox="0 0 91 91"
-            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <path
-              d="M36.6,43.5C31.1,49,25.7,54.8,20.7,60.8c-5.1,6.2-12,13.7-12.7,21.9c-0.1,1.3,1.5,2.5,2.7,2   c7.7-3.1,13.1-11.4,18.6-17.4c6.7-7.3,13.6-14.4,20.9-21c2.8-2.5,1.9-7.3-1.2-9.1C36.3,30,27,18.8,19.7,6.2   C15-1.9,2.2,5.6,7.2,13.5C14.8,25.7,24.6,35.8,36.6,43.5z"
-              fill="#ffffff"
-            />
-            <path
-              d="M72.9,43.5C67.3,49,62,54.8,57,60.8C52,67.1,45,74.5,44.3,82.7c-0.1,1.3,1.5,2.5,2.7,2   c7.7-3.1,13.1-11.4,18.6-17.4c6.7-7.3,13.6-14.4,20.9-21c2.8-2.5,1.9-7.3-1.2-9.1C72.6,30,63.3,18.8,56,6.2   c-4.7-8.1-17.5-0.6-12.5,7.3C51.1,25.7,60.9,35.8,72.9,43.5z"
-              fill="#ffffff"
-            />
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.15, backgroundColor: 'rgba(255,255,255,0.4)' }}
+          whileTap={{ scale: 0.9 }}
+          onClick={nextSlide}
+          className={classNames(
+            'flex h-10 w-10 items-center justify-center rounded-full',
+            'bg-white/20 backdrop-blur-md',
+            'border border-white/20',
+            'transition-all duration-300',
+            'lg:h-12 lg:w-12'
+          )}
+          aria-label="Next slide"
+        >
+          <svg
+            className="h-5 w-5 text-white lg:h-6 lg:w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </motion.button>
       </div>
 
       {/* Progress Indicators */}
-      <div className="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 space-x-3">
+      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2 lg:bottom-6 lg:gap-3">
         {images.slice(0, -1).map((_, idx) => (
           <motion.button
             key={idx}
             onClick={() => {
               setCurrentIndex(idx)
               setDirection(idx > currentIndex ? 1 : -1)
+              setCurrentTransition(Math.floor(Math.random() * transitions.length))
             }}
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-            className="relative h-3 overflow-hidden rounded-full"
+            className="group relative h-2 overflow-hidden rounded-full lg:h-3"
+            aria-label={`Go to slide ${idx + 1}`}
           >
             <motion.div
-              className={`h-full transition-all duration-500 ${
-                idx === currentIndex ? 'w-12 bg-white' : 'w-3 bg-white/40'
-              }`}
+              className={classNames(
+                'h-full transition-all duration-500',
+                idx === currentIndex
+                  ? 'w-8 bg-white lg:w-10'
+                  : 'w-2 bg-white/40 group-hover:bg-white/60 lg:w-3'
+              )}
               layout
             />
             {idx === currentIndex && (
               <motion.div
-                className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600"
+                className="absolute inset-0 bg-gradient-to-r from-alpha via-beta to-accent"
                 initial={{ x: '-100%' }}
                 animate={{ x: '100%' }}
-                transition={{ duration: 11, repeat: Infinity, ease: 'linear' }}
+                transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
               />
             )}
           </motion.button>
         ))}
+      </div>
+
+      {/* Slide counter */}
+      <div className="absolute right-4 top-4 z-10 lg:right-6 lg:top-6">
+        <motion.div
+          key={currentIndex}
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className={classNames(
+            'rounded-lg px-3 py-1.5 backdrop-blur-md',
+            'bg-black/40 border border-white/10',
+            'text-sm font-medium text-white/80'
+          )}
+        >
+          {currentIndex + 1} / {images.length - 1}
+        </motion.div>
       </div>
     </div>
   )
