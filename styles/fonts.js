@@ -1,11 +1,6 @@
-import { Inter } from '@next/font/google'
+// Fallback: using system fonts instead of Google Fonts fetch
+// The Inter font will be loaded via CSS in globals.css if needed
 
-const sans = Inter({
-  variable: '--font-sans',
-  display: 'swap',
-  subsets: ['latin'],
-})
-
-const variables = [sans.variable]
+const variables = ['font-sans']
 
 export default variables
