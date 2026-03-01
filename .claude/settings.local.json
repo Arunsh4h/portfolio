@@ -6,7 +6,10 @@
       "WebFetch(domain:viraltrill.com)",
       "Bash(rg:*)",
       "Bash(grep:*)",
-      "Bash(true)"
+      "Bash(true)",
+      "Bash(git checkout:*)",
+      "Bash(git reset:*)",
+      "Bash(git rm:*)"
     ],
     "deny": []
   }
