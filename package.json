@@ -20,8 +20,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.1",
-    "@next/font": "^13.1.6",
-    "@react-spring/web": "^9.7.5",
+        "@react-spring/web": "^9.7.5",
     "@remotion/player": "^4.0.245",
     "@sendgrid/mail": "^7.7.0",
     "autoprefixer": "^10.4.13",
