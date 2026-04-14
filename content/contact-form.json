@@ -168,121 +168,120 @@
       }
     ]
   },
-  {
-    "legend": "What services do you need for your project?",
-    "columns": 3,
-
-    "fields": [
-      {
-        "type": "checkbox",
-        "name": "project-type[Website Development]",
-        "label": "Website Development",
-        "description": "Custom websites, CMS development, and web applications"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[App Development]",
-        "label": "App Development",
-        "description": "Mobile and desktop applications, cross-platform solutions"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Design System]",
-        "label": "Design System",
-        "description": "UI/UX frameworks, component libraries, and style guides"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Website Migration]",
-        "label": "Website Migration",
-        "description": "Platform migrations, content transfer, and system upgrades"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[E-commerce Site]",
-        "label": "E-commerce Site",
-        "description": "Online stores, payment systems, and inventory management"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Performance Evaluation]",
-        "label": "Performance Evaluation",
-        "description": "Speed optimization, security audits, and system analysis"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Cloud Solutions]",
-        "label": "Cloud Solutions",
-        "description": "AWS, Azure, and GCP implementations and management"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[API Development]",
-        "label": "API Development",
-        "description": "RESTful services, GraphQL, and microservices architecture"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Security Implementation]",
-        "label": "Security Implementation",
-        "description": "Security audits, compliance, and penetration testing"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Database Design]",
-        "label": "Database Design",
-        "description": "Schema design, optimization, and data migration"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[AI Integration]",
-        "label": "AI Integration",
-        "description": "Machine learning, chatbots, and automation systems"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[DevOps Setup]",
-        "label": "DevOps Setup",
-        "description": "CI/CD pipelines, containerization, and automation"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Blockchain Development]",
-        "label": "Blockchain Development",
-        "description": "Smart contracts, DApps, and cryptocurrency solutions"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[AR/VR Development]",
-        "label": "AR/VR Development",
-        "description": "Augmented and virtual reality applications and experiences"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[IoT Solutions]",
-        "label": "IoT Solutions",
-        "description": "Internet of Things device integration and management"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[Analytics Implementation]",
-        "label": "Analytics Implementation",
-        "description": "Data analytics, reporting, and business intelligence"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[CMS Development]",
-        "label": "CMS Development",
-        "description": "Custom content management systems and integrations"
-      },
-      {
-        "type": "checkbox",
-        "name": "project-type[System Integration]",
-        "label": "System Integration",
-        "description": "Third-party integrations and enterprise system connectivity"
-      }
-    ]
-  },
+ {
+  "legend": "What services do you need for your project?",
+  "columns": 3,
+  "fields": [
+    {
+      "type": "checkbox",
+      "name": "project-type[Data Science & Analytics]",
+      "label": "Data Science & Analytics",
+      "description": "Statistical modeling, predictive analytics, and machine learning solutions"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Business Intelligence]",
+      "label": "Business Intelligence",
+      "description": "Executive dashboards, KPI tracking, and data-driven decision support"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Quantitative Analytics]",
+      "label": "Quantitative Analytics",
+      "description": "Financial modeling, risk analytics, and statistical analysis"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[ML/AI Solutions]",
+      "label": "ML/AI Solutions",
+      "description": "Machine learning models, AI automation, and intelligent systems"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Data Engineering]",
+      "label": "Data Engineering",
+      "description": "ETL pipelines, data warehousing, and real-time processing"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Web Development]",
+      "label": "Web Development",
+      "description": "React.js, Next.js applications, and modern web platforms"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Database Architecture]",
+      "label": "Database Architecture",
+      "description": "Schema design, optimization, and data modeling"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Cloud & DevOps]",
+      "label": "Cloud & DevOps",
+      "description": "AWS, CI/CD pipelines, and infrastructure automation"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[API Development]",
+      "label": "API Development",
+      "description": "RESTful services, GraphQL, and microservices architecture"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Performance Optimization]",
+      "label": "Performance Optimization",
+      "description": "System tuning, scalability, and efficiency improvements"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Mobile Development]",
+      "label": "Mobile Development",
+      "description": "React Native apps and cross-platform solutions"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[E-commerce Platforms]",
+      "label": "E-commerce Platforms",
+      "description": "Online stores, payment systems, and conversion analytics"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[MLOps & Deployment]",
+      "label": "MLOps & Deployment",
+      "description": "Model deployment, monitoring, and production ML systems"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Blockchain & Web3]",
+      "label": "Blockchain & Web3",
+      "description": "Smart contracts, DApps, and decentralized solutions"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Data Visualization]",
+      "label": "Data Visualization",
+      "description": "Interactive dashboards, charts, and analytics interfaces"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[System Integration]",
+      "label": "System Integration",
+      "description": "Third-party integrations and enterprise connectivity"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[CMS Development]",
+      "label": "CMS Development",
+      "description": "Headless WordPress, custom CMS, and content platforms"
+    },
+    {
+      "type": "checkbox",
+      "name": "project-type[Digital Transformation]",
+      "label": "Digital Transformation",
+      "description": "Legacy modernization, technology strategy, and migration"
+    }
+  ]
+},
   {
     "legend": "Select Your Investment Range.",
     "columns": 3,

@@ -139,10 +139,10 @@ export const siteMetaData = {
   authorName: 'Arun Shah',
   siteName: 'Arun Shah',
   defaultTitle:
-    'Arun Shah - Full Stack Engineer - Bhopal, Web Architect, Digital Growth Strategist, & Monetization Specialist, along Freelance.',
+    'Arun Shah - Lead Full Stack & Data Engineer - Bhopal, Web Architect, Quantitative Analytics Specialist, ML/AI Expert & Statistical Modeling Expert.',
   titleTemplate: 'Arun Shah | %s',
   description:
-    'Empowering Businesses with Scalable Web Solutions, Digital Growth Strategies, and Monetization Expertise.',
+    'Empowering Businesses with Scalable Web Solutions, Analytics Specialist, ML/AI Expert & Statistical Model Specialist.',
   email: 'arunshah23jan@gmail.com',
   locale: 'en_US',
   twitter: {

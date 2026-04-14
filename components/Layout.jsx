@@ -11,7 +11,7 @@ const Layout = (props) => {
   return (
     <div
       className={classNames(
-        'dark relative flex min-h-screen w-full justify-center bg-black font-sans lg:px-4 xl:px-8',
+        'dark relative flex min-h-screen w-full justify-center overflow-x-hidden bg-black font-sans lg:px-4 xl:px-8',
         theme,
         ...fonts
       )}

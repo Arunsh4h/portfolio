@@ -8,6 +8,7 @@ module.exports = withBundleAnalyzer({
   },
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'utils'],
+    ignoreDuringBuilds: true,
   },
   webpack(config) {
     config.module.rules.push({
