@@ -8,6 +8,11 @@
   * {
     @apply box-border;
   }
+  html,
+  body {
+    @apply overflow-x-hidden;
+    max-width: 100%;
+  }
   h1 {
     @apply text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl;
   }
